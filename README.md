@@ -2,6 +2,7 @@
 html入门到放弃
 ### html基础1
 1.<!DOCTYPE html> 声明为 HTML5 文档  
+<<<<<<< HEAD
 2.`<body>`元素包含了可见的页面内容  
 3.`<a href="default.html">`超链接，以`</a>`结束  
 关于超链接：  
@@ -22,3 +23,6 @@ css使用方式有3种
 内部样式表 -在HTML文档头部 `<head> `区域使用`<style>`元素 来包含CSS
 外部引用 - 使用外部 CSS 文件
 此部分使用内联css
+=======
+2.body元素包含了可见的页面内容
+>>>>>>> 37bfdb18cee32eba1fc823e9afeb5f220ca365c8
