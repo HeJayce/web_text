@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+.table 
+{
+    margin-top: 13px;
+}
+.tabletop td
+{
+    background-color: #ffffff;
+}
