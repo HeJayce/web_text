@@ -1,10 +1,30 @@
 @charset "utf-8";
 /* CSS Document */
-.table 
+table 
 {
-    margin-top: 13px;
+    border-collapse:collapse;
+
+}
+table,th, td
+{
+    border: 1px solid #F8F8F8 ;
+}
+td
+{
+    text-align: center;
+}
+.tabletop
+{
+    background-color: #e9faff;
 }
 .tabletop td
 {
-    background-color: #ffffff;
+    color: #255e95;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    font-weight: bold;
+} 
+.tableleft
+{
+    background-color: #E8E8E8 ;
 }
