@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js</title>
+        <script>
+            document.write("<h1>我的第一个Javascript</h1>")
+            document.write("<p>我的第一个Javascript</p>")
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="alert('欢迎!')">点我!</button>
+        <br>
+
+        <script>
+            function changeImage(){
+                img=document.getElementById("light")
+                if(img.src.match("bulbon"))  
+                {
+                    img.src="media/pic_bulboff.gif";
+                }
+                else
+                {
+                   
+                    img.src="media/pic_bulbon.gif";
+                }
+            }
+
+        </script>
+
+        <img id="light" src="media/pic_bulboff.gif" alt="error" width="100" height="180" onclick="changeImage()">
+    </body>
+</html>

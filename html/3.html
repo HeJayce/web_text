@@ -49,11 +49,20 @@
     </table>
 
     <form action="">
-        username:<input type="text" name="user"><br>
-        password:<input type="text" name="passwor"><br>
+        username:<br><input type="text" name="user"><br>
+        password:<br><input type="password" name="password"><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+<br>
         sex:<input type="radio" name="sex" value="male">male <br>
         sex:<input type="checkbox" name="sex" value="female">female
         <input type="submit" value="提交">
+        <br>
+        Select your favorite color:
+        <input type="color" name="favcolor">
+<br>
+        Birthday:
+         <input type="date" name="bday">   
     </form>
 
     <p id="demo">
@@ -75,9 +84,22 @@
         {
             x=document.getElementById("demo2") // 找到元素
             x.style.color="#ff0000";          // 改变样式
+            alert("点击确定生效变成红色")
         }
         </script>
     <button type="button" onclick="myFunction()">点我</button>
     <button type="button" onclick="myFunction2()">变色</button>
+<br>
+
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi" selected>Audi</option>
+    </select>
+<br>
+<textarea name="message" style="width:200px; height:600px">
+    The cat was playing in the garden.
+</textarea>
 
 </body>
