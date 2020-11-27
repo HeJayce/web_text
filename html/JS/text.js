@@ -84,9 +84,9 @@ function captureThreeNumbers(str1) {
         break;
       }
     }
-    if(x<y)
+    if()
       return shunxuarr;
-    else if(x>y)
+    else if()
       return daoxuarr;
     else 
       return false;
