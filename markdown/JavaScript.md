@@ -146,6 +146,21 @@ console.log();
 
 #### 1.数字/字符串
 
+字符串也可以是对象：
+
+```js
+var x = "jayce";
+var y = new String ("jayce")
+```
+
+其中x是字符串
+
+y是对象
+
+`(x === y) // 结果为 false`
+
+
+
 可使用单引号和双引号
 
 用`''`或`""`表示
@@ -205,7 +220,7 @@ s[13]; // undefined
 
 `toUpperCase()`把一个字符串全部变为大写：
 
-```
+```js
 var s = 'Hello';
 s.toUpperCase(); // 返回'HELLO'
 ```
@@ -214,7 +229,7 @@ s.toUpperCase(); // 返回'HELLO'
 
 `toLowerCase()`把一个字符串全部变为小写：
 
-```
+```js
 var s = 'Hello';
 var lower = s.toLowerCase(); // 返回'hello'并赋值给变量lower
 lower; // 'hello'
@@ -224,17 +239,21 @@ lower; // 'hello'
 
 `indexOf()`会搜索指定字符串出现的位置：
 
-```
+```js
 var s = 'hello, world';
 s.indexOf('world'); // 返回7
 s.indexOf('World'); // 没有找到指定的子串，返回-1
 ```
 
-###### **substring**
+###### lastIndexOf
+
+`lastIndexOf`会反向搜索
+
+###### substring
 
 `substring()`返回指定索引区间的子串：
 
-```
+```js
 var s = 'hello, world'
 s.substring(0, 5); // 从索引0开始到5（不包括5），返回'hello'
 s.substring(7); // 从索引7开始到结束，返回'world'
@@ -245,6 +264,8 @@ s.substring(7); // 从索引7开始到结束，返回'world'
 #### 2.数组（array）
 
 [40, 100, 1, 5, 25, 10]
+
+数组是一种特殊的对象格式，所以`typeof [1,2,3,4] 返回 object`
 
 array可以包含任意数据类型，并通过索引来访问每个元素
 
@@ -591,7 +612,7 @@ document.write("您的浏览器支持JavaScript脚本!");
 
 
 
-### strict模式
+### use strict模式（严格模式）
 
 在strict模式下运行的JavaScript代码，强制通过`var`申明变量，未使用`var`申明变量就使用的，将导致运行错误。
 
@@ -601,7 +622,21 @@ document.write("您的浏览器支持JavaScript脚本!");
 'use strict';
 ```
 
+严格模式的限制：
 
+1. 不允许使用未声明的变量
+2. 不允许删除变量和对象
+3. 不允许删除函数
+4. 不允许变量重名
+5. 不允许使用八进制
+6. 不允许使用转义字符
+7. 不允许对只读属性赋值
+8. 不允许对一个使用getter方法读取的属性进行赋值
+9. 不允许删除一个不允许删除的属性
+10. 变量名不能使用eval
+11. 变量名不能使用arguments
+12. 作用域 eval() 创建的变量不能被调用
+13. 禁止this关键字指向全局对象
 
 ### 函数
 
@@ -646,3 +681,254 @@ JavaScript 变量的生命期从它们被声明的时间开始。
 - HTML 页面完成加载
 - HTML input 字段改变时
 - HTML 按钮被点击
+
+| 事件        | 描述                         |
+| :---------- | :--------------------------- |
+| onchange    | HTML 元素改变                |
+| onclick     | 用户点击 HTML 元素           |
+| onmouseover | 用户在一个HTML元素上移动鼠标 |
+| onmouseout  | 用户从一个HTML元素上移开鼠标 |
+| onkeydown   | 用户按下键盘按键             |
+| onload      | 浏览器已完成页面的加载       |
+
+
+
+### JS类型转换
+
+在 JavaScript 中有 6 种不同的数据类型：
+
+- string 
+- number
+- boolean
+- object
+- function
+- symbol
+
+3 种对象类型：
+
+- Object
+- Date
+- Array
+
+2 个不包含任何值的数据类型：
+
+- null
+- undefined
+
+**使用Number() 转换为数字， String() 转换为字符串， Boolean() 转换为布尔值**
+
+```js
+typeof "John"                 // 返回 string
+typeof 3.14                   // 返回 number
+typeof NaN                    // 返回 number
+typeof false                  // 返回 boolean
+typeof [1,2,3,4]              // 返回 object
+typeof {name:'John', age:34}  // 返回 object
+typeof new Date()             // 返回 object
+typeof function () {}         // 返回 function
+typeof myCar                  // 返回 undefined (如果 myCar 没有声明)
+typeof null                   // 返回 object
+```
+
+##### 自动转换类型
+
+```js
+5 + null    // 返回 5         null 转换为 0
+"5" + null  // 返回"5null"   null 转换为 "null"
+"5" + 1     // 返回 "51"      1 转换为 "1" 
+"5" - 1     // 返回 4         "5" 转换为 5
+```
+
+##### 自动转换字符串
+
+```js
+document.getElementById("demo").innerHTML = myVar;
+
+myVar = {name:"Fjohn"}  // toString 转换为 "[object Object]"
+myVar = [1,2,3,4]       // toString 转换为 "1,2,3,4"
+myVar = new Date()      // toString 转换为 "Fri Jul 18 2014 09:08:55 GMT+0200"
+```
+
+
+
+
+
+## 正则表达式
+
+### search()
+
+search()使用方法
+
+检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串，并返回子串的起始位置
+
+1. `var n = str.search(/Runoob/i);`
+2. `var n = str.search("Runoob");`
+
+
+
+## JS错误-throw、try 和 catch
+
+**try** 语句测试代码块的错误。
+
+**catch** 语句处理错误。
+
+**throw** 语句创建自定义错误。
+
+**finally** 语句在 try 和 catch 语句之后，无论是否有触发异常，该语句都会执行。
+
+
+
+#### throw：
+
+当错误发生时，当事情出问题时，JavaScript 引擎通常会停止，并生成一个错误消息。
+
+描述这种情况的技术术语是：JavaScript 将**抛出**一个错误。
+
+throw 语句允许我们创建自定义错误。
+
+正确的技术术语是：创建或**抛出异常**（exception）。
+
+如果把 throw 与 try 和 catch 一起使用，那么您能够控制程序流，并生成自定义的错误消息。
+
+
+
+#### try和catch
+
+**try** 语句允许我们定义在执行时进行错误测试的代码块。
+
+**catch** 语句允许我们定义当 try 代码块发生错误时，所执行的代码块。
+
+```js
+var txt=""; 
+function message() 
+{ 
+    try { 
+        adddlert("Welcome guest!"); 
+    } catch(err) { 
+        txt="本页有一个错误。\n\n"; 
+        txt+="错误描述：" + err.message + "\n\n"; 
+        txt+="点击确定继续。\n\n"; 
+        alert(txt); 
+    } 
+}
+```
+
+
+
+## JS使用常见错误
+
+#### 赋值运算符应用错误
+
+```js
+var x = 0;
+if (x == 10)
+```
+
+#### 比较运算符常见错误
+
+```js
+var x = 10;
+var y = "10";
+if (x == y)   //true
+if (x === y)  //false	
+```
+
+#### 加法与连接注意事项
+
+```js
+var x = 10 + 5;          // x 的结果为 15
+var x = 10 + "5";        // x 的结果为 "105"
+```
+
+#### 浮点数据使用注意事项
+
+```js
+var x = 0.1;
+var y = 0.2;
+var z = x + y            // z 的结果为 0.30000000000000004
+if (z == 0.3)            // 返回 false
+```
+
+解决方用整数的乘除法来解决
+
+
+
+#### 字符串分行
+
+错误示范：
+
+```js
+var x = "Hello
+World!";
+```
+
+####  return不可换行
+
+
+
+## JS表单验证
+
+### 验证数字：
+
+```js
+<input id="numb">
+<button type="button" onclick="myFunction()">提交</button>
+<script>
+function myFunction() {
+    var x, text;
+    // 获取 id="numb" 的值
+    x = document.getElementById("numb").value;
+    // 如果输入的值 x 不是数字或者小于 1 或者大于 10，则提示错误 Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "输入错误";
+    } else {
+        text = "输入正确";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+```
+
+### 必填验证
+
+```js
+var x=document.forms["myForm"]["fname"].value;
+if (x==null || x==""){
+  alert("姓必须填写");
+  return false;
+  }
+```
+
+### Email验证
+
+数据必须包含 @ 符号和点号(.)。同时，@ 不可以是邮件地址的首字符，并且 @ 之后需有至少一个点号
+
+```js
+var x=document.forms["myForm"]["email"].value;
+  var atpos=x.indexOf("@");
+  var dotpos=x.lastIndexOf(".");
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+    alert("不是一个有效的 e-mail 地址");
+    return false;
+  }
+```
+
+
+
+## JS验证API
+
+### 约束验证 DOM 方法
+
+1.checkValidity
+
+如果input的元素合法，返回true
+
+会检查元素是否有任何输入约束条件，并且检查值是否符合约束条件。 如果值是不符合约束条件的，浏览器就会在该元素上触发一个可以撤销的 invalid 事件
+
+2.validationMessage	
+
+浏览器错误提示信息
+
+3.setCustomValidity()
+
+设置 input 元素的 validationMessage 属性，用于自定义错误提示信息的方法
