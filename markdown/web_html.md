@@ -8,8 +8,6 @@ html入门到放弃
 
 ##### 关于超链接：  
 
-(1)图片超链接将文字整个替换为图片格式  
-
 (2)`target=_blank`属性可以将链接从新的标签页打开. 
 `<base> `标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接  
 (3)ID 属性,`<a href="#tips">访问有用的提示部分</a>`.在要跳转的书签加上`<a id="tips">有用的提示部分</a>`,如果需要跳转其他的网页,#前加上链接.
@@ -489,4 +487,137 @@ document.write("Hello World!");
 | &        | 和号   | &amp;             | &#38;    |
 | "        | 引号   | &quot;            | &#34;    |
 | '        | 撇号   | &apos; (IE不支持) | &#39;    |
+
+
+
+# HTML5
+
+## 将HTML5元素定义为块元素
+
+HTML5 定了 8 个新的 HTML **语义（semantic）** 元素。
+
+所有这些元素都是 **块级** 元素
+
+为了能让旧版本的浏览器正确显示这些元素，你可以设置 CSS 的 **display** 属性值为 **block**:
+
+```css
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+```
+
+
+
+## 添加新的自定义元素
+
+添加新元素myHero，并为该元素定义样式。
+
+```html
+<style>
+myHero {
+    display: block;
+    background-color: #ddd;
+    padding: 50px;
+    font-size: 30px;
+</style>
+<myHero>我的第一个新元素</myHero>
+```
+
+
+
+**JavaScript 语句 `document.createElement("myHero")`** **是为 IE 浏览器添加新的元素。**
+
+**PS: Internet Explorer 8 及更早 IE 版本的浏览器不支持以上的方式。**
+
+为了解决此类问题，需要读取 html5.js 文件，并解析它
+
+```html
+<!--[if lt IE 9]>
+  <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+```
+
+
+
+## 新元素
+
+## canvas
+
+标签定义图形，比如图表和其他图像。该标签基于 JavaScript 的绘图 API
+
+`<canvas>`标签只是图形容器，您必须使用脚本来绘制图形。
+
+你可以通过多种方法使用 canvas 绘制路径,盒、圆、字符以及添加图像。
+
+**注意:** 默认情况下 `<canvas>` 元素没有边框和内容。
+
+
+
+## 其他
+
+| 标签                                                  | 描述                                                       |
+| :---------------------------------------------------- | :--------------------------------------------------------- |
+| [audio](https://www.runoob.com/tags/tag-audio.html)   | 定义音频内容                                               |
+| [video](https://www.runoob.com/tags/tag-video.html)   | 定义视频（video 或者 movie）                               |
+| [source](https://www.runoob.com/tags/tag-source.html) | 定义多媒体资源 <video> 和 <audio>                          |
+| [embed](https://www.runoob.com/tags/tag-embed.html)   | 定义嵌入的内容，比如插件。                                 |
+| [track](https://www.runoob.com/tags/tag-track.html)   | 为诸如 <video> 和 <audio> 元素之类的媒介规定外部文本轨道。 |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
