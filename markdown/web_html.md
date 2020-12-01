@@ -6,6 +6,36 @@ html入门到放弃
 2.`<body>`元素包含了可见的页面内容  
 3.`<a href="default.html">`超链接，以`</a>`结束  
 
+**自闭合标签有`<input/><img/><br/><link/><hr/>`等**
+
+
+
+（1）行内元素有：a b span img input select strong 
+
+ （2）块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
+
+ （3）常见的空元素：
+
+ `<br>` `<hr>` `<img>` `<input> ` `<link>` `<meta>`
+
+ 鲜为人知的是：
+
+ <area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>
+
+
+
+不可继承的：display、margin、border、padding、background、height、min-height、max- height、width、min-width、max-width、overflow、position、left、right、top、 bottom、z-index、float、clear、table-layout、vertical-align、page-break-after、 page-bread-before和unicode-bidi。
+
+所有元素可继承：visibility和cursor。
+
+内联元素可继承：letter-spacing、word-spacing、white-space、line-height、color、font、 font-family、font-size、font-style、font-variant、font-weight、text- decoration、text-transform、direction。
+
+块状元素可继承：text-indent和text-align。
+
+列表元素可继承：list-style、list-style-type、list-style-position、list-style-image。
+
+表格元素可继承：border-collapse。
+
 ##### 关于超链接：  
 
 (2)`target=_blank`属性可以将链接从新的标签页打开. 
@@ -59,6 +89,8 @@ br也可以作为段落之间拆行使用
 <em>这个文本是斜体的</em>
 <i>这个文本是斜体的</i>
 ```
+
+**em是强调文本，不算斜体**
 
 ##### 4.下标上标
 

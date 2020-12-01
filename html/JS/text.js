@@ -53,44 +53,44 @@
 
 // }
 
-function captureThreeNumbers(str1) {
-  var str=str1.split(',');
-  for(var k=0 ; k<str.length;k++)
-  {
-    str[k]=parseFloat(str[k]);
-  }
-  var shunxuarr =[]
-  var daoxuarr = []
-  var x;
-  var y;
-  for(var i=0;i<str.length;i++)
-  {
-      if (str[i]===str[i+1]-1&&str[i+1]-1===str[i+2]-2)
-          {
-              shunxuarr.push(str[i],str[i+1],str[i+2])
-              shunxuarr = shunxuarr.join('');
-              x = i
-              break;
-          }
+// function captureThreeNumbers(str1) {
+//   var str=str1.split(',');
+//   for(var k=0 ; k<str.length;k++)
+//   {
+//     str[k]=parseFloat(str[k]);
+//   }
+//   var shunxuarr =[]
+//   var daoxuarr = []
+//   var x;
+//   var y;
+//   for(var i=0;i<str.length;i++)
+//   {
+//       if (str[i]===str[i+1]-1&&str[i+1]-1===str[i+2]-2)
+//           {
+//               shunxuarr.push(str[i],str[i+1],str[i+2])
+//               shunxuarr = shunxuarr.join('');
+//               x = i
+//               break;
+//           }
           
-    }
-    for(var i=0;i<str.length;i++)
-    {
-      if((str[i]===str[i+1]+1&&str[i+1]+1===str[i+2]+2))
-      {
-        daoxuarr.push(str[i],str[i+1],str[i+2])
-        daoxuarr =  daoxuarr.join('');
-        y = i;
-        break;
-      }
-    }
-    if()
-      return shunxuarr;
-    else if()
-      return daoxuarr;
-    else 
-      return false;
-}
+//     }
+//     for(var i=0;i<str.length;i++)
+//     {
+//       if((str[i]===str[i+1]+1&&str[i+1]+1===str[i+2]+2))
+//       {
+//         daoxuarr.push(str[i],str[i+1],str[i+2])
+//         daoxuarr =  daoxuarr.join('');
+//         y = i;
+//         break;
+//       }
+//     }
+//     if()
+//       return shunxuarr;
+//     else if()
+//       return daoxuarr;
+//     else 
+//       return false;
+// }
 
 // getOrderNum (str) {
 //   const orderNum = []
@@ -109,4 +109,48 @@ function captureThreeNumbers(str1) {
 // }
 
 // console.log(getOrderNum('1,2,5,6,3,2,1,3,1,2,3'))
-console.log(captureThreeNumbers('1,2,5,6,3,1,3,1,2,3'))
+// console.log(captureThreeNumbers('1,2,5,6,3,1,3,1,2,3'))
+
+// function count(str) {
+//   str=str.replace(/\s/,'');
+//   let obj ={};
+//   var i=0 , j;
+//   var key 
+//   for (var i = 0;i<str.length;i++)
+//   {
+//     key = str[i]
+//     if(obj.hasOwnProperty(str[i]))
+//     {
+//       obj[key] ++;
+//     }
+//     else
+//     {
+//       obj[key] = 1;
+//     }
+//   }
+//   return obj;
+// }
+// console.log(count("hello"))
+// function cssStyle2DomStyle(sName) {
+//   if (sName[0]==='-')
+//     {
+//       sName = sName.slice(1,sName.length);
+//       console.log(sName);
+//     }
+//   if(sName[sName.length-1]==='-')
+//     {
+//       sName = sName.slice(0,sName.length-1);
+//     }
+//   let arr = sName.split("-")
+
+
+//     for(var i=1;i < arr.length;i++)
+//     {
+//           arr[i] = arr[i].replace(arr[i][0],arr[i][0].toUpperCase());
+//     }
+    
+//     return arr.join("")
+
+//   }
+  
+// console.log(cssStyle2DomStyle('font-size-')) 
