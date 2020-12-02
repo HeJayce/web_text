@@ -154,3 +154,29 @@
 //   }
   
 // console.log(cssStyle2DomStyle('font-size-')) 
+
+function rgb2hex(r,g,b) {
+  r = parseInt(r).toString(16)
+  var color = [];
+  color[0] =r;
+  color[1] =g;
+  color[2] =b;
+  for(var i = 0 ;i < 3 ; i++)
+  {
+    if(color[i]<=16)
+    {
+      color[i] =parseInt(color[i]).toString(16);
+      color[i] = '0' + color[i]
+    }
+    else
+    {
+      color[i] = parseInt(color[i]).toString(16);
+  
+    }
+  }
+  var rgb = '#'+color.join('')
+
+  return rgb;
+    
+}
+console.log(rgb2hex(16,255,255))
