@@ -163,20 +163,22 @@ function rgb2hex(r,g,b) {
   color[2] =b;
   for(var i = 0 ;i < 3 ; i++)
   {
-    if(color[i]<=16)
-    {
-      color[i] =parseInt(color[i]).toString(16);
-      color[i] = '0' + color[i]
-    }
-    else
-    {
-      color[i] = parseInt(color[i]).toString(16);
-  
-    }
-  }
-  var rgb = '#'+color.join('')
+      for(var i = 0 ;i < 3 ; i++)
+      {
+        if(color[i]<=16)
+        {
+          color[i] =parseInt(color[i]).toString(16);
+          color[i] = '0' + color[i]
+        }
+        else
+        {
+          color[i] = parseInt(color[i]).toString(16);
+      
+        }
+      }
+      var rgb = '#'+color.join('')
 
-  return rgb;
+      return rgb;
     
 }
 console.log(rgb2hex(16,255,255))
