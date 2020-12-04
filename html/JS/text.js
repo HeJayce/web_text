@@ -154,27 +154,61 @@
 //   }
   
 // console.log(cssStyle2DomStyle('font-size-')) 
+//
+// function rgb2hex(r,g,b) {
+//     r = parseInt(r).toString(16);
+//     let color = [];
+//     color[0] = r;
+//     color[1] = g;
+//     color[2] = b;
+//     for (let i = 0; i < 3; i++) {
+//         for (let i = 0; i < 3; i++) {
+//             if (color[i] <= 16) {
+//                 color[i] = parseInt(color[i]).toString(16);
+//                 color[i] = '0' + color[i]
+//             } else {
+//                 color[i] = parseInt(color[i]).toString(16);
+//
+//             }
+//         }
+//         let rgb = '#' + color.join('')
+//
+//         return rgb;
+//
+//     }
+// }
+// console.log(rgb2hex(16,255,255))
+//
+// let person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     id: 5566,
+//     fullName: function () {
+//         return this.firstName + " " + this.lastName;
+//     }
+// };
+//
+// // 显示对象的数据
+// console.log(person.fullName())
+//
+// let person1 = {
+//     fullName: function () {
+//         return this.firstName + " " + this.lastName;
+//     }
+// };
+//
+// let person2 = {
+//     firstName:"John",
+//     lastName: "Doe",
+// }
+// let x = person1.fullName.call(person2);  // 返回 "John Doe"
+// console.log(x)
 
-function rgb2hex(r,g,b) {
-    r = parseInt(r).toString(16);
-    let color = [];
-    color[0] = r;
-    color[1] = g;
-    color[2] = b;
-    for (let i = 0; i < 3; i++) {
-        for (let i = 0; i < 3; i++) {
-            if (color[i] <= 16) {
-                color[i] = parseInt(color[i]).toString(16);
-                color[i] = '0' + color[i]
-            } else {
-                color[i] = parseInt(color[i]).toString(16);
-
-            }
-        }
-        let rgb = '#' + color.join('')
-
-        return rgb;
-
-    }
+function getValue(){
+    var a,b,c;
+    a = void ( b = 5, c = 7 );
+    console.log(a)
+    console.log(b)
+    console.log(c)
 }
-console.log(rgb2hex(16,255,255))
+getValue()
