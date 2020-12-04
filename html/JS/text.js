@@ -204,11 +204,27 @@
 // let x = person1.fullName.call(person2);  // 返回 "John Doe"
 // console.log(x)
 
-function getValue(){
-    var a,b,c;
-    a = void ( b = 5, c = 7 );
-    console.log(a)
-    console.log(b)
-    console.log(c)
+// (function (){
+//     var a,b,c;
+//     a = void ( b = 5, c = 7 );
+//     console.log(a)
+//     console.log(b)
+//     console.log(c)
+// })();
+
+
+x = findMax(1, 123, 500, 115, 44, 88);
+console.log(x)
+function findMax() {
+    var i, max = arguments[0];
+
+    if(arguments.length < 2) return max;
+
+    for (i = 0; i < arguments.length; i++) {
+        if (arguments[i] > max) {
+            max = arguments[i];
+        }
+    }
+    return max;
+
 }
-getValue()
