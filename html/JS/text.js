@@ -161,8 +161,8 @@ function rgb2hex(r,g,b) {
     color[0] = r;
     color[1] = g;
     color[2] = b;
-    for (var i = 0; i < 3; i++) {
-        for (var i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 3; i++) {
             if (color[i] <= 16) {
                 color[i] = parseInt(color[i]).toString(16);
                 color[i] = '0' + color[i]
@@ -171,7 +171,7 @@ function rgb2hex(r,g,b) {
 
             }
         }
-        var rgb = '#' + color.join('')
+        let rgb = '#' + color.join('')
 
         return rgb;
 
