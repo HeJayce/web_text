@@ -213,18 +213,59 @@
 // })();
 
 
-x = findMax(1, 123, 500, 115, 44, 88);
-console.log(x)
-function findMax() {
-    var i, max = arguments[0];
+// x = findMax(1, 123, 500, 115, 44, 88);
+// console.log(x)
+// function findMax() {
+//     var i, max = arguments[0];
+//
+//     if(arguments.length < 2) return max;
+//
+//     for (i = 0; i < arguments.length; i++) {
+//         if (arguments[i] > max) {
+//             max = arguments[i];
+//         }
+//     }
+//     return max;
+//
+// }
 
-    if(arguments.length < 2) return max;
+// setTimeout(function (){
+//     console.log('1');
+// },1000)
+// console.log('2')
 
-    for (i = 0; i < arguments.length; i++) {
-        if (arguments[i] > max) {
-            max = arguments[i];
-        }
-    }
-    return max;
+// setTimeout(function () {
+//     console.log("First");
+//     setTimeout(function () {
+//         console.log("Second");
+//         setTimeout(function () {
+//             console.log("Third");
+//         }, 3000);
+//     }, 4000);
+// }, 1000);
 
-}
+// new Promise(function (resolve, reject) {
+//     var a = 0;
+//     var b = 1;
+//     if (b == 0) reject("Diveide zero");
+//     else resolve(a / b);
+// }).then(function (value) {
+//     console.log("a / b = " + value);
+// }).catch(function (err) {
+//     console.log(err);
+// }).finally(function () {
+//     console.log("End");
+// });
+
+new Promise(function (resolve, reject) {
+    console.log(1111);
+    resolve(2222);
+}).then(function (value) {
+    console.log(value);
+    return 3333;
+}).then(function (value) {
+    console.log(value);
+    throw "An error";
+}).catch(function (err) {
+    console.log(err);
+});
