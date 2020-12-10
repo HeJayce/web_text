@@ -11,7 +11,6 @@
     function changeColor(id){
             id.innerHTML = "yes"
     }
-
     function mOver(obj){
         obj.innerHTML="Thank You"
     }
@@ -27,3 +26,12 @@
 <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="padding: 10% ; background-color: #0b51c5 ;width: 10% ;height: 10%">Mouse Over Me</div>
 </body>
 </html>
+
+server {
+    server_name http://121.4.44.19/; // 你的域名或者 ip
+    root /www/blog/; // 你的克隆到的项目路径
+    index index.html; // 显示首页
+    location ~* ^.+\.(jpg|jpeg|gif|png|ico|css|js|pdf|txt){
+    root /www/blog/;
+        } // 静态文件访问
+    }
