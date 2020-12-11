@@ -674,6 +674,62 @@ JavaScript 变量的生命期从它们被声明的时间开始。
 
 
 
+#### 自调用函数
+
+函数自己调用自己；
+
+函数没有名字，函数体在（）内
+
+结尾紧跟（）；
+
+```js
+(function () {
+    var x = "Hello!!";      // 我将调用自己
+})();
+```
+
+#### 箭头函数
+
+```js
+// ES5
+var x = function(x, y) {
+     return x * y;
+}
+ 
+// ES6
+const x = (x, y) => x * y;
+```
+
+ES6新增了箭头函数，更加简介
+
+
+
+#### 默认参数
+
+ES6新增了默认参数
+
+```js
+function myFunction(x, y = 10) {
+    // y is 10 if not passed or undefined
+    return x + y;
+}
+ 
+myFunction(0, 2) // 输出 2
+myFunction(5); // 输出 15, y 参数的默认值
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 事件
 
 ##### html事件
@@ -932,3 +988,328 @@ var x=document.forms["myForm"]["email"].value;
 3.setCustomValidity()
 
 设置 input 元素的 validationMessage 属性，用于自定义错误提示信息的方法
+
+
+
+
+
+
+
+## JS关键字this
+
+this表示当前对象的一个引用
+
+会随着执行环境的改变而改变
+
+举例：
+
+```js
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+```
+
+如果不加this，访问不到fullname
+
+this就表示person对象
+
+### 单独使用this
+
+指向全局对象
+
+window就是该全局对象[object window]
+
+```
+var x = this;
+document.getElementById("demo").innerHTML = x;
+```
+
+### 函数中使用this
+
+#### **在非严格模式下**
+
+函数的所有者默认绑定到this上
+
+浏览器中，window就是该全局对象为[object Window]
+
+#### 严格模式下
+
+函数是没有绑定到this上的
+
+这时this就是`undefined`
+
+###  事件中的this
+
+在 HTML 事件句柄中，this 指向了接收事件的 HTML 元素
+
+```js
+<button onclick="this.style.display='none'">
+点我后我就消失了
+</button>
+```
+
+
+
+### 对象方法中绑定
+
+例题代码：
+
+```js
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+```
+
+在fullname中，this指向了fullname的所有者，也就是person
+
+如果不加this或者person，fullname是访问不到person 中的其他键值对
+
+
+
+### 显式函数绑定
+
+JS的函数也是对象，是对象就有方法
+
+`apply`和`call`就是函数对象的方法
+
+他们允许切换函数执行的上下文环境（context），即 this 绑定的对象。
+
+例题代码展示了使用 person2 作为参数来调用 person1
+
+```js
+var person1 = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person2 = {
+  firstName:"John",
+  lastName: "Doe",
+}
+var x = person1.fullName.call(person2);
+```
+
+
+
+## let和const
+
+### let
+
+使用 let 关键字来实现块级作用域
+
+例如：
+
+```js
+{ 
+    var x = 2; 
+}
+// 这里可以使用 x 变量
+{ 
+    let x = 2;
+}
+// 这里不能使用 x 变量
+```
+
+#### 重新定义变量
+
+```js
+var x = 10;
+// 这里输出 x 为 10
+{ 
+    let x = 2;
+    // 这里输出 x 为 2
+}
+// 这里输出 x 为 10
+```
+
+ let 命令所在的代码块 **{}** 内有效
+
+ **var** 关键字，它声明的变量是全局的，包括循环体内与循环体外
+
+ **let** 关键字， 它声明的变量作用域只在循环体内，循环体外的变量不受影响
+
+**但是**：
+
+使用 **var** 关键字声明的全局作用域变量属于 window 对象:
+
+可以使用 window.Name 访问变量
+
+使用 **let** 关键字声明的全局作用域变量不属于 window 对象:
+
+不能使用 window.Name 访问变量
+
+
+
+#### 重置变量
+
+只有var能重置var定义的变量
+
+除此之外let和var任意组合都不合法
+
+
+
+#### 变量提升
+
+var 定义的变量可以在使用后定义
+
+但let不可以
+
+### const
+
+const 用于声明一个或多个常量，声明时必须进行初始化，且初始化后值不可再修改：
+
+`const`声明的常量必须初始化，而`let`声明的变量不用
+
+const 定义常量的值不能通过再赋值修改，也不能再次声明。而 let 定义的变量值可以修改
+
+但const不是严格意义上的常量
+
+只是不可以重新赋值而已
+
+例如：（不报错）
+
+```js
+const car = {type:"Fiat", model:"500", color:"white"};
+// 修改属性:
+car.color = "red";
+// 添加属性
+car.owner = "Johnson";
+```
+
+
+
+但重新赋值就会报错
+
+```js
+const car = {type:"Fiat", model:"500", color:"white"};
+car = {type:"Volvo", model:"EX60", color:"red"};    // 错误
+```
+
+- 不能使用 **const** 关键字来重置 **var** 和 **let**关键字声明的变量
+- 在相同的作用域或块级作用域中，不能使用 **const** 关键字来重置 **const** 关键字声明的变量
+- **const** 关键字在不同作用域，或不同块级作用域中是可以重新声明赋值的
+
+
+
+
+
+## JSON
+
+JSON是一种轻量级的数据交换格式
+
+JSON是种独立的语言
+
+
+
+## void
+
+void()仅仅是代表不返回任何值
+
+该操作符指定要计算一个表达式但是不返回值
+
+
+
+## 异步编程
+
+### setTimeout
+
+设置事件等待时间
+
+（函数，时间）
+
+### Promise
+
+```js
+new Promise(function (resolve, reject) {
+    // 要做的事情...
+});
+```
+
+其中调用 resolve 代表一切正常，reject 是出现异常时所调用的
+
+Promise 类有三个方法
+
+-  .then()     将参数中的函数添加到当前 Promise 的正常执行序列
+
+- .catch()     设定 Promise 的异常处理序列
+
+- .finally()    在 Promise 执行的最后一定会执行的序列
+
+
+
+catch 块只会执行第一个，除非 catch 块里有异常。所以最好只安排一个 catch 和 finally 块
+
+ 当你又需要调用一个异步任务的时候，就再写一个then
+
+
+
+
+
+## DOM
+
+### 查找HTML
+
+1. 通过id查找html元素   **getElementById("")**
+
+   本例查找 id="intro" 元素：
+
+   ```js
+   var x=document.getElementById("intro");
+   ```
+
+   
+
+2. 通过签名查找  **getElementsByTagName("");**
+
+   本例查找 id="main" 的元素，然后查找 id="main" 元素中的所有 <p> 元素：
+
+   ```js
+   var x=document.getElementById("main");
+   var y=x.getElementsByTagName("p");
+   ```
+   
+
+   3.通过类名找到html元素
+
+​	
+
+### 事件
+
+#### 鼠标事件
+
+##### 悬浮/移开
+
+onmouseover 和 onmouseout 事件
+
+onmouseover :当鼠标悬浮在某一元素上，发生改变
+
+onmouseout ：当鼠标从元素上移开即鼠没有在元素上时
+
+
+
+##### 按住/松手
+
+onmousedown 和onmouseup
+
+onmousedown ：鼠标按下
+
+onmouseup：鼠标松开
+
+
+
+#### onchange 事件
+
+当输入字段被改变的时候，触发该事件
+
+
+

@@ -20,7 +20,7 @@ html入门到放弃
 
  鲜为人知的是：
 
- <area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>
+ `<area>` `<base>`  `<col>` `<command>` `<embed>` `<keygen>` `<param>` `<source>` `<track>` `<wbr>`
 
 
 

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="12.10">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="12.10" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +71,7 @@
       <workItem from="1607485819647" duration="1250000" />
       <workItem from="1607504797542" duration="25000" />
       <workItem from="1607591465849" duration="830000" />
+      <workItem from="1607655546722" duration="520000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -130,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607591697456</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="12.11">
+      <created>1607655582233</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607655582233</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +158,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="12.4" />
     <MESSAGE value="12.10" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.10" />
+    <MESSAGE value="12.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.11" />
   </component>
 </project>
