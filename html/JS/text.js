@@ -257,15 +257,29 @@
 //     console.log("End");
 // });
 
-new Promise(function (resolve, reject) {
-    console.log(1111);
-    resolve(2222);
-}).then(function (value) {
-    console.log(value);
-    return 3333;
-}).then(function (value) {
-    console.log(value);
-    throw "An error";
-}).catch(function (err) {
-    console.log(err);
-});
+// new Promise(function (resolve, reject) {
+//     console.log(1111);
+//     resolve(2222);
+// }).then(function (value) {
+//     console.log(value);
+//     return 3333;
+// }).then(function (value) {
+//     console.log(value);
+//     throw "An error";
+// }).catch(function (err) {
+//     console.log(err);
+// });
+
+function factorialize(num) {
+    let x = num ;
+    num = 1 ;
+    let num_before;
+    for (let i =1 ; i<=x ;i++)
+    {
+        num_before = num ;
+        num =num_before * i;
+    }
+    return num;
+}
+
+console.log(factorialize(5))
