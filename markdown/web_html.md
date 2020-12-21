@@ -10,11 +10,11 @@ html入门到放弃
 
 
 
-（1）行内元素有：a b span img input select strong 
+(1)行内元素有：a b span img input select strong 
 
- （2）块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
+ (2)块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
 
- （3）常见的空元素：
+ (3)常见的空元素：
 
  `<br>` `<hr>` `<img>` `<input> ` `<link>` `<meta>`
 
@@ -44,13 +44,13 @@ html入门到放弃
 (4)跳出框架target=_top
 4.`<br>`换行 ,在开始标签中添加斜杠，比如 `<br/>`，是关闭空元素的正确方法,即使 `<br> `在所有浏览器中都是有效的，但使用 `<br/> `其实是更长远的保障，`<br/> `是 XHTML 为兼容 HTML 的写法,也是 XML 写法
 br也可以作为段落之间拆行使用
-5.`<hr>`元素可分隔内容（分割线）
+5.`<hr>`元素可分隔内容(分割线)
 6.浏览器会自动地在段落的前后添加空行  
 7.当显示页面时，浏览器会移除源代码中多余的空格和空行。所有连续的空格或空行都会被算作一个空格。   
 
 8.`<h1-6>`定义标题。
 
-**注意：浏览器会自动在标题之前和之后添加一些空格（边距）**
+**注意：浏览器会自动在标题之前和之后添加一些空格(边距)**
 
 
 
@@ -226,18 +226,20 @@ img {
 
 #### 表格
 
-|    标签    |         描述         |
+
+| 标签 | 描述  |
 | :--------: | :------------------: |
-|  <table>   |       定义表格       |
-|    <th>    |    定义表格的表头    |
-|    <tr>    |     定义表格的行     |
-|    <td>    |     定义表格单元     |
-| <caption>  |     定义表格标题     |
-| <colgroup> |    定义表格列的组    |
-|   <col>    | 定义用于表格列的属性 |
-|  <thead>   |    定义表格的页眉    |
-|  <tbody>   |    定义表格的主体    |
-|  <tfoot>   |    定义表格的页脚    |
+|  `<table>`   |       定义表格       |
+|    `<th>`    |    定义表格的表头    |
+|    `<tr>`    |     定义表格的行     |
+|    `<td>`    |     定义表格单元     |
+| `<caption>`  |     定义表格标题     |
+| `<colgroup>` |    定义表格列的组    |
+|   `<col>`    | 定义用于表格列的属性 |
+|  `<thead>`   |    定义表格的页眉    |
+|  `<tbody>`   |    定义表格的主体    |
+|  `<tfoot>`   |    定义表格的页脚    |
+
 
 colspan="x"  列合并x
 
@@ -340,7 +342,7 @@ passwd: <input type="password" name="user">
 user: <input type="text" name="user"><br>
 passwd: <input type="password" name="user">
 </form>
-##### 单选（radio）
+##### 单选(radio)
 
 
 ```html
@@ -368,7 +370,7 @@ passwd: <input type="password" name="user">
 <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
 <input type="checkbox" name="vehicle" value="Car">I have a car
 </form>
-##### 下拉列表（select）
+##### 下拉列表(select)
 
 ```html
 <select name="cars">
@@ -386,7 +388,7 @@ passwd: <input type="password" name="user">
     <option value="audi">Audi</option>
 </select>
 
-##### 文本输入（textarea）
+##### 文本输入(textarea)
 
 ```html
 <textarea name="message" rows="10" cols="30">
@@ -491,13 +493,13 @@ name和target绑定来操控内部页面
 
 #### 颜色
 
-HTML 颜色由一个十六进制符号来定义，这个符号由红色、绿色和蓝色的值组成（RGB）。
+HTML 颜色由一个十六进制符号来定义，这个符号由红色、绿色和蓝色的值组成(RGB)。
 
-每种颜色的最小值是0（十六进制：#00）。最大值是255（十六进制：#FF）
+每种颜色的最小值是0(十六进制：#00)。最大值是255(十六进制：#FF)
 
 1600w种颜色
 
-**RGBA 的意思是（Red-Green-Blue-Alpha）它是在 RGB 上扩展包括了 “alpha” 通道，运行对颜色值设置透明度。0-1**
+**RGBA 的意思是(Red-Green-Blue-Alpha)它是在 RGB 上扩展包括了 “alpha” 通道，运行对颜色值设置透明度。0-1**
 
 #### 脚本
 
@@ -513,12 +515,12 @@ document.write("Hello World!");
 
 | 显示结果 | 描述   | 实体名称          | 实体编号 |
 | :------- | :----- | :---------------- | :------- |
-|          | 空格   | &nbsp;            | &#160;   |
-| <        | 小于号 | &lt;              | &#60;    |
-| >        | 大于号 | &gt;              | &#62;    |
-| &        | 和号   | &amp;             | &#38;    |
-| "        | 引号   | &quot;            | &#34;    |
-| '        | 撇号   | &apos; (IE不支持) | &#39;    |
+|          | 空格   | `&nbsp; `           | `&#160;`   |
+| `<`        | 小于号 | `&lt;  `            | `&#60; `   |
+|` >`       | 大于号 | `&gt;  `            | `&#62; `   |
+| `&`        | 和号   | `&amp;  `           | `&#38; `   |
+| `"`        | 引号   | `&quot;`            | `&#34; `   |
+| `'`        | 撇号   |` &apos;` (IE不支持) | `&#39;`    |
 
 
 
@@ -526,7 +528,7 @@ document.write("Hello World!");
 
 ## 将HTML5元素定义为块元素
 
-HTML5 定了 8 个新的 HTML **语义（semantic）** 元素。
+HTML5 定了 8 个新的 HTML **语义(semantic)** 元素。
 
 所有这些元素都是 **块级** 元素
 
@@ -590,7 +592,7 @@ myHero {
 | 标签                                                  | 描述                                                       |
 | :---------------------------------------------------- | :--------------------------------------------------------- |
 | [audio](https://www.runoob.com/tags/tag-audio.html)   | 定义音频内容                                               |
-| [video](https://www.runoob.com/tags/tag-video.html)   | 定义视频（video 或者 movie）                               |
+| [video](https://www.runoob.com/tags/tag-video.html)   | 定义视频(video 或者 movie)                               |
 | [source](https://www.runoob.com/tags/tag-source.html) | 定义多媒体资源 <video> 和 <audio>                          |
 | [embed](https://www.runoob.com/tags/tag-embed.html)   | 定义嵌入的内容，比如插件。                                 |
 | [track](https://www.runoob.com/tags/tag-track.html)   | 为诸如 <video> 和 <audio> 元素之类的媒介规定外部文本轨道。 |
@@ -613,11 +615,11 @@ Canvas 通过 JavaScript 来绘制 2D 图形。
 
 | Canvas                                                       | SVG                                                          |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| 依赖分辨率          不支持事件处理器                                                                           弱的文本渲染能力          能够以 .png 或 .jpg 格式保存结果图像          最适合图像密集型的游戏，其中的许多对象会被频繁重绘 | 不依赖分辨率          支持事件处理器                     最适合带有大型渲染区域的应用程序（比如谷歌地图）           复杂度高会减慢渲染速度（任何过度使用 DOM 的应用都不快）           不适合游戏应用 |
+| 依赖分辨率          不支持事件处理器                                                                           弱的文本渲染能力          能够以 .png 或 .jpg 格式保存结果图像          最适合图像密集型的游戏，其中的许多对象会被频繁重绘 | 不依赖分辨率          支持事件处理器                     最适合带有大型渲染区域的应用程序(比如谷歌地图)           复杂度高会减慢渲染速度(任何过度使用 DOM 的应用都不快)           不适合游戏应用 |
 
 
 
-## 拖放（Drag 和 Drop）
+## 拖放(Drag 和 Drop)
 
 
 
@@ -640,7 +642,7 @@ Canvas 通过 JavaScript 来绘制 2D 图形。
 1. 用户从浏览器打开位置感知应用页面
 2. 页面加载后将调用Geolocation函数请求位置
 3. 浏览器拦截该调用，向用户发出许可请求。如用户拒绝则什么都不会发生，否则
-4. 浏览器将从上述的底层（宿主）设备检索位置信息如IP、GPS等
+4. 浏览器将从上述的底层(宿主)设备检索位置信息如IP、GPS等
 5. 浏览器将该位置信息发给它预设的、受信任的外部定位服务器，以期得到更详细的位置信息
 6. 浏览器将该详细位置信息返回给页面应用
 

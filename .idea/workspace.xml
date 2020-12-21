@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="12.21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/MDB学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/MDB学习.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/HTML 速查列表.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/HTML 速查列表.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/JavaScript.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/MDB学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/Bootstrap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/web_html.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_html.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,11 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\web_html" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.3.html">
     <configuration name="3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_html/html/3.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -83,7 +90,7 @@
       <workItem from="1608516773927" duration="7000" />
       <workItem from="1608517169215" duration="6000" />
       <workItem from="1608517176456" duration="5038000" />
-      <workItem from="1608530386130" duration="2990000" />
+      <workItem from="1608530386130" duration="4829000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -176,7 +183,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608537714482</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="12.21">
+      <created>1608540980268</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608540980268</updated>
+    </task>
+    <task id="LOCAL-00015" summary="12.21">
+      <created>1608541166519</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608541166519</updated>
+    </task>
+    <task id="LOCAL-00016" summary="12.21">
+      <created>1608541244532</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608541244532</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

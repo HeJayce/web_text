@@ -23,7 +23,7 @@ HTML 速查列表. 你可以打印它，以备日常使用。
 
 ------
 
-## 基本标签（Basic Tags）
+## 基本标签(Basic Tags)
 
 ```html
 <h1>最大的标题</h1> 
@@ -33,14 +33,14 @@ HTML 速查列表. 你可以打印它，以备日常使用。
 <h5> . . . </h5> 
 <h6>最小的标题</h6> 
 <p>这是一个段落。</p> 
-<br> （换行） 
-<hr> （水平线） 
+<br> (换行) 
+<hr> (水平线) 
 <!-- 这是注释 -->
 ```
 
 ------
 
-## 文本格式化（Formatting）
+## 文本格式化(Formatting)
 
 ```html
 <b>粗体文本</b>
@@ -51,22 +51,22 @@ HTML 速查列表. 你可以打印它，以备日常使用。
 <pre>预格式化文本</pre>
 <small>更小的文本</small> 
 <strong>重要的文本</strong>
-<abbr> （缩写）
-<address> （联系信息）
-<bdo> （文字方向） 
-<blockquote> （从另一个源引用的部分）
-<cite> （工作的名称）
-<del> （删除的文本） 
-<ins> （插入的文本） 
-<sub> （下标文本） 
-<sup> （上标文本）
+<abbr> (缩写)
+<address> (联系信息)
+<bdo> (文字方向) 
+<blockquote> (从另一个源引用的部分)
+<cite> (工作的名称)
+<del> (删除的文本) 
+<ins> (插入的文本) 
+<sub> (下标文本) 
+<sup> (上标文本)
 ```
 
 
 
 ------
 
-## 链接（Links）
+## 链接(Links)
 
 ```html
 普通的链接：<a href="http://www.example.com/">链接文本</a> 
@@ -80,7 +80,7 @@ HTML 速查列表. 你可以打印它，以备日常使用。
 
 ------
 
-## 图片（Images）
+## 图片(Images)
 
 ```html
 <img loading="lazy" src="URL" alt="替换文本" height="42" width="42">
@@ -90,7 +90,7 @@ HTML 速查列表. 你可以打印它，以备日常使用。
 
 ------
 
-## 样式/区块（Styles/Sections）
+## 样式/区块(Styles/Sections)
 
 ```html
 <style type="text/css">
@@ -142,7 +142,7 @@ p {color:blue;}
 
 ------
 
-## 表格（Tables）
+## 表格(Tables)
 
 ```html
 <table border="1"> 
@@ -161,7 +161,7 @@ p {color:blue;}
 
 ------
 
-## 框架（Iframe）
+## 框架(Iframe)
 
 ```html
 <iframe src="demo_iframe.htm"></iframe>
@@ -171,7 +171,7 @@ p {color:blue;}
 
 ------
 
-## 表单（Forms）
+## 表单(Forms)
 
 ```html
 <form action="demo_form.php" method="post/get">
@@ -195,7 +195,7 @@ p {color:blue;}
 
 ------
 
-## 实体（Entities）
+## 实体(Entities)
 
 `&lt;` 等同于 <
 
