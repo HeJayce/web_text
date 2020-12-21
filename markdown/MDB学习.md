@@ -171,12 +171,265 @@ body {
 
 ## 表格
 
-| 标签      | 描述                                                         |
-| :-------- | :----------------------------------------------------------- |
-| <table>   | 为表格添加基础样式。                                         |
-| <thead>   | 表格标题行的容器元素（<tr>），用来标识表格列。               |
-| <tbody>   | 表格主体中的表格行的容器元素（<tr>）。                       |
-| <tr>      | 一组出现在单行上的表格单元格的容器元素（<td> 或 <th>）。     |
-| <td>      | 默认的表格单元格。                                           |
-| <th>      | 特殊的表格单元格，用来标识列或行（取决于范围和位置）。必须在 <thead> 内使用。 |
-| <caption> | 关于表格存储内容的描述或总结。                               |
+### 表格层级
+
+| 标签        | 描述                                                         |
+| :---------- | :----------------------------------------------------------- |
+| `<table>`   | 为表格添加基础样式。                                         |
+| `<thead>`   | 表格标题行的容器元素（<tr>），用来标识表格列。               |
+| `<tbody>`   | 表格主体中的表格行的容器元素（<tr>）。                       |
+| `<tr>`      | 一组出现在单行上的表格单元格的容器元素（<td> 或 <th>）。     |
+| `<td>`      | 默认的表格单元格。                                           |
+| `<th>`      | 特殊的表格单元格，用来标识列或行（取决于范围和位置）。必须在 <thead> 内使用。 |
+| `<caption>` | 关于表格存储内容的描述或总结。                               |
+
+具体层级为：
+
+```html
+<table class="table">
+   <caption>基本的表格布局</caption>
+    
+   <thead>
+      <tr>
+         <th>名称（表头1）</th>    
+         <th>城市（表头2）</th>
+      </tr>
+   </thead>
+    
+   <tbody>
+      <tr>    
+         <td>Tanmay（内容第一行第一列）</td>
+         <td>Bangalore（内容第一行第二列）</td>
+      </tr>
+      <tr>
+         <td>Sachin（内容第二行第一列）</td>
+         <td>Mumbai（内容第二行第二列）</td>
+      </tr>
+   </tbody>
+    
+</table>
+```
+
+
+
+### 表格类：
+
+| 类               | 描述                                            |
+| ---------------- | ----------------------------------------------- |
+| .table           | 为任意 <table> 添加基本样式 (只有横向分隔线)    |
+| .table-striped   | 在 <tbody> 内添加斑马线形式的条纹 ( IE8 不支持) |
+| .table-bordered  | 在 <tbody> 内添加斑马线形式的条纹 ( IE8 不支持) |
+| .table-hover     | 在 <tbody> 内的任一行启用鼠标悬停状态           |
+| .table-condensed | 让表格更加紧凑                                  |
+
+都要添加`.table`的类
+
+
+
+下表中所列出的上下文类允许您改变表格行或单个单元格的背景颜色。
+
+| 类       | 描述                                           |
+| :------- | :--------------------------------------------- |
+| .info    | 表示信息变化的操作**（蓝色）**                 |
+| .active  | 对某一特定的行或单元格应用悬停颜色**（灰色）** |
+| .success | 表示一个成功的或积极的动作**（绿色）**         |
+| .warning | 表示一个需要注意的警告**（黄色）**             |
+| .danger  | 表示一个危险的或潜在的负面动作**（红色）**     |
+
+
+
+### 响应式表格
+
+通过把任意的 *.table* 包在 *.table-responsive* class 内，您可以让表格水平滚动以适应小型设备（小于 768px）。当在大于 768px 宽的大型设备上查看时，您将看不到任何的差别。
+
+```html
+<div class="table-responsive">
+    <table class="table">
+        <caption>响应式表格布局</caption>
+        <thead>
+        <tr>
+            <th>产品</th>
+            <th>状态</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>产品1</td>
+            <td>待发货</td>
+        </tr>
+        <tr>
+            <td>产品2</td>
+            <td>发货中</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+```
+
+## 
+
+## 表单
+
+### 表单布局
+
+1. 垂直表单
+2. 内联表单
+3. 水平表单
+
+#### 垂直表单
+
+垂直表单为Bootstrap自带默认，不需要添加class
+
+了创建基本表单的步骤：
+
+- 向父`<form>`元素添加 *role="form"*。
+
+  ```html
+  <form role="form">
+      <div>
+      </div>
+  </form>
+  ```
+
+- 把标签和控件放在一个带有 `class.form-group `的` <div> `中。这是获取**最佳间距**所必需的。
+
+  ```html
+  <div class="form-group">
+  </div>
+  ```
+
+- 向所有的**文本元素**`<input>`、`<textarea> `和 `<select> `添加 class *.form-control*。
+
+  ```html
+  <input type="text" class="form-control" id="name" placeholder="请输入名称">
+  ```
+
+form-control:
+
+宽度为100% 
+
+设置边框为浅灰色 
+
+控件具有4px的圆角 
+
+设置阴影效果，元素得到焦点时，阴影和边框效果会发生变化
+
+设置placeholder的颜色为#999
+
+#### 内联表单
+
+向左对齐的，标签并排
+
+向` <form>`标签添加 `class.form-inline`
+
+**PS：默认情况下，Bootstrap 中的 input、select 和 textarea 有 100% 宽度。在使用内联表单时，您需要在表单控件上设置一个宽度**
+
+使用 class *.sr-only*，您可以隐藏内联表单的标签
+
+
+
+#### 水平表单
+
+创建步骤;
+
+- 向父` <form>` 元素添加` class.form-horizontal`
+- 把标签和控件放在一个带有` class.form-group `的 `<div> `中。
+- 向标签添加` class.control-label`
+
+#### 支持表单的控件
+
+- ##### `input` 输入框
+
+  - 包括：*text、password、datetime、datetime-local、date、month、time、week、number、email、url、search、tel* 和 *color*
+  - 适当的 *type* 声明是必需的
+
+- ##### `textarea`文本框多行
+
+- `checkbox`复选框
+
+- `radio`单选框
+
+  ​	**对一系列复选框和单选框使用 `.checkbox-inline` 或 `.radio-inline` class，控制它们显示在同一行上**
+
+  ```html
+  <label class="checkbox-inline">
+        <input type="radio"  id="optionsRadios4" value="option2"> 选项 2   
+  </label>
+  ```
+
+  
+
+- `select`下拉选择框
+
+  ```html
+  <form role="form">
+     <div class="form-group">
+        <label for="name">选择列表</label>
+        <select class="form-control">
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+        </select>
+  
+        <label for="name">可多选的选择列表</label>
+        <select multiple class="form-control">
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+        </select>
+     </div>
+  </form>
+  ```
+
+  ​	multiple：允许用户选择多个选项
+
+   
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -329,7 +329,7 @@ p {margin:0; padding:0}
 
 ##### 文本输入
 
-```htnl
+```html
 <form>
 user: <input type="text" name="user"><br>
 passwd: <input type="password" name="user">
@@ -343,7 +343,7 @@ passwd: <input type="password" name="user">
 ##### 单选（radio）
 
 
-```htnl
+```html
 <form>
 <input type="radio" name="sex" value="male">Male<br>
 <input type="radio" name="sex" value="female">Female
