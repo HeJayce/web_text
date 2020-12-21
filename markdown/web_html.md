@@ -287,9 +287,10 @@ div:它可用于组合其他 **HTML** 元素的容器
 与 CSS 一同使用，<div> 元素可用于对大的内容块设置样式属性
 
 ```html
-<div style="color:#0000FF">
-  <h3>这是一个在 div 元素中的标题。</h3>
-  <p>这是一个在 div 元素中的文本。</p>
+
+<div style="color:#0000ff">
+    <h3>这是一个在 div 元素中的标题。</h3>
+    <p>这是一个在 div 元素中的文本。</p>
 </div>
 ```
 
@@ -342,6 +343,7 @@ passwd: <input type="password" name="user">
 user: <input type="text" name="user"><br>
 passwd: <input type="password" name="user">
 </form>
+
 ##### 单选(radio)
 
 
@@ -356,6 +358,7 @@ passwd: <input type="password" name="user">
 <input type="radio" name="sex" value="male">Male<br>
 <input type="radio" name="sex" value="female">Female
 </form>
+
 ##### 复选框
 
 
@@ -370,6 +373,7 @@ passwd: <input type="password" name="user">
 <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
 <input type="checkbox" name="vehicle" value="Car">I have a car
 </form>
+
 ##### 下拉列表(select)
 
 ```html
