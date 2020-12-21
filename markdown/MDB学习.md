@@ -336,60 +336,77 @@ form-control:
 - 把标签和控件放在一个带有` class.form-group `的 `<div> `中。
 - 向标签添加` class.control-label`
 
-#### 支持表单的控件
+### 支持表单的控件
 
-- ##### `input` 输入框
+##### `input` 输入框
 
-  - 包括：*text、password、datetime、datetime-local、date、month、time、week、number、email、url、search、tel* 和 *color*
-  - 适当的 *type* 声明是必需的
+包括：*text、password、datetime、datetime-local、date、month、time、week、number、email、url、search、tel* 和 *color*
 
-- ##### `textarea`文本框多行
+适当的 *type* 声明是必需的
 
-- `checkbox`复选框
+##### `textarea`文本框多行
 
-- `radio`单选框
+##### `checkbox`复选框
 
-  ​	**对一系列复选框和单选框使用 `.checkbox-inline` 或 `.radio-inline` class，控制它们显示在同一行上**
+##### `radio`单选框
 
-  ```html
-  <label class="checkbox-inline">
-        <input type="radio"  id="optionsRadios4" value="option2"> 选项 2   
-  </label>
-  ```
+**对一系列复选框和单选框使用 `.checkbox-inline` 或 `.radio-inline` class，控制它们显示在同一行上**
 
-  
+```html
+<label class="checkbox-inline">
+      <input type="radio"  id="optionsRadios4" value="option2"> 选项 2   
+</label>
+```
 
-- `select`下拉选择框
+##### `select`下拉选择框
 
-  ```html
-  <form role="form">
-     <div class="form-group">
-        <label for="name">选择列表</label>
-        <select class="form-control">
-           <option>1</option>
-           <option>2</option>
-           <option>3</option>
-           <option>4</option>
-           <option>5</option>
-        </select>
-  
-        <label for="name">可多选的选择列表</label>
-        <select multiple class="form-control">
-           <option>1</option>
-           <option>2</option>
-           <option>3</option>
-           <option>4</option>
-           <option>5</option>
-        </select>
-     </div>
-  </form>
-  ```
+```html
+<form role="form">
+   <div class="form-group">
+      <label for="name">选择列表</label>
+      <select class="form-control">
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+      </select>
 
-  ​	multiple：允许用户选择多个选项
+      <label for="name">可多选的选择列表</label>
+      <select multiple class="form-control">
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+      </select>
+   </div>
+</form>
+```
 
-   
+multiple：允许用户选择多个选项
 
-  
+###  静态控件
+
+```html
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">email@example.com</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="col-sm-2 control-label">密码</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword" 
+         placeholder="请输入密码">
+    </div>
+  </div>
+</form>
+```
+
+
 
 
 
