@@ -136,7 +136,6 @@ body {
 <p class="text-danger">本行内容带有一个 danger class</p>
 ```
 
-![image-20201217145840249](C:\Users\hejay\AppData\Roaming\Typora\typora-user-images\image-20201217145840249.png)
 
 ### 缩写
 
@@ -346,6 +345,12 @@ form-control:
 
 适当的 *type* 声明是必需的
 
+**其中，`value`属性表示该输入框默认的文字，输入时需删除。**
+
+**而`placeholder`则为空白时的提示，聚焦输入框消失**
+
+
+
 ##### `textarea`文本框多行
 
 ##### `checkbox`复选框
@@ -408,23 +413,58 @@ multiple：允许用户选择多个选项
 </form>
 ```
 
+当您需要在一个水平表单内的表单标签后放置纯文本时，请在 `<p> `上使用 class *.form-control-static*。
 
+### 禁止的字段集
 
+#### 区域型禁止
 
+```html
+<fieldset disabled>
+    
+</fieldset>
+```
 
+在`<fieldset disabled>`中添加的所有控件都会被禁止操作。
 
+#### 单条禁止
 
+若想对某一个组件设置单独的禁止，就需要在需要的组件里新添加`disabled`属性
 
+### 表单控件大小
 
+使用 `class *.input-lg`* 和` .col-lg-* `来设置表单的高度和宽度
 
+`input-lg`大
 
+`input-sm`小
 
+`col-lg-*`宽度
 
+### 帮助文本
 
+`<span class="help-block">`一个较长的帮助文本块，超过一行，  需要扩展到下一行。本实例中的帮助文本总共有两行。`</span>`
 
+`help-block`
 
+## 按钮
 
-
+| 类           | 描述                                     |      |
+| :----------- | :--------------------------------------- | ---- |
+| .btn         | 为按钮添加基本样式                       |      |
+| .btn-default | 默认/标准按钮                            |      |
+| .btn-primary | 原始按钮样式（未被操作）                 | 深蓝 |
+| .btn-success | 表示成功的动作                           |      |
+| .btn-info    | 该样式可用于要弹出信息的按钮             | 蓝色 |
+| .btn-warning | 表示需要谨慎操作的按钮                   |      |
+| .btn-danger  | 表示一个危险动作的按钮操作               |      |
+| .btn-link    | 让按钮看起来像个链接 (仍然保留按钮行为） |      |
+| .btn-lg      | 制作一个大按钮                           |      |
+| .btn-sm      | 制作一个小按钮                           |      |
+| .btn-xs      | 制作一个超小按钮                         |      |
+| .btn-block   | 块级按钮(100%的宽度)                     |      |
+| .active      | 按钮被点击                               |      |
+| .disabled    | 禁用按钮                                 |      |
 
 
 

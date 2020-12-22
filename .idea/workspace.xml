@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="12.21" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="12.21">
+      <change afterPath="$PROJECT_DIR$/bootstrap/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/Bootstrap.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/Bootstrap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +47,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -83,7 +90,8 @@
       <workItem from="1608516773927" duration="7000" />
       <workItem from="1608517169215" duration="6000" />
       <workItem from="1608517176456" duration="5038000" />
-      <workItem from="1608530386130" duration="5280000" />
+      <workItem from="1608530386130" duration="6132000" />
+      <workItem from="1608599531167" duration="13886000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -204,7 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608542834897</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="12.21">
+      <created>1608543359451</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608543359451</updated>
+    </task>
+    <task id="LOCAL-00019" summary="12.21">
+      <created>1608543520891</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608543520891</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
