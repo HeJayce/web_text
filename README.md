@@ -7,4 +7,4 @@
 ## [Javascript](https://github.com/HeJayce/web_text/blob/main/markdown/JavaScript.md)
 
 ## [bootstrap](https://github.com/HeJayce/web_text/blob/main/markdown/MDB%E5%AD%A6%E4%B9%A0.md)
-[index](https://github.com/HeJayce/web_text/tree/main/bootstrap)
+[index](https://hejayce.github.io/web_text/bootstrap)
