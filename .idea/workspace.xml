@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="12.21">
-      <change afterPath="$PROJECT_DIR$/bootstrap/login.html" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="12.22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/Bootstrap.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/Bootstrap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,8 @@
       <workItem from="1608517169215" duration="6000" />
       <workItem from="1608517176456" duration="5038000" />
       <workItem from="1608530386130" duration="6132000" />
-      <workItem from="1608599531167" duration="13886000" />
+      <workItem from="1608599531167" duration="14500000" />
+      <workItem from="1608692114341" duration="629000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -226,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608543520891</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="12.22">
+      <created>1608629609852</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1608629609852</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +254,7 @@
     <MESSAGE value="12.11" />
     <MESSAGE value="12.10" />
     <MESSAGE value="12.21" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.21" />
+    <MESSAGE value="12.22" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.22" />
   </component>
 </project>
