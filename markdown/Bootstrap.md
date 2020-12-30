@@ -447,48 +447,106 @@ multiple：允许用户选择多个选项
 
 `help-block`
 
-## 按钮
+## 按钮Button
 
-| 类           | 描述                                     |      |
-| :----------- | :--------------------------------------- | ---- |
-| .btn         | 为按钮添加基本样式                       |      |
-| .btn-default | 默认/标准按钮                            |      |
-| .btn-primary | 原始按钮样式（未被操作）                 | 深蓝 |
-| .btn-success | 表示成功的动作                           |      |
-| .btn-info    | 该样式可用于要弹出信息的按钮             | 蓝色 |
-| .btn-warning | 表示需要谨慎操作的按钮                   |      |
-| .btn-danger  | 表示一个危险动作的按钮操作               |      |
-| .btn-link    | 让按钮看起来像个链接 (仍然保留按钮行为） |      |
-| .btn-lg      | 制作一个大按钮                           |      |
-| .btn-sm      | 制作一个小按钮                           |      |
-| .btn-xs      | 制作一个超小按钮                         |      |
-| .btn-block   | 块级按钮(100%的宽度)                     |      |
-| .active      | 按钮被点击                               |      |
-| .disabled    | 禁用按钮                                 |      |
-
-
+| 类           | 描述                                     |          |
+| :----------- | :--------------------------------------- | -------- |
+|` .btn        ` | 为按钮添加基本样式                       |          |
+| `.btn-default `| 默认/标准按钮                            |          |
+| `.btn-primary `| 原始按钮样式（未被操作）                 | 深蓝     |
+| `.btn-success` | 表示成功的动作                           | 绿色     |
+|` .btn-info   ` | 该样式可用于要弹出信息的按钮             | 蓝色     |
+|` .btn-warning` | 表示需要谨慎操作的按钮                   | 黄色     |
+|` .btn-danger ` | 表示一个危险动作的按钮操作               | 红色     |
+|` .btn-link   ` | 让按钮看起来像个链接 (仍然保留按钮行为） | 链接样式 |
+| `.btn-lg     ` | 制作一个大按钮                           | 大按钮   |
+| `.btn-sm     ` | 制作一个小按钮                           | 小按钮   |
+|` .btn-xs     ` | 制作一个超小按钮                         | 超小按钮 |
+| `.btn-block  ` | 块级按钮(100%的宽度)                     |          |
+|` .active    `  | 按钮被点击                               |          |
+|`.disabled  ` | 禁用按钮                                 |          |
 
 
 
+## 图片
+
+三种可对图片应用简单样式的class
+
+1. `img-rounded`为图片添加圆角
+2. `img-circle`将图片变为圆形 
+3. `img-thumbnail`缩略图功能
+4. `img-responsive`图片响应式 (将很好地扩展到父元素)
 
 
 
+## Bootstrap 辅助类
+
+### 文本
+
+以下不同的类展示了不同的文本颜色。如果文本是个链接鼠标移动到文本上会变暗：
+
+| 类            | 描述                        |
+| :------------ | :-------------------------- |
+| `.text-muted  ` | "text-muted" 类的文本样式   |
+|` .text-primary `| "text-primary" 类的文本样式 |
+|` .text-success` | "text-success" 类的文本样式 |
+| `.text-info   ` | "text-info" 类的文本样式    |
+| `.text-warning` | "text-warning" 类的文本样式 |
+| `.text-danger ` | "text-danger" 类的文本样式  |
+
+### 背景
+
+以下不同的类展示了不同的背景颜色。 如果文本是个链接鼠标移动到文本上会变暗：
+
+| 类          | 描述                             |
+| :---------- | :------------------------------- |
+| `.bg-primary` | 表格单元格使用了 "bg-primary" 类 |
+| `.bg-success` | 表格单元格使用了 "bg-success" 类 |
+| `.bg-info  `  | 表格单元格使用了 "bg-info" 类    |
+| `.bg-warning `| 表格单元格使用了 "bg-warning" 类 |
+| `.bg-danger  `| 表格单元格使用了 "bg-danger" 类  |
+
+### 其他
+
+| 类                 | 描述                                                         |
+| :----------------- | :----------------------------------------------------------- |
+| `.pull-left        ` | 元素浮动到左边                                               |
+| `.pull-right       ` | 元素浮动到右边                                               |
+| `.center-block     ` | 设置元素为 display:block 并居中显示                          |
+| `.clearfix         ` | 清除浮动                                                     |
+| `.show             ` | 强制元素显示                                                 |
+| `.hidden           ` | 强制元素隐藏                                                 |
+| `.sr-only         `  | 除了屏幕阅读器外，其他设备上隐藏元素                         |
+| `.sr-only-focusable` | 与 .sr-only 类结合使用，在元素获取焦点时显示(如：键盘操作的用户) |
+| `.text-hide        ` | 将页面元素所包含的文本内容替换为背景图                       |
+| `.close            ` | 显示关闭按钮                                                 |
+| `.caret            ` | 显示下拉式功能                                               |                                                              |
 
 
 
+## 响应式实用工具
 
+实现对移动设备的友好开发
 
+## 字体图标
 
+在fonts文件夹下可、可以找到字体图标
 
+### 用法
 
+只需要添加class即可，例如：
 
+```html
+<span class="glyphicon glyphicon-search"></span>
+<button type="button" class="btn btn-default btn-sm">
+  <span class="glyphicon glyphicon-user"></span> 
+    User
+</button>
+```
 
+### 定制字体图标
 
-
-
-
-
-
+通过改变字体的尺寸，颜色 和应用文本阴影来进行定制图标
 
 
 
