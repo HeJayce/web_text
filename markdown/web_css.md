@@ -1,4 +1,4 @@
-
+### 
 
 # web_css
 
@@ -15,259 +15,7 @@ CSS：
 - 层叠样式表
 - 用来设置网页样式（化妆）
 
-
-
-#### 语法：
-
-**开发不要使用内联样式**
-
-```html
-<p style="color:red; font-size:60px "> asdda </p>
-```
-
-
-
-两部分：
-
-1. 选择器：需要改变的html样式，比如ｈ１、ｐ
-
-2. 声明：花括号中的，由一个属性和一个值组成，每个声明用一个分号隔开
-
-   ```css
-   p 
-   {
-       color : red ;
-     	text-align : center ;
-   }
-```
-   
-   注释用/* */
-
-
-
-#### id 和css选择器
-
-##### id 选择器
-
-可以为标有特定 id 的 HTML 元素指定特定的样式。
-
-用#来定义
-
-```css
-#para1
-{
-    text-align:center;
-    color:red;
-}
-```
-
-**注意：ID属性不能以数字开头**
-
-
-
-##### class选择器
-
-class 选择器用于描述一组元素的样式，**class 选择器有别于id选择器，class可以在多个元素中使用。**
-
-格式
-
-```css
-.center 
-{
-    text-align:center;
-}
-```
-
-在`.`的前面可以加上指定的元素。
-
-class可以指定多个元素，使用**空格**隔开
-
-
-
-id和class的区别：HTML 元素只能**有一个属于**该单个元素的唯一 ID，而类名可由多个元素使用。
-
-比如id是一个人，class是一个班级，id只能用一个，class可以用很多
-
-**id在一个页面上只能使用一次。**
-
-
-
-##### 通位选择器
-
-```
-*{
-
-}
-```
-
-选定所有
-
-
-
-#### 交集选择
-
-例如：选定class为某值的P元素
-
-用法：
-
-元素选择器.类选择器
-
-不推荐使用id选择，因为id可以直接确定唯一元素，但语法没问题`div#p1{}`
-
-**如果交集选择器有元素选择器，必须要用元素选择器开头**
-
-```css
-div.red{
-
-}
-.a.b.c{
-
-}
-```
-
-必须同时满足
-
-
-
-#### 选择器分组（并集）
-
-```css
-h1,span{
-
-}
-```
-
-逗号表示或，满足一个即可
-
-
-
-#### 关系选择器
-
-父子元素
-
-- 直接包含被包含的元素
-
-祖先/后代元素
-
-- 直接或间接包含
-
-兄弟元素
-
-- 拥有相同父元素的
-
-
-
-##### （祖先）后代选择器
-
-(以空格   分隔)
-
-```css
-div p
-{
-  background-color:yellow;
-}
-```
-
-其中div里的p背景为黄色
-
-##### （父）子元素选择器
-
-(以大于 **>** 号分隔)，可连着写
-
-```css
-div > p
-{
-  background-color:yellow;
-}
-```
-
-div中直属的p才会变成黄色
-
-##### 兄弟选择器（2种）
-
-###### (以加号 **+** 分隔)
-
-选择下一个兄弟
-
-```css
-div + p
-{
-  background-color:yellow;
-}
-```
-
-div结束之后的第一个p，**只找一个**
-
-###### (以波浪号 **～** 分隔)
-
-```css
-div ～ p
-{
-	background-color:yellow;
-}
-```
-
-div结束之后的所有p，**找所有**
-
-
-
-#### 属性选择器
-
-```css
-p[title]{
-	color:red
-}
-
-p[title = abc]{
-	color:red
-}
-
-p[title ^= abc]{
-	color:red
-}
-
-p[title $= abc]{
-	color:red
-}
-
-p[title *= abc]{
-	color:red
-}
-
-/*
-1.有属性的变
-2.确定属性值的变
-3.属性值开头的变
-4.属性值结尾的变
-5.属性值只要有的变
-*/
-```
-
-
-
-
-
-#### 分组嵌套
-
-```css
-h1,h2,p
-{
-    color:green;
-}
-```
-
-##### 嵌套选择器
-
-- **p{ }**: 为所有 **p** 元素指定一个样式。
-- **.marked{ }**: 为所有 **class="marked"** 的元素指定一个样式。
-- **.marked p{ }**: 为所有 **class="marked"** 元素内的 **p** 元素指定一个样式。
-- **p.marked{ }**: 为所有 **class="marked"** 的 **p** 元素指定一个样式。
-
-
-
-
-
-#### 创建CSS
+## 创建CSS
 
 ##### 外部样式表
 
@@ -343,6 +91,437 @@ font-size:20pt;
 **注意：!important 规则  **
 
 **当 !important 规则被应用在一个样式声明中时,该样式声明会覆盖CSS中任何其他的声明**
+
+
+
+## 语法：
+
+**开发不要使用内联样式**
+
+```html
+<p style="color:red; font-size:60px "> asdda </p>
+```
+
+
+
+两部分：
+
+1. 选择器：需要改变的html样式，比如ｈ１、ｐ
+
+2. 声明：花括号中的，由一个属性和一个值组成，每个声明用一个分号隔开
+
+   ```css
+   p 
+   {
+       color : red ;
+     	text-align : center ;
+   }
+   ```
+```
+   
+   注释用/* */
+
+
+
+#### id 和css选择器
+
+##### id 选择器
+
+可以为标有特定 id 的 HTML 元素指定特定的样式。
+
+用#来定义
+
+​```css
+#para1
+{
+    text-align:center;
+    color:red;
+}
+```
+
+**注意：ID属性不能以数字开头**
+
+
+
+### class选择器
+
+class 选择器用于描述一组元素的样式，**class 选择器有别于id选择器，class可以在多个元素中使用。**
+
+格式
+
+```css
+.center 
+{
+    text-align:center;
+}
+```
+
+在`.`的前面可以加上指定的元素。
+
+class可以指定多个元素，使用**空格**隔开
+
+
+
+id和class的区别：HTML 元素只能**有一个属于**该单个元素的唯一 ID，而类名可由多个元素使用。
+
+比如id是一个人，class是一个班级，id只能用一个，class可以用很多
+
+**id在一个页面上只能使用一次。**
+
+
+
+### 通位选择器
+
+```
+*{
+
+}
+```
+
+选定所有
+
+
+
+### 交集选择
+
+例如：选定class为某值的P元素
+
+用法：
+
+元素选择器.类选择器
+
+不推荐使用id选择，因为id可以直接确定唯一元素，但语法没问题`div#p1{}`
+
+**如果交集选择器有元素选择器，必须要用元素选择器开头**
+
+```css
+div.red{
+
+}
+.a.b.c{
+
+}
+```
+
+必须同时满足
+
+
+
+### 选择器分组（并集）
+
+```css
+h1,span{
+
+}
+```
+
+逗号表示或，满足一个即可
+
+
+
+### 关系选择器
+
+父子元素
+
+- 直接包含被包含的元素
+
+祖先/后代元素
+
+- 直接或间接包含
+
+兄弟元素
+
+- 拥有相同父元素的
+
+
+
+#### （祖先）后代选择器
+
+(以空格   分隔)
+
+```css
+div p
+{
+  background-color:yellow;
+}
+```
+
+其中div里的p背景为黄色
+
+#### （父）子元素选择器
+
+(以大于 **>** 号分隔)，可连着写
+
+```css
+div > p
+{
+  background-color:yellow;
+}
+/* 或者指定的字元素 */
+div > p.类名
+{
+  
+}
+```
+
+div中直属的p才会变成黄色
+
+#### 兄弟选择器（2种）
+
+(以加号 **+** 分隔)
+
+选择下一个兄弟
+
+```css
+div + p
+{
+  background-color:yellow;
+}
+```
+
+div结束之后的第一个p，**只找一个**
+
+(以波浪号 **～** 分隔)
+
+```css
+div ～ p
+{
+	background-color:yellow;
+}
+```
+
+div结束之后的所有p，**找所有**
+
+
+
+### 属性选择器
+
+```css
+p[title]{
+	color:red
+}
+
+p[title = abc]{
+	color:red
+}
+
+p[title ^= abc]{
+	color:red
+}
+
+p[title $= abc]{
+	color:red
+}
+
+p[title *= abc]{
+	color:red
+}
+
+/*
+1.有属性的变
+2.确定属性值的变
+3.属性值开头的变
+4.属性值结尾的变
+5.属性值只要有的变
+*/
+```
+
+
+
+### 伪类选择器
+
+#### 伪类
+
+一般情况下一个`：`开头
+
+1.  first-child——选择父元素的第一个子元素
+
+   ```css
+   p:first-child
+   {
+   	color:blue;
+   } 
+   /* 或者 */
+   div > p:first-child
+   {
+   	color:blue;
+   } 
+   ```
+
+   last-child   :   最后一个元素
+
+   nth-child(n)  : n: 第n个字元素
+
+   ​					2n 或even  : 双数子元素
+
+   ​					2n+1 或 add : 奇数子元素
+
+   这些伪类都是依据**所有**的子元素排序的。
+
+   还有同类型排序的 :
+
+   first-of-type 
+
+   last-of-type 
+
+   nth-of-type 
+
+   表示同类型排序的
+
+   
+
+   not() 否定伪类 :  将符合条件的元素从选择器中去除
+
+   ​	参数 : 与前面一致 , 类似于 `ul > li:not(:nth-child(3))`
+
+   
+
+2. 匹配所有作为第一个子元素的 <p> 元素中的所有 <i> 元素
+
+   ```css
+   p:first-child i
+   {
+    color:blue;
+   }
+   ```
+
+3. lang伪类
+
+   ```css
+   q:lang(no)
+   {
+   	quotes: "~" "~";
+   }
+   ```
+
+   ```html
+   <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+   ```
+
+   输出：Some text ~A quote in a paragraph~ Some text.
+
+   **其中两个~不可被选中。q元素的值为lang =“no”**
+
+4. ##### 超链接伪类
+
+   ###### 颜色
+
+   ```css
+   a:link {color:#000000;}      /* 未访问链接*/
+   a:visited {color:#00FF00;}  /* 已访问链接 */
+   a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+   a:active {color:#0000FF;}  /* 鼠标点击时 */
+   ```
+
+   其中已访问链接就是打开过的链接
+
+   ###### 背景颜色
+
+   ```css
+   a:link {background-color:#B2FF99;}
+   a:visited {background-color:#FFFF85;}
+   a:hover {background-color:#FF704D;}
+   a:active {background-color:#FF704D;}
+   ```
+
+   
+
+   ###### 顺序：
+
+   - a:hover 必须跟在 a:link 和 a:visited后面
+   - a:active 必须跟在 a:hover后面
+
+   ###### 文本修饰
+
+   下划线
+
+   ```css
+   a:link {text-decoration:none;}
+   a:visited {text-decoration:none;}
+   a:hover {text-decoration:underline;}
+   a:active {text-decoration:underline;}
+   ```
+
+   大小字体
+
+   ```css
+   a.one:hover {font-size:150%;}
+   a.four:hover {font-family:Georgia, serif;}
+   ```
+
+   ###### 高级操作
+
+   创建链接框
+
+   ```css
+   a:link,a:visited   /*未访问过和已访问过*/
+   {
+   	display:block;   /*display设置段落生成一个行内框,block将显示为块级元素，此元素前后会带有换行符*/
+   	font-weight:bold; /*定义字体粗细为粗*/
+   	color:#FFFFFF;
+   	background-color:#98bf21;
+   	width:120px;     
+   	text-align:center;
+   	padding:4px;   /*P元素的填充。参数顺序1个上下左右，2个上下、左右，3个上、左右、下，4个上右下左*/
+   	text-decoration:none;    /*去除下划线*/
+   }
+   a:hover,a:active     /*移动到链接和点击*/
+   {
+   	background-color:#7A991A;
+   }
+   ```
+
+   注意:visit只能设置颜色
+
+   link 和 visit 是超链接独有的
+
+   其他两个其他也有
+
+   
+
+
+
+#### 伪元素
+
+first-line设置文本首行
+
+```css
+p::first-line 
+{
+    color:#ff0000;
+    font-variant:small-caps;
+}
+```
+
+first-line 首行
+
+first-letter 首字母
+
+selection 设置选中样式
+
+before/after 该标签开头/最后    的缝
+
+​		该伪元素必须结合content使用 , 可实现添加内容 , 也不能选中
+
+### 分组嵌套
+
+```css
+h1,h2,p
+{
+    color:green;
+}
+```
+
+### 嵌套选择器
+
+- **p{ }**: 为所有 **p** 元素指定一个样式。
+- **.marked{ }**: 为所有 **class="marked"** 的元素指定一个样式。
+- **.marked p{ }**: 为所有 **class="marked"** 元素内的 **p** 元素指定一个样式。
+- **p.marked{ }**: 为所有 **class="marked"** 的 **p** 元素指定一个样式。
+
+
+
+### 继承
 
 
 
@@ -504,75 +683,6 @@ h3 {text-decoration:underline;}
 | [word-spacing](https://www.runoob.com/cssref/pr-text-word-spacing.html) | 设置字间距               |
 
 
-
-#### 链接
-
-##### 颜色
-
-```css
-a:link {color:#000000;}      /* 未访问链接*/
-a:visited {color:#00FF00;}  /* 已访问链接 */
-a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
-a:active {color:#0000FF;}  /* 鼠标点击时 */
-```
-
-其中已访问链接就是打开过的链接
-
-##### 背景颜色
-
-```css
-a:link {background-color:#B2FF99;}
-a:visited {background-color:#FFFF85;}
-a:hover {background-color:#FF704D;}
-a:active {background-color:#FF704D;}
-```
-
-
-
-###### 顺序：
-
-- a:hover 必须跟在 a:link 和 a:visited后面
-- a:active 必须跟在 a:hover后面
-
-##### 文本修饰
-
-###### 下划线
-
-```css
-a:link {text-decoration:none;}
-a:visited {text-decoration:none;}
-a:hover {text-decoration:underline;}
-a:active {text-decoration:underline;}
-```
-
-###### 大小字体
-
-```css
-a.one:hover {font-size:150%;}
-a.four:hover {font-family:Georgia, serif;}
-```
-
-##### 高级操作
-
-###### 创建链接框
-
-```css
-a:link,a:visited   /*未访问过和已访问过*/
-{
-	display:block;   /*display设置段落生成一个行内框,block将显示为块级元素，此元素前后会带有换行符*/
-	font-weight:bold; /*定义字体粗细为粗*/
-	color:#FFFFFF;
-	background-color:#98bf21;
-	width:120px;     
-	text-align:center;
-	padding:4px;   /*P元素的填充。参数顺序1个上下左右，2个上下、左右，3个上、左右、下，4个上右下左*/
-	text-decoration:none;    /*去除下划线*/
-}
-a:hover,a:active     /*移动到链接和点击*/
-{
-	background-color:#7A991A;
-}
-```
 
 #### 列表
 
@@ -769,70 +879,4 @@ clear:both
 
 
 
-
-#### 伪类
-
-1. first-child
-
-   选择父元素的第一个子元素
-
-   ```css
-   p:first-child
-   {
-   	color:blue;
-   } 
-   ```
-
-   第一个p
-
-2. 匹配所有<p> 元素中的第一个 <i> 元素
-
-	```css
-p > i:first-child
-{
-    color:blue;
-}
-	```
-
-3. 匹配所有作为第一个子元素的 <p> 元素中的所有 <i> 元素
-
-	```css
-p:first-child i
-{
-    color:blue;
-}
-	```
-	
-4. lang伪类
-
-   ```css
-   q:lang(no)
-   {
-   	quotes: "~" "~";
-   }
-   ```
-
-   ```html
-   <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
-   ```
-
-   输出：Some text ~A quote in a paragraph~ Some text.
-
-   **其中两个~不可被选中。q元素的值为lang =“no”**
-
-
-
-
-
-##### 伪元素
-
-first-line设置文本首行
-
-```css
-p:first-line 
-{
-    color:#ff0000;
-    font-variant:small-caps;
-}
-```
 
