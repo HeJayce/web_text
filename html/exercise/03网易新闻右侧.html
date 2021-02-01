@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        body{
+            background-color: #b2dfdb;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .news-wrapper{
+            width: 300px;
+            height: 358px;
+            margin:50px auto;
+            background-color: #FFFFFF;
+            border-top: 1px  solid #dddddd;;
+            padding: 10px;
+        }
+
+        .news-title{
+            display: inline-block;
+            height: 30px;
+            border-top: 1px solid red;
+            margin-top: -1px;
+            padding-top: 10px;
+
+        }
+        .news-title a{
+            color: #40406b;
+            font-weight: bold;
+
+        }
+        .news-img .img-title{
+            margin-top: -30px;
+            color: #FFFFFF;
+            font-weight: bold;
+            /*padding-left: 30px;*/
+        }
+        /*设置图片容器高度，避免文字上移*/
+        .news-img{
+            height: 150px;
+        }
+        .news-list{
+            margin-top: 20px;
+            /*padding-left: 14px;*/
+            /*list-style: disc;*/
+        }
+        .news-list li{
+            margin-bottom: 17px;
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: #666666;
+
+        }
+        .news-list li a:hover{
+            color: red;
+        }
+        .news-list li::before{
+            content: '';
+            color: #666666;
+
+        }
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+<!--创建新闻列表容器-->
+    <div class="news-wrapper">
+        <h2 class="news-title">
+            <a href="#">体育</a>
+        </h2>
+<!--创建图片容器-->
+        <div class="news-img">
+            <a href="#">
+                <img src="https://cms-bucket.ws.126.net/2021/0201/cefe0259j00qntq26003qc000z700juc.jpg?imageView&thumbnail=300y150&type=webp" alt="car">
+                <h3 class="img-title">
+                    特斯拉甩锅国家电网 被怼了
+                </h3>
+            </a>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="#">最恐慌时点已过 市场将在3450-3700点震荡</a>
+            </li>
+            <li>
+                <a href="#">贾跃亭欠巨债 借壳上市的FF是家啥公司</a>
+            </li>
+            <li>
+                <a href="#">比特币将崩溃？国际清算银行行长质疑</a>
+            </li>
+            <li>
+                <a href="#">超级重磅！中央重大部署 信息量太大了</a>
+            </li>
+
+        </ul>
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>

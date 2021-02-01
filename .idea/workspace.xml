@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="1.27">
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="1.30">
+      <change afterPath="$PROJECT_DIR$/Users/jayce/WebstormProjects/web_text/html/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/exercise/01图片列表.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/exercise/02JD左侧导航条.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/exercise/03网易新闻右侧.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +22,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/html/JS/text.js" root0="SKIP_INSPECTION" />
@@ -39,6 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,6 +70,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html/css" />
+      <recent name="$PROJECT_DIR$/html/exercise" />
       <recent name="E:\web_html" />
     </key>
   </component>
@@ -103,6 +124,8 @@
       <workItem from="1611840785508" duration="1000" />
       <workItem from="1611844808972" duration="25000" />
       <workItem from="1611933623116" duration="284000" />
+      <workItem from="1612013154474" duration="511000" />
+      <workItem from="1612182771849" duration="6462000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -272,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611844818854</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="1.30">
+      <created>1612013177880</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1612013177880</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +330,7 @@
     <MESSAGE value="12.30" />
     <MESSAGE value="1.28" />
     <MESSAGE value="1.27" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.27" />
+    <MESSAGE value="1.30" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.30" />
   </component>
 </project>
