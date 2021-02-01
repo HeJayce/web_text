@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="1.30">
-      <change afterPath="$PROJECT_DIR$/Users/jayce/WebstormProjects/web_text/html/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/exercise/01图片列表.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/exercise/02JD左侧导航条.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/exercise/03网易新闻右侧.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="2.1">
       <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +119,7 @@
       <workItem from="1611844808972" duration="25000" />
       <workItem from="1611933623116" duration="284000" />
       <workItem from="1612013154474" duration="511000" />
-      <workItem from="1612182771849" duration="6462000" />
+      <workItem from="1612182771849" duration="7136000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -302,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612013177880</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="2.1">
+      <created>1612189598448</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1612189598448</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +332,7 @@
     <MESSAGE value="1.28" />
     <MESSAGE value="1.27" />
     <MESSAGE value="1.30" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.30" />
+    <MESSAGE value="2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.1" />
   </component>
 </project>

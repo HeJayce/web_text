@@ -849,7 +849,47 @@ table {
 
 默认黑色
 
+### outline
 
+用法与border一样
+
+区别不会影响可见框的大小
+
+### 阴影
+
+box-shadow
+
+四个值
+
+1.水平位置,正向右,负向左
+
+2.垂直位置,正向右,负向左
+
+3.模糊半径,
+
+4.颜色.
+
+#### 透明阴影:
+
+​	rgba(0,0,0,5)
+
+### 圆角
+
+`border-radius`:
+
+​	`border-top-left-radius`
+
+​	`border-top-right-radius`
+
+​	`border-bottom-left-radius`
+
+​	`border-bottom-right-radius`
+
+​	参数:10px:以10px画圆
+
+两个值画椭圆
+
+`border-radius:50%` 圆形
 
 
 
@@ -920,10 +960,13 @@ block作用：这两个元素之间的换行符
 
 **float**
 
+float:left;
+
 1. 往往用于图像，也可以用在布局。
 2. 元素浮动后，会尽量向边缘移动。
 3. 浮动元素之后的元素将围绕它，之前的不受影响
 4. 多个浮动元素放到一起会彼此相邻
+5. 设置浮动后会脱离文档流.下面的元素会向上移动.
 
 清楚浮动：
 
