@@ -4,10 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="2.1">
-      <change afterPath="$PROJECT_DIR$/html/exercise/w3School导航条.html" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="2.3">
+      <change afterPath="$PROJECT_DIR$/html/exercise/05_BFC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/exercise/布局.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/jayce/WebstormProjects/web_text/html/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/4.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/css1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/css1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/div.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/div.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/exercise/01图片列表.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/01_图片列表.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/exercise/02JD左侧导航条.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/02_JD左侧导航条.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/exercise/03网易新闻右侧.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/03_网易新闻右侧.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/exercise/w3School导航条.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/04_w3School导航条.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/iframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/iframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/jstext.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/jstext.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/math.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/math.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/导航栏.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/导航栏.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +139,7 @@
       <workItem from="1611933623116" duration="284000" />
       <workItem from="1612013154474" duration="511000" />
       <workItem from="1612182771849" duration="7198000" />
-      <workItem from="1612355120989" duration="1609000" />
+      <workItem from="1612355120989" duration="4503000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -313,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612192713497</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="2.3">
+      <created>1612356966404</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1612356966404</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +367,7 @@
     <MESSAGE value="1.27" />
     <MESSAGE value="1.30" />
     <MESSAGE value="2.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.1" />
+    <MESSAGE value="2.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.3" />
   </component>
 </project>

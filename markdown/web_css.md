@@ -972,7 +972,7 @@ float:left;
 
 clear:both
 
-
+#### 
 
 ## 布局layout
 
@@ -1178,6 +1178,54 @@ border,margin同上padding规则
 reset.css 直接去除所有样式
 
 normailze.css  对默认样式进行统一
+
+
+
+### 网页布局
+
+header
+
+main
+
+footer
+
+
+
+### 高度塌陷问题
+
+当高度没有被写死的时候,子元素负浮动后会无法撑起父元素高度,
+
+导致父元素高度丢失 , 下面的元素上移 , 导致异常
+
+**BFC**(block formatting context) CSS中的隐含属性
+
+为元素开启BFC , 该元素会变成一个独立的布局区域
+
+特点:
+
+​	1.开启BFC的元素不会被覆盖
+
+​	2.开启BFC的元素子元素和父元素外边距不会重叠
+
+​	3.开启BFC的元素可以包含浮动的子元素
+
+通过特殊方法开启BFC
+
+​	1.设置元素浮动
+
+​	2.将元素设置为行内块元素
+
+​	3.将元素的`overflow`设置为一个非`visible`的值
+
+​			常用的方式为元素设置overflow hidden 开启其BFC,使其包含浮动元素
+
+
+
+
+
+
+
+
 
 
 
