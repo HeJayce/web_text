@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="导航条加粘滞定位">
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="2.8">
+      <change afterPath="$PROJECT_DIR$/html/exercise/京东轮播图1.0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/media/jdpic/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/media/jdpic/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/media/jdpic/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/media/jdpic/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/media/jdpic/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/media/jdpic/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/media/jdpic/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/media/jdpic/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +136,7 @@
       <workItem from="1612182771849" duration="7198000" />
       <workItem from="1612355120989" duration="5241000" />
       <workItem from="1612541005525" duration="369000" />
-      <workItem from="1612785063758" duration="2109000" />
+      <workItem from="1612785063758" duration="4304000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -345,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612787813192</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="2.8">
+      <created>1612789536309</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1612789536309</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,8 +393,8 @@
     <MESSAGE value="1.30" />
     <MESSAGE value="2.1" />
     <MESSAGE value="2.3" />
-    <MESSAGE value="2.8" />
     <MESSAGE value="导航条加粘滞定位" />
-    <option name="LAST_COMMIT_MESSAGE" value="导航条加粘滞定位" />
+    <MESSAGE value="2.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.8" />
   </component>
 </project>

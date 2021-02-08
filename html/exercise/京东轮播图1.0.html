@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JD轮播图</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        /*设置图片容器*/
+        .img-list{
+            width: 590px;
+            height: 470px;
+
+            margin: 100px auto;
+
+        }
+        /*设置li*/
+        .img-list li{
+            position: absolute;
+        }
+        .img-list li:nth-child(1){
+            z-index: 1;
+        }
+        /*导航点样式*/
+        .pointer a{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+        .pointer{
+            position: absolute;
+            z-index: 9999;
+
+        }
+    </style>
+
+</head>
+<body>
+<!-- ul>li>a>img -->
+<ul class="img-list">
+    <li><a href="javascript:;"><img src="../media/jdpic/1.jpg" alt="1"></a></li>
+    <li><a href="javascript:;"><img src="../media/jdpic/2.jpg" alt="1"></a></li>
+    <li><a href="javascript:;"><img src="../media/jdpic/3.jpg" alt="1"></a></li>
+    <li><a href="javascript:;"><img src="../media/jdpic/4.jpg" alt="1"></a></li>
+    <li><a href="javascript:;"><img src="../media/jdpic/5.jpg" alt="1"></a></li>
+    <li><a href="javascript:;"><img src="../media/jdpic/6.jpg" alt="1"></a></li>
+    <li><a href="javascript:;"><img src="../media/jdpic/7.jpg" alt="1"></a></li>
+    <li><a href="javascript:;"><img src="../media/jdpic/8.jpg" alt="1"></a></li>
+
+    <div class="pointer">
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+
+    </div>
+
+
+
+</ul>
+
+</body>
+</html>
