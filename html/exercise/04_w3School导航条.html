@@ -5,11 +5,16 @@
     <title>导航条</title>
     <link rel="stylesheet" href="../css/reset.css">
     <style>
+        body{
+            height: 3000px;
+        }
         .nav{
             width: 1205px;
             height: 48px;
             background-color: #E8e7e3;
             margin:100px auto;
+            position: sticky;  /*开启粘滞定位*/
+            top:10px
 
         }
         .nav li{
@@ -23,7 +28,7 @@
             text-decoration: none;
             color: #777777;
             font-size: 18px;
-            padding: 0 41px;
+            padding: 0 39px;
         }
         .nav a:hover{
             background-color: #777777;
