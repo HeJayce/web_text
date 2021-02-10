@@ -7,6 +7,8 @@
     <style>
         /*设置图片容器*/
         .img-list{
+            position: relative;
+            /*开启相对定位，使得小白点可根据图片位置定位，而不是html*/
             width: 590px;
             height: 470px;
 
@@ -17,20 +19,33 @@
         .img-list li{
             position: absolute;
         }
-        .img-list li:nth-child(1){
+        .img-list li:nth-child(2){
             z-index: 1;
         }
         /*导航点样式*/
         .pointer a{
-            display: block;
-            width: 20px;
-            height: 20px;
-            background-color: red;
+            /*display: block;   !*可以不用写，26行可以做到*!*/
+            float: left;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255,255,255,.6);
+            /*将背景设置到内容区，边框和内边距不再有背景颜色*/
+            background-clip: content-box;
+            border: 2px solid transparent;   /*设置透明边框，使得防止active变大下移，与其他小点不同的*/
+            margin-left: 6px;
+            border-radius: 50%;
+
         }
         .pointer{
             position: absolute;
             z-index: 9999;
-
+            bottom: 20px;
+        }
+        .pointer a.active,
+        .pointer a:hover
+        {
+            background-color: #FFFFFF;
+            border: 2px solid rgba(255,255,255,.3);
         }
     </style>
 

@@ -669,11 +669,77 @@ h2 {color:rgb(255,0,0);}
 
  `font-family `属性设置文本的字体系列：
 
-设置几个字体名称作为一种"后备"机制，如果浏览器不支持第一种字体，他将尝试下一种字体
+​		`serif` 衬线字体。 有勾勾
+
+​		`sans-serif`   非衬线字体。  字体不带勾（比如黑体）
+
+​		`monospace`   等宽字体。  确保每个字符宽度一样
+
+设置几个字体名称作为一种"后备"机制，
+
+如果浏览器不支持第一种字体，他将尝试下一种字体
 
 ```css
 p{font-family:"Times New Roman", Times, serif;}
 ```
+
+有空格的字体必须加引号
+
+
+
+#####  服务器字体提供用户：
+
+```css
+@font-face` {
+	font-family: "xxx";
+	src: url('./xxx/xxx.ttf');
+}
+```
+
+问题：
+
+​	速度，版权，字体格式
+
+
+
+`iconfont`图标字体
+
+​	将图标设置为字体，利用font-face引入
+
+font awesome网站
+
+​	1解压需要css和webfonts
+
+​	2移入项目
+
+​	3link href="../xx/all.css"
+
+​	4使用
+
+```
+<i class="fas fa-bell">
+```
+
+参考手册
+
+可加style标签修改
+
+**通过伪元素设置图标字体**
+	通过before或after选中
+
+​	设置content选择编码 \xxx
+
+​	设置font-family
+
+**通过实体来使用字体**
+
+```html
+<span class="fas">&#xfof3; </span>
+```
+
+&#x + 字体编号
+
+
 
 `font-style`属性设置文本的样式
 
@@ -689,6 +755,8 @@ p{font-family:"Times New Roman", Times, serif;}
 但是并不是所有字体都做了这些，一些不常用的字体，或许就只有个正常体，如果你用 italic，就没有效果了
 
 这时候你就要用 oblique，可以理解成 italic 是使用文字的斜体，oblique 是让没有斜体属性的文字倾斜！
+
+
 
 `font-size` 属性设置文本的大小
 
@@ -717,7 +785,7 @@ h3 {text-decoration:underline;}
 | 属性                                                         | 描述                     |
 | :----------------------------------------------------------- | :----------------------- |
 | [color](https://www.runoob.com/cssref/pr-text-color.html)    | 设置文本颜色             |
-| [direction](https://www.runoob.com/cssref/pr-text-direction.html) | 设置文本方向。           |
+| [direction](https://www.runoob.com/cssref/pr-text-direction.html) | 设置文本方向             |
 | [letter-spacing](https://www.runoob.com/cssref/pr-text-letter-spacing.html) | 设置字符间距             |
 | [line-height](https://www.runoob.com/cssref/pr-dim-line-height.html) | 设置行高                 |
 | [text-align](https://www.runoob.com/cssref/pr-text-text-align.html) | 对齐元素中的文本         |

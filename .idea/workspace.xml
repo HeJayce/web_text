@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="2.8">
-      <change afterPath="$PROJECT_DIR$/html/exercise/京东轮播图1.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/jdpic/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/jdpic/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/jdpic/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/jdpic/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/jdpic/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/jdpic/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/jdpic/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/jdpic/8.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/exercise/京东轮播图1.0.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/京东轮播图1.0.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +127,9 @@
       <workItem from="1612182771849" duration="7198000" />
       <workItem from="1612355120989" duration="5241000" />
       <workItem from="1612541005525" duration="369000" />
-      <workItem from="1612785063758" duration="4304000" />
+      <workItem from="1612785063758" duration="5106000" />
+      <workItem from="1612943609134" duration="100000" />
+      <workItem from="1612960872576" duration="1881000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -362,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612789536309</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="2.8">
+      <created>1612797128967</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1612797128967</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
