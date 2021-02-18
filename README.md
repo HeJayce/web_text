@@ -1,6 +1,6 @@
 # JayceHe前端学习笔记
 
-## [HTML](https://github.com/HeJayce/web_text/blob/main/markdown/web_text.md)
+## [HTML](https://github.com/HeJayce/web_text/blob/main/markdown/web_html.md)
 
 ## [CSS](https://github.com/HeJayce/web_text/blob/main/markdown/web_css.md)
 
