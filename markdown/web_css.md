@@ -578,10 +578,7 @@ rem:相对于根元素的字体大小(html的字体大小)
 1. background可以设置多个背景图像
 
 ```css
-   body
-   { 
-       background: #00ff00 url('smiley.gif') no-repeat fixed center;
-   }
+background: #00ff00 url('smiley.gif') no-repeat fixed center;
 ```
 
 ​	属性顺序：
@@ -596,7 +593,11 @@ rem:相对于根元素的字体大小(html的字体大小)
 
 ​	background-position
 
-2. 
+​	没有顺序要求，**注意size在position的后边；orgin在clip的前边**
+
+
+
+2.
 
 
 - background-color  背景颜色
@@ -611,18 +612,23 @@ rem:相对于根元素的字体大小(html的字体大小)
     background-image:url('paper.gif');
     ```
 
+    如果背景图片小，则自动铺满
+    
+    如果背景图片大，则有部分不显示
+    
     
 
 ###### 样式
 
-1.水平或垂直平铺
+1.设置重复的水平或垂直平铺
 
 ```css
 background-repeat:repeat-x;
 ```
 
-| repeat-x  | 只有水平位置会重复背景图像         |
+| repeat    | 用来设置背景重复方式             |
 | --------- | ---------------------------------- |
+| repeat-x  | 只有水平位置会重复背景图像         |
 | repeat-y  | 只有垂直位置会重复背景图像         |
 | no-repeat | background-image不会重复(不平铺) |
 
@@ -632,16 +638,69 @@ background-repeat:repeat-x;
 background-position:right top;
 ```
 
+top、left、right、bottom、center
+
+五个用来控制方位，如果只写一个值，默认第二个center
+
+也可通过偏移量来控制位置
+
+与定位类似，两个值，但使用负值偏多
+
+
+
 3.背景图片随着页面的滚动
 
 ```css
 background-attachment:fixed;
 ```
 
-| scroll | 背景图片随着页面的滚动而滚动，这是默认的。 |
+| 值     |                                            |
 | ------ | ------------------------------------------ |
-| fixed  | 背景图片不会随着页面的滚动而滚动。         |
+| scroll | 背景图片随着页面的滚动而滚动，这是默认的。 |
+| fixed  | 背景图片不会随着页面的滚动而滚动。（固定） |
 | local  | 背景图片会随着元素内容的滚动而滚动。       |
+
+
+
+4，背景范围
+
+```css
+background-clip:border-box; /*默认值*/
+```
+
+border-box  默认值，背景会出现在边框的下边
+
+padding-box  背景不会出现在边框，只出现在内容区和内边距
+
+content-box   背景只会出现在内容区
+
+
+
+5.背景图片偏移量的原点
+
+```css
+background-origin:border-box;
+```
+
+`padding-box`  默认值  `background-position`从内边距处开始计算
+
+`content-box`  背景图片的偏移从内容区处计算
+
+`border-box` 背景图片的变量从边框处开始计算
+
+
+
+6.背景图片大小
+
+```css
+background-size:1920px 1080px;
+```
+
+第二个默认等比缩放
+
+`cover`:图片比例不变，图片铺满
+
+`contain`：图片完整显示
 
 
 
@@ -719,6 +778,8 @@ font awesome网站
 ```
 <i class="fas fa-bell">
 ```
+
+**苹果显示不出来？**
 
 参考手册
 
