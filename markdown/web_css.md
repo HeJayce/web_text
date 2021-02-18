@@ -782,21 +782,27 @@ h3 {text-decoration:underline;}
 
 ##### 所有属性
 
-| 属性                                                         | 描述                     |
-| :----------------------------------------------------------- | :----------------------- |
-| [color](https://www.runoob.com/cssref/pr-text-color.html)    | 设置文本颜色             |
-| [direction](https://www.runoob.com/cssref/pr-text-direction.html) | 设置文本方向             |
-| [letter-spacing](https://www.runoob.com/cssref/pr-text-letter-spacing.html) | 设置字符间距             |
-| [line-height](https://www.runoob.com/cssref/pr-dim-line-height.html) | 设置行高                 |
-| [text-align](https://www.runoob.com/cssref/pr-text-text-align.html) | 对齐元素中的文本         |
-| [text-decoration](https://www.runoob.com/cssref/pr-text-text-decoration.html) | 向文本添加修饰           |
-| [text-indent](https://www.runoob.com/cssref/pr-text-text-indent.html) | 缩进元素中文本的首行     |
-| [text-shadow](https://www.runoob.com/cssref/css3-pr-text-shadow.html) | 设置文本阴影             |
-| [text-transform](https://www.runoob.com/cssref/pr-text-text-transform.html) | 控制元素中的字母         |
-| [unicode-bidi](https://www.runoob.com/cssref/pr-text-unicode-bidi.html) | 设置或返回文本是否被重写 |
-| [vertical-align](https://www.runoob.com/cssref/pr-pos-vertical-align.html) | 设置元素的垂直对齐       |
-| [white-space](https://www.runoob.com/cssref/pr-text-white-space.html) | 设置元素中空白的处理方式 |
-| [word-spacing](https://www.runoob.com/cssref/pr-text-word-spacing.html) | 设置字间距               |
+| 属性                                                         | 描述                                                  |
+| :----------------------------------------------------------- | :---------------------------------------------------- |
+| [color](https://www.runoob.com/cssref/pr-text-color.html)    | 设置文本颜色                                          |
+| [direction](https://www.runoob.com/cssref/pr-text-direction.html) | 设置文本方向                                          |
+| [letter-spacing](https://www.runoob.com/cssref/pr-text-letter-spacing.html) | 设置字符间距                                          |
+| [line-height](https://www.runoob.com/cssref/pr-dim-line-height.html) | 设置行高                                              |
+| [text-align](https://www.runoob.com/cssref/pr-text-text-align.html) | 对齐元素中的文本                                      |
+| [text-decoration](https://www.runoob.com/cssref/pr-text-text-decoration.html) | 向文本添加修饰（下划/上滑/删除线）                    |
+| [text-indent](https://www.runoob.com/cssref/pr-text-text-indent.html) | 缩进元素中文本的首行                                  |
+| [text-shadow](https://www.runoob.com/cssref/css3-pr-text-shadow.html) | 设置文本阴影                                          |
+| [text-transform](https://www.runoob.com/cssref/pr-text-text-transform.html) | 控制元素中的字母                                      |
+| [unicode-bidi](https://www.runoob.com/cssref/pr-text-unicode-bidi.html) | 设置或返回文本是否被重写                              |
+| [vertical-align](https://www.runoob.com/cssref/pr-pos-vertical-align.html) | 设置元素的垂直对齐                                    |
+| [white-space](https://www.runoob.com/cssref/pr-text-white-space.html) | 设置元素中空白的处理方式（nowrap不换行，pre保留空白） |
+| [word-spacing](https://www.runoob.com/cssref/pr-text-word-spacing.html) | 设置字间距                                            |
+
+text-overflow：ellipsis   设置溢出省略号
+
+
+
+
 
 
 

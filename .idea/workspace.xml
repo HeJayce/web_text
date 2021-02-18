@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="2.8">
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="2.10">
+      <change afterPath="$PROJECT_DIR$/html/exercise/JD顶部导航条.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/exercise/京东轮播图1.0.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/京东轮播图1.0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html/fa" />
       <recent name="$PROJECT_DIR$/html/OldExercise" />
       <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$/html/css" />
       <recent name="$PROJECT_DIR$/html/exercise" />
-      <recent name="E:\web_html" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.3.html">
@@ -130,6 +131,8 @@
       <workItem from="1612785063758" duration="5106000" />
       <workItem from="1612943609134" duration="100000" />
       <workItem from="1612960872576" duration="1881000" />
+      <workItem from="1612966996997" duration="90000" />
+      <workItem from="1613629424959" duration="1533000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -362,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612797128967</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="2.10">
+      <created>1612967017567</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1612967017567</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +405,7 @@
     <MESSAGE value="2.3" />
     <MESSAGE value="导航条加粘滞定位" />
     <MESSAGE value="2.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.8" />
+    <MESSAGE value="2.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.10" />
   </component>
 </project>
