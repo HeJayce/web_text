@@ -644,7 +644,7 @@ top、left、right、bottom、center
 
 也可通过偏移量来控制位置
 
-与定位类似，两个值，但使用负值偏多
+与定位类似，两个值，但使用负值偏多（见雪碧图）
 
 
 
@@ -701,6 +701,61 @@ background-size:1920px 1080px;
 `cover`:图片比例不变，图片铺满
 
 `contain`：图片完整显示
+
+
+
+#### 实战雪碧图
+
+通过一张大图，不同的定位，来实现一张图包含多张
+
+减小加载速度，减弱视觉不适
+
+​	步骤：1确定图片
+
+​			2测量图片大小
+
+​		3根据测量结果创建一个元素
+
+​		4设置偏移量，以显示正常图片
+
+### 渐变色
+
+#### 线性渐变
+
+可设置多个颜色，默认平均分配
+
+```css
+background-image:linear-gradient(red,green)
+```
+
+默认从上往下
+
+```css
+background-image:linear-gradient(to right,red,green)
+```
+
+从左往右
+
+xxxdeg：旋转度数
+
+指定分配：颜色后加数值（10px）
+
+#### 径向渐变
+
+```css
+background-image:radial-gradient(red,green)
+```
+
+圆形渐变
+
+正方形--> 吊形
+长方形--> 椭圆形
+
+```
+background-image:radial-gradient(10px,10px,red,green)
+```
+
+指定圆心大小
 
 
 

@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="tb选择区域bug">
-      <change afterPath="$PROJECT_DIR$/html/exercise/08背景重复.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/exercise/09按钮.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/exercise/10雪碧图.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/09/active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/09/hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/09/link.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/bg.png" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="通过一张大图的定位优化速度">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/exercise/JD顶部导航条.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/06JD顶部导航条.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/exercise/tb导航条.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/07tb导航条.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/exercise/10雪碧图.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/10雪碧图.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/html/media/10" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -75,6 +67,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html/media/10" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/html/media/09" />
       <recent name="$PROJECT_DIR$/html/media" />
@@ -141,7 +136,7 @@
       <workItem from="1612960872576" duration="1881000" />
       <workItem from="1612966996997" duration="90000" />
       <workItem from="1613629424959" duration="12498000" />
-      <workItem from="1613657252609" duration="989000" />
+      <workItem from="1613657252609" duration="2508000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -409,7 +404,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613642342464</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="2.18">
+      <created>1613658661739</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1613658661739</updated>
+    </task>
+    <task id="LOCAL-00040" summary="通过一张大图的定位优化速度">
+      <created>1613658711130</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1613658711130</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,8 +452,9 @@
     <MESSAGE value="导航条加粘滞定位" />
     <MESSAGE value="2.8" />
     <MESSAGE value="2.10" />
-    <MESSAGE value="2.18" />
     <MESSAGE value="tb选择区域bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="tb选择区域bug" />
+    <MESSAGE value="2.18" />
+    <MESSAGE value="通过一张大图的定位优化速度" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过一张大图的定位优化速度" />
   </component>
 </project>
