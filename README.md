@@ -7,4 +7,4 @@
 ## [Javascript](https://github.com/HeJayce/web_text/blob/main/markdown/JavaScript.md)
 
 ## [bootstrap](https://github.com/HeJayce/web_text/blob/main/markdown/Bootstrap.md)
-[index](https://jayce.icu)
+## [我的主页](https://jayce.icu)
