@@ -245,6 +245,36 @@ colspan="x"  列合并x
 
 rowspan="x" 行合并
 
+表格边框合并：
+
+`border-collapse:collapse`
+
+设置边框间距：
+
+`border-spacing:1px`
+
+知识点：
+
+1. tr并不是table的子元素，当没设置tbody的时候，默认所有tr都归为tbody
+
+2. 根据1，使用table的子元素是无法选中tr的
+
+    正确代码：
+
+    ```css
+    tbody > tr:nth-child(odd){
+    	background-color:red
+    }
+    ```
+
+    
+
+
+
+
+
+
+
 #### 列表
 
 ##### 无序表
@@ -328,7 +358,23 @@ p {margin:0; padding:0}
 .content p {margin:0; padding:0;}
 ```
 
+
+
 #### 表单和输入
+
+知识点：
+
+​	autocomplete="off"    关闭自动补全
+
+​	readonly不可修改，但可提交
+
+​	autofocus 自动聚焦
+
+​	
+
+form：
+
+​	属性：action
 
 ##### 文本输入
 
@@ -344,6 +390,15 @@ user: <input type="text" name="user"><br>
 passwd: <input type="password" name="user">
 </form>
 
+
+##### 提交
+
+```html
+<input type="submit"  value="提交">
+```
+
+数据想要提交必须设置name属性.
+
 ##### 单选(radio)
 
 
@@ -358,6 +413,11 @@ passwd: <input type="password" name="user">
 <input type="radio" name="sex" value="male">Male<br>
 <input type="radio" name="sex" value="female">Female
 </form>
+name属性必须一样，才能作为同一组的单选
+
+checked可以增加默认选项
+
+
 
 ##### 复选框
 
@@ -373,6 +433,7 @@ passwd: <input type="password" name="user">
 <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
 <input type="checkbox" name="vehicle" value="Car">I have a car
 </form>
+
 
 ##### 下拉列表(select)
 
@@ -391,6 +452,9 @@ passwd: <input type="password" name="user">
     <option value="fiat">Fiat</option>
     <option value="audi">Audi</option>
 </select>
+selected：默认选中
+
+
 
 ##### 文本输入(textarea)
 

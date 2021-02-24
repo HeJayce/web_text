@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 312px;
+            margin: 0 auto;
+            background-image: url("../media/walkingdead.png");
+            animation: run 1s steps(10) infinite;
+        }
+
+        @keyframes run {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -2000px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

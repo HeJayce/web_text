@@ -1,4 +1,4 @@
-### 
+
 
 # web_css
 
@@ -1608,4 +1608,276 @@ table既可以解决高度塌陷，还可以解决外边距重叠
 可使用`z-index`作为参数，越大层级越高
 
 祖先的元素的层级再高也不会覆盖后代元素
+
+
+
+## CSS过度动画
+
+`transition`
+
+​	大部分属性都支持过度
+
+​	必须是从一个有效数值到另一个有效数值
+
+transition-property：指定要过度的属性(height/all)
+
+transition-duration ：指定要过度的时间s/ms 1s=1000ms
+
+也可分别指定时间，两个属性，两个时间
+
+transition-timing-function：过度时间函数，可实现加速减速运动
+
+​	ease默认，先加速后减速
+
+​	linear 匀速运动
+
+​	cubic-bezier 贝塞尔曲线[参数网址](https://cubic-bezier.com/)
+
+​	steps()	 分布执行效果（离散）（n，end）
+
+​			n表示步数，end或start表示时间结束或开始时执行运动
+
+transition-delay：过度效果的延时
+
+
+
+简写：
+
+transition
+
+
+
+### CSS动画
+
+动画
+
+动画和过渡类似，都是可以实现一些动态的效果，
+
+不同的是过渡需要在某个属性发生变化时才会触发
+
+动画可以自动触发动态效果
+
+设置动画效果，必须先要设置一个关键帧，关键帧设置了动画执行每一个步骤
+
+```css
+@keyframes test {
+	from{
+			margin-left: 700px;
+			}
+	to{
+			margin-left: 0;
+		}
+ .box3{
+     background-color: orange;
+     animation-name: test;/*名字*/
+     animation-duration: 1s; /*时间*/
+     animation-iteration-count: infinite;
+      /*执行次数n/infinite无限*/
+   	 animation-direction: alternate;
+       /*指定动画运行的方向
+       可选值:
+       normal默认值从from 向to运行 每次都是这样
+       reverse从to向from 运行每次都是这样
+       alternateI从from向to运行重复执行动画时反向执行(来回)
+       alternate-reverse从to向fror运行 重复执行动画时反向执行*/
+   		
+```
+
+
+
+### less
+
+css的预处理语言
+
+​	是css的增强版，使用更少的代码，实现更强的样式
+
+​	less添加了各种新特性如变量等，大体上与css一样
+
+​	
+
+​	 
+
+#### css变量
+
+```css
+--name:#bfa
+```
+
+变量名-值
+
+使用：
+
+```css
+var(--name)
+```
+
+
+
+#### css计算函数：
+
+```css
+calc(200px*2)
+```
+
+  
+
+### less语法：
+
+```less
+body{
+	width: 100px;
+	height: 100px;
+		div{
+			color: red;
+				}
+}
+```
+
+指定body下的div
+
+
+
+##### less变量
+
+`@name:value`
+
+```less
+@name:value
+.box1{
+	width:@name;
+}
+```
+
+变量可以是颜色，数值，类名
+
+使用类名时：
+
+```less
+@c:box1;
+	.@{c}{
+    width:0;
+  }
+```
+
+
+
+##### 
+
+#### 扩展
+
+##### extend
+
+选择器分组
+
+```less
+.p2:extend(.p1){
+	colorl:red;
+}
+```
+
+相当于p2保持与p1一致的属性，扩展的属性另外加在p2
+
+##### Mixins
+
+```less
+.p3{
+	.p1();
+}
+```
+
+用类选择器时可以在选择器后边添加().  
+
+实际上创建了mixins
+
+
+
+### 混合函数
+
+在混合函数中直接设置变量
+
+```less
+/*定义*/
+.box1(@w:100px,@h:100px,@bg_color:red){
+  /* ⬆️设置默认值*/
+	width:@w;
+  height:@h
+  border:1px soild @bg_color
+}
+div{
+	.box1(200px,300px,red)
+  /*.
+  box1(@bg-color:red,@h:300px,@width:200px)
+  */
+}
+```
+
+
+
+#### 导入
+
+```less
+@import "xxx.less"
+```
+
+
+
+## Flex弹性盒
+
+用于替代**浮动**，来完成布局
+
+让元素跟随页面的大小而改变
+
+#### 弹性容器
+
+​	必须将一个元素设置为弹性容器
+
+​	方法：	
+
+```css
+display:flex         //弹性容器(独占一行)
+display:inline-flex  //行内弹性容器
+```
+
+指定弹性元素的排列方向
+
+```css
+flex-direction: column
+//row（水平） row-reverse（反向水平排列）
+//column（自上向下）column-reverse（反向自上向下）
+```
+
+**主轴**：弹性元素的排列方式
+
+**侧轴**：与主轴垂直
+
+
+
+#### 弹性元素
+
+​	弹性容器的直接子元素（弹性项）
+
+​	一个元素可以同时是弹性容器和弹性元素
+
+`flex-grow`
+
+```css
+flex-grow:0
+```
+
+flex- grow 指定弹性元素的伸展的系数
+
+当父元素有多余空间的时，子元素如何伸展
+
+父元素的剩余空间会按比例分配
+
+
+
+`flex-shrink`
+
+​	父元素的空间不足以容纳所有子元素
+
+```css
+flex-shrink:0; //不收缩（溢出）
+flex-shrink:1; //收缩
+```
 
