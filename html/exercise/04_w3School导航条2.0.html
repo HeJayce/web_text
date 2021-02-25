@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        body{
+            height: 3000px;
+        }
+        .nav{
+            width: 1205px;
+            height: 48px;
+            background-color: #E8e7e3;
+            margin:100px auto;
+            position: sticky;  /*开启粘滞定位*/
+            top:10px;
+            display: flex;
+
+        }
+        .nav li{
+            flex-grow: 1;
+            height: 48px;
+            line-height: 48px;   /*将文字在父元素居中*/
+
+        }
+        .nav a{
+            display: block;
+            text-decoration: none;
+            color: #777777;
+            font-size: 18px;
+            padding: 0 39px;
+        }
+        .nav a:hover{
+            background-color: #777777;
+            color: #FFFFFF;
+
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li>
+        <a href="#">HTML/CSS</a>
+    </li>
+    <li>
+        <a href="#">Browser Side</a>
+    </li>
+    <li>
+        <a href="#">Server Side</a>
+    </li>
+    <li>
+        <a href="#">Programming</a>
+    </li>
+    <li>
+        <a href="#">XML</a>
+    </li>
+    <li>
+        <a href="#">Web Building</a>
+    </li>
+    <li>
+        <a href="#">Reference</a>
+    </li>
+</ul>
+</body>
+</html>

@@ -1827,7 +1827,7 @@ div{
 
 让元素跟随页面的大小而改变
 
-#### 弹性容器
+### 弹性容器
 
 ​	必须将一个元素设置为弹性容器
 
@@ -1852,7 +1852,61 @@ flex-direction: column
 
 
 
-#### 弹性元素
+`flex-wrap`
+
+设置是否自动换行
+
+​	nowrap 默认，不换
+
+​	wrap换行
+
+​	wrap-reverse 反向换行
+
+
+
+`flex-flow` wrap和direction的简写属性
+
+`justify-content`
+
+​		如何分配主轴空白空间
+
+​		可选值：
+
+​				flex-start 靠（左）（row）
+
+​				flex-end 靠右
+
+​				center居中排列
+
+​				space-around 居中但互不紧贴，空白分布给元素两边
+
+​				space-evenly 与around类似，但每处空白一样宽
+
+
+
+`align-items`
+
+元素在辅轴上如何对齐
+
+​	align-items: **stretch**; 	默认，将元素长度设置为相同的值	
+
+​	align-items: **center**;	居中
+
+​	align-items: **flex-start**;	元素不会拉伸，沿起边对齐
+
+​	align-items: **flex-end**;	沿终边对齐
+
+​	align-items: **baseline**; 	沿基线对齐
+
+
+
+`align-content`
+
+​	
+
+
+
+### 弹性元素
 
 ​	弹性容器的直接子元素（弹性项）
 
@@ -1864,7 +1918,7 @@ flex-direction: column
 flex-grow:0
 ```
 
-flex- grow 指定弹性元素的伸展的系数
+flex- grow 指定弹性元素的伸展的系数（比例）
 
 当父元素有多余空间的时，子元素如何伸展
 
@@ -1881,3 +1935,48 @@ flex-shrink:0; //不收缩（溢出）
 flex-shrink:1; //收缩
 ```
 
+
+
+`flex- basis`
+
+指定的是元素在主轴上的基础长度
+
+如果主轴是横向的，则该值指定的就是元素的宽度
+
+如果主轴是纵向的，则该值指定的就是元素的高度
+
+​	默认auto
+
+
+
+`flex`简写属性
+
+​	flex：grow，shrink ，basis
+
+​	
+
+`order`
+
+​	指定顺序，数值越小，越往前
+
+
+
+
+
+## 移动端
+
+### 像素
+
+#### 	物理像素：小点
+
+#### 	CSS像素：PX
+
+​		浏览器会将css像素转换为物理像素，
+
+​		默认情况转换由浏览器决定，一般是1:1
+
+
+
+### 视口
+
+网页显示的区域
