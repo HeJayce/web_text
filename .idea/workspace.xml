@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="2.24">
-      <change afterPath="$PROJECT_DIR$/html/exercise/04_w3School导航条2.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/exercise/Mobiltb.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/media/tb/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/JavaScript.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/web_css.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/web_css.md" afterDir="false" />
-    </list>
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="2.25" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,6 +139,7 @@
       <workItem from="1614156364774" duration="606000" />
       <workItem from="1614168897176" duration="3154000" />
       <workItem from="1614247067136" duration="220000" />
+      <workItem from="1614250405121" duration="109000" />
     </task>
     <task id="LOCAL-00001" summary="12.4">
       <created>1607047715297</created>
@@ -457,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614168927981</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="2.25">
+      <created>1614250435685</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1614250435685</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +487,8 @@
     <MESSAGE value="通过一张大图的定位优化速度" />
     <MESSAGE value="2.18" />
     <MESSAGE value="2.24" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.24" />
+    <MESSAGE value="2.25" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.25" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
