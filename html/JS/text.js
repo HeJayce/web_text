@@ -270,16 +270,18 @@
 //     console.log(err);
 // });
 
-function factorialize(num) {
-    let x = num ;
-    num = 1 ;
-    let num_before;
-    for (let i =1 ; i<=x ;i++)
-    {
-        num_before = num ;
-        num =num_before * i;
-    }
-    return num;
-}
+// function factorialize(num) {
+//     let x = num ;
+//     num = 1 ;
+//     let num_before;
+//     for (let i =1 ; i<=x ;i++)
+//     {
+//         num_before = num ;
+//         num =num_before * i;
+//     }
+//     return num;
+// }
+//
+// console.log(factorialize(5))
 
-console.log(factorialize(5))
+

@@ -178,6 +178,15 @@ console.log();
 
 即可在控制台看到输出内容
 
+计算运行时间
+
+```javascript
+console.time("计时器名称")
+
+console.timeEnd("计时器名称")
+
+```
+
 
 
 ## 语法
@@ -495,6 +504,21 @@ arr.join('-'); // 'A-B-C-1-2-3'
 
 #### 3.对象(object)
 
+除了五种数据类型之外，其余全是对象
+
+​	string 、number、boolean、null、undefined未定义
+
+
+
+新建对象
+
+```js
+var obj = new Object();
+obj.name = "Jayce"
+```
+
+
+
 ```js
 var xiaoming = {
     name: '小明',
@@ -749,6 +773,39 @@ document.write("您的浏览器支持JavaScript脚本!");
 //-->
 </script>
 ```
+
+### for
+
+同c++
+
+可以对for加一个label来标示当前循环
+
+
+
+### break
+
+break可以结束离他最近的循环，且不对外层循环有影响
+
+**label表示结束循环**
+
+```javascript
+label：
+	for(){
+		for(){
+			break label;
+		}
+	}
+```
+
+​	其中label可以更换名字
+
+### continue
+
+continue可以跳过当次循环
+
+默认只会对他最近的循环起作用
+
+## 
 
 
 
