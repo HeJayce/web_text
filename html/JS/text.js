@@ -285,3 +285,27 @@
 // console.log(factorialize(5))
 
 
+// var obj = {
+//     name:"Jayce" ,
+//     age:20
+// }
+// for (var n in obj)
+// {
+//     console.log(n + ":" + obj[n])
+// }
+
+function fun(){
+    console.log(this.name);
+}
+
+var obj = {
+    name:"jayce",
+    sayName:fun
+};
+var obj2 = {
+    name:"tim",
+    sayName:fun
+};
+var name = 222;
+obj.sayName();
+// fun();
