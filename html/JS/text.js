@@ -294,18 +294,32 @@
 //     console.log(n + ":" + obj[n])
 // }
 
-function fun(){
-    console.log(this.name);
-}
-
-var obj = {
-    name:"jayce",
-    sayName:fun
-};
-var obj2 = {
-    name:"tim",
-    sayName:fun
-};
-var name = 222;
-obj.sayName();
+// function fun(){
+//     console.log(this.name);
+// }
+//
+// var obj = {
+//     name:"jayce",
+//     sayName:fun
+// };
+// var obj2 = {
+//     name:"tim",
+//     sayName:fun
+// };
+// var name = 222;
+// obj.sayName();
 // fun();
+
+// function Person(name , age){
+//    var obj = new Object();
+//    obj.name = name;
+//    obj.age = age;
+//    obj.sayName = function (){
+//        console.log(this.name);
+//    };
+//    return obj;
+// };
+// var per = new Person("jayce",18);
+// per.sayName();
+
+
