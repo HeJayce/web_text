@@ -7,7 +7,6 @@
     <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/JS/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/JS/text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/OldExercise/99.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/99.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markdown/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/JavaScript.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,14 +151,9 @@
       <workItem from="1614747068912" duration="2846000" />
       <workItem from="1614952976335" duration="1600000" />
       <workItem from="1614960820387" duration="2000" />
-      <workItem from="1615010827892" duration="2140000" />
-    </task>
-    <task id="LOCAL-00002" summary="12.4">
-      <created>1607047732474</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1607047732474</updated>
+      <workItem from="1615010827892" duration="2343000" />
+      <workItem from="1615090675857" duration="313000" />
+      <workItem from="1615181259614" duration="4049000" />
     </task>
     <task id="LOCAL-00003" summary="12.4">
       <created>1607048334393</created>
@@ -497,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614960579687</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="3.6">
+      <created>1615019172362</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1615019172362</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +541,8 @@
     <MESSAGE value="2.27" />
     <MESSAGE value="3.3" />
     <MESSAGE value="3.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.5" />
+    <MESSAGE value="3.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -342,9 +342,9 @@ s.substring(7); // 从索引7开始到结束，返回'world'
 
 [40, 100, 1, 5, 25, 10]
 
-数组是一种特殊的对象格式，所以`typeof [1,2,3,4] 返回 object`
+数组是一种特殊的**对象格式**，所以`typeof [1,2,3,4] 返回 object`
 
-array可以包含任意数据类型，并通过索引来访问每个元素
+array可以包含**任意数据类型**，并通过索引来访问每个元素
 
 要取得`Array`的长度，直接访问`length`属性：
 
@@ -352,6 +352,10 @@ array可以包含任意数据类型，并通过索引来访问每个元素
 var arr = [1, 2, 3.14, 'Hello', null, true];
 arr.length; // 6
 ```
+
+对于非连续的数组，length会得到最大索引+1
+
+
 
 但如果给`length`赋一个新的值会导致`array`大小发生变化
 
@@ -361,7 +365,7 @@ arr.length; // 6
 
 若使用索引给数组赋值，索引超出了范围，则自动改变大小，没有值的`undefined`
 
-##### 特别方法：
+### 特别方法：
 
 ###### indexOf
 
@@ -393,7 +397,7 @@ arr.slice(3); // 从3开始到结束: ['D','E','F','G']
 
 `pop()`则把`Array`的最后一个元素删除掉；
 
-```
+```js
 var arr = [1, 2];
 arr.push('A','B');  //返回Array新的长度:4
 arr;     // [1,2,'A','B']
@@ -428,6 +432,29 @@ arr.shift(); // 空数组继续shift不会报错，而是返回undefined
 arr; // []
 ```
 
+###### forEach
+
+IE8以下不支持
+
+遍历数组
+
+数组中有几个元素函数就会执行几次，每次执行时，浏览器会将遍历到的元素以实参的形式传递进来，我们可以来定义形参，来读取这些内容
+
+浏览器会在回调函数传递三个参数
+
+1. 正在遍历的元素
+2. 遍历元素的索引
+3. 正在遍历的数组
+
+```js
+var arr = [1,2,3,4,5];
+arr.forEach(function (value,index,obj){
+  
+})
+```
+
+
+
 ###### sort
 
 `sort()`可以对当前`Array`进行排序，它会直接修改当前`Array`的元素位置
@@ -448,21 +475,49 @@ arr.reverse();
 arr; // ['three', 'two', 'one']
 ```
 
+
+
+###### slice
+
+用来提取指定元素（切片）
+
+```js
+arr.slice(start,end)
+```
+
+ 包含开始，不包含结束
+
+负值从后往前
+
+
+
 ###### splice
 
 `splice()`方法是修改`Array`的“万能方法”，它可以从指定的索引开始删除若干元素，然后再从该位置添加若干元素：
 
 ```js
+arr.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+```
+
+
+
+```js
 var arr = ['Microsoft','Apple','Yahoo','AOL','Excite','Oracle'];
 // 从索引2开始删除3个元素,然后再添加两个元素:
-arr.splice(2,3,'Google','Facebook'); //返回删除的元素 ['Yahoo','AOL', 'Excite']
-arr; // ['Microsoft', 'Apple', 'Google', 'Facebook', 'Oracle']
+arr.splice(2,3,'Google','Facebook');
+//返回删除的元素 ['Yahoo','AOL', 'Excite']
+arr; 
+// ['Microsoft', 'Apple', 'Google', 'Facebook', 'Oracle']
 // 只删除,不添加:
-arr.splice(2, 2); // ['Google', 'Facebook']
-arr; // ['Microsoft', 'Apple', 'Oracle']
+arr.splice(2, 2); 
+// ['Google', 'Facebook']
+arr; 
+// ['Microsoft', 'Apple', 'Oracle']
 // 只添加,不删除:
-arr.splice(2, 0, 'Google', 'Facebook'); // 返回[],因为没有删除任何元素
-arr; // ['Microsoft', 'Apple', 'Google', 'Facebook', 'Oracle']
+arr.splice(2, 0, 'Google', 'Facebook'); 
+// 返回[],因为没有删除任何元素
+arr; 
+// ['Microsoft', 'Apple', 'Google', 'Facebook', 'Oracle']
 ```
 
 ###### concat
@@ -1030,6 +1085,34 @@ ES6新增了箭头函数，更加简介
 
 
 
+原型对象就相当于一个公共区域
+
+可以将对象中共有的内容，统一设置到原型对象中
+
+当我们访问对象的一个属性或方法时，它会先在对象自身中寻找，如果有则直接使用
+
+如果没有则会去原型对象中寻找，如果找到则直接使用
+
+如果没有则会去原型中寻找
+
+如果原型没有，则去原型的原型中寻找，直到找到Object的原型
+
+Object没有原型，没有返回undefined 
+
+```js
+function myClass(){
+
+}
+myClass.prototype.a = 123;
+var mc = new myClass();
+var mc2 = new myClass();
+console.log(myClass.prototype);  //{a:123}
+console.log(mc2.__proto__ == myClass.prototype);  //true
+console.log(mc.a);    //123
+```
+
+
+
 #### 默认参数
 
 ES6新增了默认参数
@@ -1048,15 +1131,23 @@ myFunction(5); // 输出 15, y 参数的默认值
 
 
 
+## 垃圾回收GC
+
+当一个对象没有任何的变量或属性对它进行引用，
+
+此时我们将永远无法操作该对象
+
+JS有自动的回收机制
+
+`obj = null`
+
+将不需要的对象设置为null
 
 
 
 
 
-
-
-
-### 事件
+## 事件
 
 ##### html事件
 
@@ -1122,6 +1213,10 @@ typeof null                   // 返回 object
 ```
 
 ##### 自动转换字符串
+
+###### toString
+
+当直接在页面打印一个对象时，事件上是输出对象的``toString()`方法的返回值 
 
 ```js
 document.getElementById("demo").innerHTML = myVar;
@@ -1351,7 +1446,7 @@ this 指向一个对象，根据调用方法的不同，this会指向不同的�
 * 当以构造函数的形式调用时，this就是新创建的那个对象
 
     
-    
+  
     
 
 this表示当前对象的一个引用

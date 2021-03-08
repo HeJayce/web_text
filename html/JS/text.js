@@ -322,4 +322,70 @@
 // var per = new Person("jayce",18);
 // per.sayName();
 
+// function myClass(){
+//
+// }
+// myClass.prototype.a = 123;
+// myClass.prototype.sayHello = function (){
+//     alert("hello")
+// }
+// var mc = new myClass();
+// var mc2 = new myClass();
+// console.log(myClass.prototype);
+// console.log(mc2.__proto__ == myClass.prototype);
+// console.log(mc.a);
+
+
+/*写入原型，否则只对当前的起作用*/
+// function Person(name , age ,gender){
+//     this.name = name ;
+//     this.age = age ;
+//     this.gender = gender;
+// }
+// var per = new Person("jayce",29,"man")
+// // per.toString = function (){
+// //     return "name:"+this.name+" age:"+this.age+" gender:"+this.gender;
+// // }
+// Person.prototype.toString = function (){
+//     return "name:"+this.name+" age:"+this.age+" gender:"+this.gender;
+// }
+//
+// console.log(per)
+
+
+// //forEach遍历
+// var arr = [1,2,3,4,5];
+// arr.forEach(function (a){
+//     console.log(a)
+// })
+
+
+//数组去重
+var arr = [1,2,3,4,6,8,2,8,21,6,4,12,3,4,2,12,3,5,1,2,5,41,21,]
+function quchong(arr){
+    for (var i=0 ;i < arr.length ;i++){
+        for(var j=1 ;j < arr.length ;j++) {
+            if (arr[i] == arr[j])
+                arr = arr.splice(j,1)
+        }
+    }
+    return arr;
+}
+
+console.log(quchong(arr))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
