@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.3">
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/JS/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/JS/text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/JavaScript.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,14 +152,7 @@
       <workItem from="1614960820387" duration="2000" />
       <workItem from="1615010827892" duration="2343000" />
       <workItem from="1615090675857" duration="313000" />
-      <workItem from="1615181259614" duration="4049000" />
-    </task>
-    <task id="LOCAL-00003" summary="12.4">
-      <created>1607048334393</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1607048334393</updated>
+      <workItem from="1615181259614" duration="7543000" />
     </task>
     <task id="LOCAL-00004" summary="12.4">
       <created>1607063667856</created>
@@ -498,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615019172362</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="3.8">
+      <created>1615208355813</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1615208355813</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,7 +541,15 @@
     <MESSAGE value="3.3" />
     <MESSAGE value="3.5" />
     <MESSAGE value="3.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.6" />
+    <MESSAGE value="3.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.8" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="arr" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
