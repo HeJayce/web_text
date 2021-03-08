@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.8">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="数组去重">
       <change beforePath="$PROJECT_DIR$/html/JS/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/JS/text.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,14 +151,7 @@
       <workItem from="1614960820387" duration="2000" />
       <workItem from="1615010827892" duration="2343000" />
       <workItem from="1615090675857" duration="313000" />
-      <workItem from="1615181259614" duration="7543000" />
-    </task>
-    <task id="LOCAL-00004" summary="12.4">
-      <created>1607063667856</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1607063667856</updated>
+      <workItem from="1615181259614" duration="7888000" />
     </task>
     <task id="LOCAL-00005" summary="12.4">
       <created>1607076067753</created>
@@ -497,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615208355813</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="数组去重">
+      <created>1615211932964</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1615211932965</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="12.4" />
     <MESSAGE value="12.11" />
     <MESSAGE value="12.10" />
     <MESSAGE value="12.21" />
@@ -542,7 +540,8 @@
     <MESSAGE value="3.5" />
     <MESSAGE value="3.6" />
     <MESSAGE value="3.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.8" />
+    <MESSAGE value="数组去重" />
+    <option name="LAST_COMMIT_MESSAGE" value="数组去重" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

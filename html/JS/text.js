@@ -360,31 +360,33 @@
 // })
 
 
-//数组去重
-var arr = [1,2,3,3,3,3,4,4,4,3,3,3,3,100,100,6,5,3,4,1]
-function quchong(arr){
-    var newArr = [];
-    for (var i=0 ;i < arr.length ;i++){
-        for(var j=i+1 ;j <= arr.length ;j++) {
-            if (arr[i] == arr[j]){
-                // arr.splice(j,1);
-                newArr.push(j)
-                break;
-            }
-        }
-    }
-    console.log(newArr);
-    var arrEnd = []
-    arr.forEach(function (value,index){
-        if(newArr.indexOf(index)==-1)
-        {
-            arrEnd.push(arr[index])
-        }
-
-    })
-    return arrEnd;
-}
-console.log(quchong(arr))
+//数组去重,第二种是将要删除的元素列出来
+// var arr = [1,2,3,3,3,3,4,4,4,3,3,3,3,100,100,6,5,3,4,1]
+// function quchong(arr){
+//     var newArr = [];
+//     for (var i=0 ;i < arr.length ;i++){
+//         for(var j=i+1 ;j <= arr.length ;j++) {
+//             if (arr[i] == arr[j]){
+//                 arr.splice(j,1);
+//                 j--;
+//                 // newArr.push(j)
+//                 // break;
+//             }
+//         }
+//     }
+//     console.log(newArr);
+//     // var arrEnd = []
+//     // arr.forEach(function (value,index){
+//     //     if(newArr.indexOf(index)==-1)
+//     //     {
+//     //         arrEnd.push(arr[index])
+//     //     }
+//     //
+//     // })
+//     // return arrEnd;
+//     return arr
+// }
+// console.log(quchong(arr))
 
 
 
