@@ -1,4 +1,3 @@
-
 // function isUSD(str) {
 //   if(str.indexOf('$')!==0)
 //   {
@@ -9,7 +8,7 @@
 //     //整数：
 //     if(str.indexOf('.'===-1))
 //     {
-      
+
 //     }
 //   }
 // }
@@ -44,7 +43,7 @@
 // // console.log(fibonacci(10))
 // function cssStyle2DomStyle(sName) {
 //   var arr=sName.split('');
-  
+
 //   var x = arr.indexOf('-');
 
 //   arr[x+1] = arr[x+1].toUpperCase();
@@ -72,7 +71,7 @@
 //               x = i
 //               break;
 //           }
-          
+
 //     }
 //     for(var i=0;i<str.length;i++)
 //     {
@@ -148,11 +147,11 @@
 //     {
 //           arr[i] = arr[i].replace(arr[i][0],arr[i][0].toUpperCase());
 //     }
-    
+
 //     return arr.join("")
 
 //   }
-  
+
 // console.log(cssStyle2DomStyle('font-size-')) 
 //
 // function rgb2hex(r,g,b) {
@@ -388,18 +387,45 @@
 // }
 // console.log(quchong(arr))
 
+// 利用sort进行数组的数字排序
+// arr = [235,44,2,1,3,6,8,7];
+// arr.sort(function(a,b){
+// //前边的大
+// //     if(a > b){
+// //         return 1;
+// //     }else if(a < b){
+// //         return - 1;
+// //     }else{
+// //         return 0;
+// //     }
+//     //简写
+//     return a-b;
+// });
+// console.log(arr)
 
+//call方法调用
+// var obj = {
+//     name: "obj",
+//     sayName: function () {
+//         alert(this.name);
+//     }
+// };
+// var obj2 = {
+//     name: "obj2"
+// }
+//
+// function fun(a,b) {
+//     console.log(a);
+//     console.log(b);
+//
+// }
+// fun.call(obj,2,3);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+//正则表达式，忽略大小写去找a
+// var reg  = new RegExp("a","i")
+// var str = "sidfsdfsdfsdf";
+//
+//
+// //正则简写版
+// reg = /a/i;
+// console.log(reg.test(str))

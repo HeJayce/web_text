@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="数组去重">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/JS/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/JS/text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/OldExercise/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/JavaScript.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +155,12 @@
       <workItem from="1615010827892" duration="2343000" />
       <workItem from="1615090675857" duration="313000" />
       <workItem from="1615181259614" duration="7888000" />
+      <workItem from="1454544089288" duration="77000" />
+      <workItem from="1615271110580" duration="788000" />
+      <workItem from="1615306247745" duration="709000" />
+      <workItem from="1615295712954" duration="395000" />
+      <workItem from="1454566814505" duration="2000" />
+      <workItem from="1615452771839" duration="2428000" />
     </task>
     <task id="LOCAL-00005" summary="12.4">
       <created>1607076067753</created>
@@ -542,13 +551,6 @@
     <MESSAGE value="3.8" />
     <MESSAGE value="数组去重" />
     <option name="LAST_COMMIT_MESSAGE" value="数组去重" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="NodeJSConfigurationType">
-        <watch expression="arr" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,99 +4,102 @@
     <title>ssss</title>
 </head>
 <body>
-    <div id="container" style="width:400px">
+<div id="container" style="width:400px">
 
     <div id="header" style="background-color:#FFA500;">
-    <h1 style="margin-bottom:0;">主要的网页标题</h1></div>
-    
+        <h1 style="margin-bottom:0;">主要的网页标题</h1></div>
+
     <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
-    <b>菜单</b><br>
-    HTML<br>
-    CSS<br>
-    JavaScript</div>
-    
-    <div id="content" style="background-color:#EEEEEE;height:200px;width:300px;float:left;">
-    内容在这里</div>
-    
-    <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
-    版权 © runoob.com</div>
-    
-    </div>
-
-
-    <table width="500" border="0">
-        <tr>
-        <td colspan="2" style="background-color:#FFA500;">
-        <h1>主要的网页标题</h1>
-        </td>
-        </tr>
-        
-        <tr>
-        <td style="background-color:#FFD700;width:100px;vertical-align:top;">
         <b>菜单</b><br>
         HTML<br>
         CSS<br>
         JavaScript
+    </div>
+
+    <div id="content" style="background-color:#EEEEEE;height:200px;width:300px;float:left;">
+        内容在这里
+    </div>
+
+    <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+        版权 © runoob.com
+    </div>
+
+</div>
+
+
+<table width="500" border="0">
+    <tr>
+        <td colspan="2" style="background-color:#FFA500;">
+            <h1>主要的网页标题</h1>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="background-color:#FFD700;width:100px;vertical-align:top;">
+            <b>菜单</b><br>
+            HTML<br>
+            CSS<br>
+            JavaScript
         </td>
         <td style="background-color:#eeeeee;height:200px;width:400px;vertical-align:top;">
-        内容在这里</td>
-        </tr>
-        
-        <tr>
+            内容在这里
+        </td>
+    </tr>
+
+    <tr>
         <td colspan="2" style="background-color:#FFA500;text-align:center;">
-        版权 © runoob.com</td>
-        </tr>
-    </table>
+            版权 © runoob.com
+        </td>
+    </tr>
+</table>
 
-    <form action="">
-        username:<br><input type="text" name="user"><br>
-        password:<br><input type="password" name="password"><br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+<form action="">
+    username:<br><input type="text" name="user"><br>
+    password:<br><input type="password" name="password"><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <br>
+    sex:<input type="radio" name="sex" value="male">male <br>
+    sex:<input type="checkbox" name="sex" value="female">female
+    <input type="submit" value="提交">
+    <br>
+    Select your favorite color:
+    <input type="color" name="favcolor">
+    <br>
+    Birthday:
+    <input type="date" name="bday">
+</form>
+
+<p id="demo">
+    JavaScript 可以触发事件，就像按钮点击。
+</p>
+<script>
+    function myFunction() {
+        x = document.getElementById("demo")
+        x.innerHTML = "hello JS";
+
+    }
+</script>
+<p id="demo2">
+    变色
+</p>
+<script>
+    function myFunction2() {
+        x = document.getElementById("demo2") // 找到元素
+        x.style.color = "#ff0000";          // 改变样式
+        alert("点击确定生效变成红色")
+    }
+</script>
+<button type="button" ondblclick="myFunction()">点我</button>
+<button type="button" onclick="myFunction2()">变色</button>
 <br>
-        sex:<input type="radio" name="sex" value="male">male <br>
-        sex:<input type="checkbox" name="sex" value="female">female
-        <input type="submit" value="提交">
-        <br>
-        Select your favorite color:
-        <input type="color" name="favcolor">
-<br>
-        Birthday:
-         <input type="date" name="bday">   
-    </form>
 
-    <p id="demo">
-        JavaScript 可以触发事件，就像按钮点击。
-    </p> 
-    <script>
-        function myFunction()
-        {
-            x=document.getElementById("demo")
-            x.innerHTML="hello JS";
-
-        }
-    </script>
-    <p id="demo2">
-        变色
-    </p>
-    <script>
-        function myFunction2()
-        {
-            x=document.getElementById("demo2") // 找到元素
-            x.style.color="#ff0000";          // 改变样式
-            alert("点击确定生效变成红色")
-        }
-        </script>
-    <button type="button" onclick="myFunction()">点我</button>
-    <button type="button" onclick="myFunction2()">变色</button>
-<br>
-
-    <select name="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi" selected>Audi</option>
-    </select>
+<select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi" selected>Audi</option>
+</select>
 <br>
 <textarea name="message" style="width:200px; height:600px">
     The cat was playing in the garden.
