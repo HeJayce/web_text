@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.11">
-      <change afterPath="$PROJECT_DIR$/html/OldExercise/onclick.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/OldExercise/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/OldExercise/3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/JavaScript.md" afterDir="false" />
-    </list>
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.14" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,14 +156,7 @@
       <workItem from="1615295712954" duration="395000" />
       <workItem from="1454566814505" duration="2000" />
       <workItem from="1615452771839" duration="2554000" />
-      <workItem from="1615728235649" duration="1460000" />
-    </task>
-    <task id="LOCAL-00006" summary="12.4">
-      <created>1607399429640</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1607399429640</updated>
+      <workItem from="1615728235649" duration="1586000" />
     </task>
     <task id="LOCAL-00007" summary="12.4">
       <created>1607413542619</created>
@@ -506,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615471316451</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="3.14">
+      <created>1615733861131</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1615733861132</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="12.10" />
     <MESSAGE value="12.21" />
     <MESSAGE value="12.22" />
     <MESSAGE value="12.30" />
@@ -551,7 +545,8 @@
     <MESSAGE value="3.8" />
     <MESSAGE value="数组去重" />
     <MESSAGE value="3.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.11" />
+    <MESSAGE value="3.14" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.14" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
