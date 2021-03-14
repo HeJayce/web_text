@@ -1,4 +1,4 @@
-# JavaScript
+#  JavaScript
 
 ## 引入
 
@@ -145,7 +145,7 @@ var	 a = +prompt("请输入a")
 
 - 使用 **window.alert()** 弹出警告框。
 - 使用 **document.write()** 方法将内容写到 HTML 文档中。
-- 使用 **innerHTML** 写入到 HTML 元素。
+- 使用 **innerHTML** 获取 HTML 元素内部代码。
 - 使用 **console.log()** 写入到浏览器的控制台。
 
 
@@ -157,6 +157,19 @@ var	 a = +prompt("请输入a")
 使用id属性来标记html元素
 
 innerHTML =“·······”；来获取或插入元素内容
+
+对于自结束标签，这个属性没有意义
+
+
+
+```js
+id = getElementById("btn1")
+//通过id属性获取一个节点对象
+tagname = getElementByTagName("div")
+//通过标签名获取一组元素节点对象,封装到类数组中返回
+name = getElementByName("")
+//通过name属性获取一组元素节点对象
+```
 
 
 
@@ -2026,6 +2039,18 @@ onmouseup：鼠标松开
 #### onchange 事件
 
 当输入字段被改变的时候，触发该事件
+
+
+
+#### onload事件
+
+会在整个页面加载完毕后执行
+
+```js
+window.onload = function(){
+
+};
+```
 
 
 

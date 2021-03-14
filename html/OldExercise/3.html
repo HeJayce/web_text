@@ -84,14 +84,20 @@
     变色
 </p>
 <script>
-    function myFunction2() {
-        x = document.getElementById("demo2") // 找到元素
-        x.style.color = "#ff0000";          // 改变样式
+    var btn2 = document.getElementById("btn2");
+    btn2.onclick = function (){
+        //  var x = document.getElementById("demo2") // 找到元素
+        // x.style.color = "#ff0000";          // 改变样式
         alert("点击确定生效变成红色")
     }
+    // function myFunction2() {
+    //     x = document.getElementById("demo2") // 找到元素
+    //     x.style.color = "#ff0000";          // 改变样式
+    //     alert("点击确定生效变成红色")
+    // }
 </script>
 <button type="button" ondblclick="myFunction()">点我</button>
-<button type="button" onclick="myFunction2()">变色</button>
+<button type="button" id="btn2">变色</button>
 <br>
 
 <select name="cars">
