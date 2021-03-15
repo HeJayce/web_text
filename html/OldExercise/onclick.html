@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>onclick</title>
 
 </head>
 <body>
-    <button id="btn">onclick</button>
+    username<input type="text" id="username" value=""><br>
+    password <input type="password" id="passwd" value=""><br>
+    <button id="btn1">onclick</button>
 <!--    script标签必须在下面-->
     <script>
-        var btn = document.getElementById("btn");
-        btn.onclick = function (){
-            alert("sasasas");
-        };
+       function myClick(idStr,fun){
+            var btn = document.getElementById(idStr);
+            btn.onclick = fun;
+       }
+       var username = document.getElementById("username")
+       var passwd = document.getElementById("passwd")
+       myClick("btn1" ,function (){
+           // alert(username.value +"\n"+passwd.value)
+           alert(username)
+       });
     </script>
 </body>
 </html>

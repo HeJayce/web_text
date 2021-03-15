@@ -163,13 +163,66 @@ innerHTML =“·······”；来获取或插入元素内容
 
 
 ```js
-id = getElementById("btn1")
+id = document.getElementById("btn1")
 //通过id属性获取一个节点对象
-tagname = getElementByTagName("div")
+tagname = ç
 //通过标签名获取一组元素节点对象,封装到类数组中返回
-name = getElementByName("")
+name = document.getElementByName("")
 //通过name属性获取一组元素节点对象
 ```
+
+想读取元素节点属性，直接使用`元素.属性名`
+
+例如
+
+```js
+alert(name[i].age)
+```
+
+但是class属性时需要使用`元素.className`
+
+##### 获取元素节点的子节点
+
+1. getElementByName
+
+    * 方法。只在当前city下找
+
+    ```js
+    var city = document.getElementById("city");
+    var lis = city.getElementByName("li");
+    ```
+
+2. childNodes
+
+    * 属性，当前节点的所有子界节点
+
+        会获取包括文本节点的所有节点，包括换行等
+
+3. firstNodes
+
+    * 属性，当前节点的第一个子节点
+
+4. lastNodes
+
+    * 属性，当前节点的最后一个子节点
+
+##### 获取父节点和兄弟节点
+
+1. parentNode 
+
+    * 属性，表示当前节点的父节点
+
+2. previousSibling
+
+    * 属性，表示当前节点的前一个兄弟节点
+
+3. nextSilling
+
+    * 属性，表示当前节点的后一个兄弟节点
+
+        
+
+    
 
 
 

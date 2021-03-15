@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        #outer{
+            width: 590px;
+            margin: 0 auto;
+            background-color: #bfa;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="outer">
+        <img src="../media/jdpic/1.jpg" alt="1">
+
+        <button id="prve">上一张</button>
+        <button id="next">下一张</button>
+    </div>
+    <script>
+        var prve = document.getElementById("prve");
+        var next = document.getElementById("next");
+        var img = document.getElementsByTagName("img")[0];
+        var imgArr = ["../media/jdpic/1.jpg","../media/jdpic/2.jpg","../media/jdpic/3.jpg","../media/jdpic/4.jpg","../media/jdpic/5.jpg"];
+        var index = 0;
+
+
+        prve.onclick = function (){
+            if (index == 0){
+                index = imgArr.length;
+            }
+            img.src = imgArr[index-1];
+            index-- ;
+
+        };
+        next.onclick = function (){
+            if (index == imgArr.length-1){
+                index = 0 ;
+            }
+            img.src = imgArr[index+1];
+            index++;
+        };
+    </script>
+
+</body>
+</html>
