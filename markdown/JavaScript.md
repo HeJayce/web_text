@@ -2061,7 +2061,17 @@ catch 块只会执行第一个，除非 catch 块里有异常。所以最好只�
    ```
    
 
-   3.通过类名找到html元素
+   
+
+3.通过类名找到html元素
+
+#### 获取body和HTML标签
+```js
+var body = document.body;
+var html = document.documentElement;
+```
+
+   
 
 ​	
 
