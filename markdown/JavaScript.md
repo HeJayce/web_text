@@ -1384,7 +1384,61 @@ return false;
 
 
 
+**tips：**
+
+函数里需要调用其他函数或对象时，`.`后面的值会被转换
+
+例如：
+
+```js
+function getStyle(obj , name){
+		getComputedStyle(obj , null)[name]
+}
+```
+
+不可以再使用`.name`，必须改为`[]`
+
+否则name会被当成字符串
+
+
+
+
+
 ## 事件
+
+#### 鼠标事件
+
+##### 悬浮/移开
+
+onmouseover 和 onmouseout 事件
+
+onmouseover :当鼠标悬浮在某一元素上，发生改变
+
+onmouseout ：当鼠标从元素上移开即鼠没有在元素上时
+
+##### 按住/松手
+
+onmousedown 和onmouseup
+
+onmousedown ：鼠标按下
+
+onmouseup：鼠标松开
+
+#### onchange 事件
+
+当输入字段被改变的时候，触发该事件
+
+#### onload事件
+
+会在整个页面加载完毕后执行
+
+```js
+ window.onload = function(){
+ 
+ };
+```
+
+
 
 ##### html事件
 
@@ -2214,49 +2268,57 @@ bj.parentNode.removeChild(bj);  //我找我的父节点
 
 
 
+### DOM操作CSS
+
+#### 内联样式
+
+语法：
+
+​	`元素.style.样式名 = 样式值`
+
+​	如果CSS样式中有`-`,则需要把样式名修改为驼峰命名法。
+
+​	例如：
+
+​		`backgroundColor` 
+
+通过style属性设置和读取的都是内联样式
+
+
+
+##### 获取元素的当前显示的样式
+
+语法：
+
+​	`元素.currentStyle.样式名`  **只有IE支持**
+
+​	未设置的值会返回默认值
+
+语法
+
+​	`getComputedStyle()`
+
+​	两个参数：
+
+1. 获取样式的元素
+
+2. 一般是null，可以传递一个伪元素	
+
+    例如：
+
+    ```js
+    getComputedStyle(box1,null).width;
+    ```
+
+    未设置的值会返回真实值		
+
+
+
 
 
 
 
 ### 事件
-
-#### 鼠标事件
-
-##### 悬浮/移开
-
-onmouseover 和 onmouseout 事件
-
-onmouseover :当鼠标悬浮在某一元素上，发生改变
-
-onmouseout ：当鼠标从元素上移开即鼠没有在元素上时
-
-
-
-##### 按住/松手
-
-onmousedown 和onmouseup
-
-onmousedown ：鼠标按下
-
-onmouseup：鼠标松开
-
-
-
-#### onchange 事件
-
-当输入字段被改变的时候，触发该事件
-
-
-
-#### onload事件
-
-会在整个页面加载完毕后执行
-
-```js
-window.onload = function(){
-
-};
-```
 
 
 

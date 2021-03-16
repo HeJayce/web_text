@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM操作CSS</title>
+    <style>
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+    </style>
+    <script>
+        window.onload = function (){
+            var box1 = document.getElementById("box1");
+            var btn1 = document.getElementById("btn1");
+            btn1.onclick = function (){
+                //修改样式
+                // box1.style.width = "300px";
+                alert(getComputedStyle(box1,null).width);
+            };
+        };
+    </script>
+</head>
+<body>
+
+    <div id="box1">
+
+    </div>
+    <button id="btn1">按钮</button>
+</body>
+</html>
