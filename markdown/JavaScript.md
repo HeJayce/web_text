@@ -1356,7 +1356,7 @@ fun();
 
             
 
-## 垃圾回收GC
+### 垃圾回收GC
 
 当一个对象没有任何的变量或属性对它进行引用，
 
@@ -1369,6 +1369,18 @@ JS有自动的回收机制
 将不需要的对象设置为null
 
 
+
+### return
+
+当使用超链接时，超链接默认会自动跳转
+
+取消默认行为：
+
+在响应函数的最后：
+
+```js
+return false;
+```
 
 
 
@@ -2065,15 +2077,146 @@ catch 块只会执行第一个，除非 catch 块里有异常。所以最好只�
 
 3.通过类名找到html元素
 
+
+
 #### 获取body和HTML标签
 ```js
 var body = document.body;
 var html = document.documentElement;
 ```
 
-   
+
+
+### DOM其他查询   
+
+查询所有元素
+
+```js
+var all = document.getElementsByTagName("*");
+all = document.all;
+```
+
+通过class查询
+
+​	只支持IE9以上
+
+```js
+var box1 = document.documentElementByClassName("box1")
+```
+
+获取class中的div
+
+​	可以根据css选择器选择节点
+
+​	`query.Selector`,但只返回一个，如果有多个，只返回第一个
+
+```js
+var box1div = document.query.Selector(".box1 div")
+```
+
+```js
+var box1div = document.query.SelectorAll(".box1 div")
+```
+
+`query.SelectorAll`	可以选择所有，封装到数组返回
+
+
+
+### DOM增删改
+
+#### 创建节点
+
+`appendChild()`
+
+1. 创建元素节点
+
+    ```js
+    var li = document.createElement("li");
+    ```
+
+2. 创建文本节点
+    ```js
+	var gzText = document.createTextNode("广州")
+    ```
+
+3. 向父节点添加自节点
+
+    ```js
+    li.appendChild(gzText);
+    ```
+4. 向页面中写入
+    ```js
+    var city = document.getElementById("city") //查找city节点
+    city.appendChild(li);  //添加刚创建的li
+    ```
+
+
+
+`insertBefore()`
+
+在指定的子节点前面插入新的子节点
+
+语法：
+
+​		`父节点.insertBefore(新节点,旧节点)`
+
+```js
+var city = document.getElementById("city") //查找city节点
+var bj = document.getElementById("bj") //查找bj兄弟节点
+city.insertbefore(li,bj)
+```
+
+#### 修改节点
+
+`replaceChild()`
+
+替换子节点
+
+```js
+city.insertbefore(li,bj);
+//（新节点，旧节点）
+```
+
+
+
+读取HTML代码
+
+`父节点.innerHTML`
+
+修改HTML代码
+
+`子节点.innerHTML = "文本"`
+
+添加HTML代码
+
+`子节点.innerHTML += "<li>文本</li>"`
+
+**两种方法结合使用：**
+
+```js
+//创建li
+var li = document.createElement("li");
+//将li中设置文本
+li.innerHTML = "文本";
+//将li添加到city中
+city.appendChild(li);
+```
 
 ​	
+
+#### 删除节点
+
+```js
+city.removeChild(bj);
+//或者
+bj.parentNode.removeChild(bj);  //我找我的父节点
+```
+
+
+
+
+
+
 
 ### 事件
 
