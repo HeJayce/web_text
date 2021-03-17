@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件的委派</title>
+</head>
+<script>
+    window.onload = function () {
+        var u1 = document.getElementById("ul1");
+        var btn = document.getElementById("btn1")
+        var allA = document.getElementsByTagName("a")
+
+        // for (let i = 0; i < allA.length; i++) {
+        //     allA[i].onclick = function () {
+        //
+        //     };
+        // }
+        u1.onclick = function (event) {
+            event = event || window.event;
+            if (event.target.className == "link"){
+                alert("外壁巴博");
+            }
+        }
+
+
+        btn.onclick = function () {
+            var li = document.createElement("li")
+            li.innerHTML = "<a href='javascript:;' class='link'>jayce</a>";
+            u1.appendChild(li);
+        }
+    };
+</script>
+<body>
+<button id="btn1">button</button>
+
+<ul id="ul1">
+    <li id="li1"><a href="javascript:;">jayce</a></li>
+    <li><a href="javascript:;" class="link">jayce</a></li>
+    <li><a href="javascript:;" class="link">jayce</a></li>
+    <li><a href="javascript:;" class="link">jayce</a></li>
+
+</ul>
+</body>
+</html>

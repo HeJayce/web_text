@@ -2380,3 +2380,95 @@ bj.parentNode.removeChild(bj);  //我找我的父节点
 
 避免出现滚动条，出现原点不同
 
+
+
+### 事件冒泡
+
+​	-事件向上传导
+
+​		子元素的事件触发，会导致父元素和祖先元素相同触发条件的事件也触发
+
+取消冒泡：
+
+​	`event.cancelBubble = true`
+
+   
+
+### 事件的委派
+
+我们希望只绑定一次事件，即可应用到多个元素
+
+思路是绑定事件给其共同绑定的祖先元素 
+
+`target`返回触发事件的元素，由谁触发就是谁
+
+
+
+### 事件的绑定
+
+ `addEventListener()` 也可以为元素绑定响应函数
+
+参数：
+
+1. 事件的字符串，不要on
+
+2. 回调函数，事件触发时该函数会调用
+
+3. 是否在捕获阶段触发事件，布尔值，一般是false
+
+    当希望在捕获阶段就触发事件，则需要改为true
+
+```js
+btn.addEventListener("click"，function(){},false);
+```
+
+可实现一个事件，多个响应函数
+
+**IE8不支持**
+
+
+
+IE8支持的方法，其他不支持：
+
+`attachEvent()`
+
+参数：
+
+1. 事件的字符串，要on
+2. 回调函数，事件触发时该函数会调用
+
+```js
+btn.attachEvent("onclick"，function(){});
+```
+
+this是window
+
+
+
+**兼容浏览器**
+
+定义一个函数，用来为指定元素绑定响应函数
+
+参数: 
+
+obj 要绑定事件的对象
+
+eventStr 事件的字符串(不要on)
+
+callback 回调函数
+
+```js
+function bind(obj , eventStr , callback){
+  if(obj.addEventListener){
+    obj.addEventListener(eventStr , callback . false)；
+  }
+	else{
+		obj.attachEvent("on"+eventStr , callback);
+	}
+}
+//调用点击
+bind(btn , "click" , function(){
+  
+});
+```
+
