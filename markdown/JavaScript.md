@@ -2472,3 +2472,103 @@ bind(btn , "click" , function(){
 });
 ```
 
+
+
+## BOM
+
+浏览器对象模型
+
+通过JS操作浏览器
+
+在BOM中提供一组对象，操作浏览器
+
+BOM对象：
+
+* window
+
+    * 浏览器整个窗口，网页全局对象
+
+* navigator
+
+    * 代表浏览器信息，可识别不同浏览器
+
+* location
+
+    * 当前浏览器地址栏信息
+
+* history
+
+    * 浏览器历史记录
+        * 由于隐私原因不能获取到具体记录，只能前进或后退
+        * 而且只在当次有效
+
+* screen
+
+    * 用户屏幕、显示器信息
+
+    ∑
+
+### Navigator
+
+利用Navigator判断用户浏览器
+
+通过正则表达式
+
+```js
+var ua = navigator.userAgent;
+if(/firefox/i.test(ua)){
+  alert("火狐")
+}
+```
+
+判断IE
+
+```js
+if("ActiveXObject" in window){
+	alert("IE")
+}else{
+	alert("不是IE")
+}
+```
+
+
+
+### location
+
+#### assign()
+
+​	用于跳转到其他的页面ß
+
+#### reload()
+
+​	重新加载，参数为`true`强制清空缓存刷新
+
+#### replace()
+
+​	替换url，不能回退
+
+
+
+### 定时器
+
+`setInterval()`开启定时器
+
+定时调用
+
+参数
+
+1. 回调函数
+2. 时间间隔单位ms
+
+返回值
+
+​	返回一个Number类型的数据，用来作为定时器的唯一标识
+
+
+
+`clearInterval()`关闭定时器
+
+参数：
+
+1. 开启定时器的返回值
+
