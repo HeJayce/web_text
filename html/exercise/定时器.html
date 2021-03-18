@@ -3,21 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>定时器</title>
+    <link rel="stylesheet" href="../css/reset.css">
     <script>
+        // window.onload = function () {
+        //     var num = 1 ;
+        //     var count = document.getElementById("count")
+        //     var timer = setInterval(function () {
+        //         count.innerHTML = num++;
+        //     if (num == 11){
+        //         clearInterval(timer);
+        //     }
+        //     },1000)
+        // }
         window.onload = function () {
-            var num = 1 ;
-            var count = document.getElementById("count")
-            var timer = setInterval(function () {
-                count.innerHTML = num++;
-            if (num == 11){
-                clearInterval(timer);
-            }
-            },1000)
-        }
+            var box1 = document.getElementById("box1");
+            var btn1 = document.getElementById("btn1");
+            btn1.onclick =function () {
+                var oldValue = getStyle
+                setInterval(function (){
+                    let oldValue = box1.offsetLeft;
+
+                },30);
+            };
+        };
+
+
 
     </script>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
 <h1 id="count"></h1>
+<button id="btn1">按钮</button>
+<div id="box1">
+
+</div>
+
+
+
 </body>
 </html>
