@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p v-for="(item,i) in list">第{{i+1}}个是{{item}}</p>
+    <hr>
+    <p v-for="user in objArr">{{user.id}}----{{user.name}}</p>
+    <hr>
+    <p v-for="(val , key) in obj">{{val}}----{{key}}</p>
+</div>
+<script>
+    const vm = new Vue({
+        el : "#app",
+        data : {
+            list:[0,1,2,3,4],
+            objArr:[
+                {id: 1, name:'jayce'},
+                {id: 2, name:'tony'}
+            ],
+            obj:{
+                id:1,
+                name :"jayce",
+                gender:'男'
+            }
+        },
+        methods : {
+
+        }
+    })
+</script>
+
+</body>
+</html>
