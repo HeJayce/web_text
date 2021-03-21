@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-cloak</title>
+    <script src="vue.js"></script>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="tip">
+    <p v-text="msg"></p>
+    <input type="button" v-bind:value="msg" v-on:click="show">
+</div>
+<script>
+    const vm = new Vue({
+        el:"#tip",
+        data: {
+            msg: 'hello'
+        },
+        methods:{
+            show:function(){
+                alert("hello vue")
+                }
+            }
+    })
+</script>
+
+</body>
+</html>

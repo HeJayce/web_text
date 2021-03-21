@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.18">
-      <change afterPath="$PROJECT_DIR$/html/exercise/图片轮播.html" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="定时切换图片未完成">
+      <change afterPath="$PROJECT_DIR$/Vue/01helloWorld.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/02vcloak.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/03跑马灯.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/计算器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web_html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_html.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/exercise/定时器.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/exercise/定时器.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markdown/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/JavaScript.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +69,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -74,11 +79,11 @@
       <recent name="$PROJECT_DIR$/html/media/10" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Vue" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/html/media" />
       <recent name="$PROJECT_DIR$/html/media/09" />
       <recent name="$PROJECT_DIR$/html/fa" />
-      <recent name="$PROJECT_DIR$/html/OldExercise" />
-      <recent name="$PROJECT_DIR$/html" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.text.js">
@@ -168,21 +173,11 @@
       <workItem from="1615973089718" duration="7367000" />
       <workItem from="1616050095899" duration="3362000" />
       <workItem from="1616059875460" duration="1000000" />
-      <workItem from="1616074484658" duration="2889000" />
-    </task>
-    <task id="LOCAL-00020" summary="12.22">
-      <created>1608629609852</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1608629609852</updated>
-    </task>
-    <task id="LOCAL-00021" summary="12.30">
-      <created>1609295802650</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1609295802650</updated>
+      <workItem from="1616074484658" duration="3057000" />
+      <workItem from="1616140433708" duration="1440000" />
+      <workItem from="1616157963784" duration="1310000" />
+      <workItem from="1616207050496" duration="288000" />
+      <workItem from="1616304977259" duration="7565000" />
     </task>
     <task id="LOCAL-00022" summary="1.27">
       <created>1611760476122</created>
@@ -513,7 +508,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616059905649</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="3.18">
+      <created>1616079383285</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1616079383286</updated>
+    </task>
+    <task id="LOCAL-00070" summary="定时切换图片未完成">
+      <created>1616079439587</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1616079439587</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +542,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="导航条加粘滞定位" />
     <MESSAGE value="2.8" />
     <MESSAGE value="2.10" />
     <MESSAGE value="tb选择区域bug" />
@@ -558,7 +566,8 @@
     <MESSAGE value="3.17" />
     <MESSAGE value="拖拽1.0" />
     <MESSAGE value="3.18" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.18" />
+    <MESSAGE value="定时切换图片未完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时切换图片未完成" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

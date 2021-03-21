@@ -842,15 +842,20 @@ length = 6
    name=person["lastname"];
    ```
 
-   #### Undefined 和 Null
+   
+### Undefined 和 Null
 
    Undefined 这个值表示变量不含有值。
 
-   Null表示空对象
-   
+   Null表示空对象，或者说值为Null
+
    可以通过将变量的值设置为 null 来清空变量
-   
-   声明新的变量可使用关键词`new`
+
+
+
+  
+
+
 
 ```js
 var length = 16;                                  // Number 通过数字字面量赋值
@@ -967,6 +972,56 @@ isNaN(NaN);    //true
 ```js
 Math.abs(1 / 3 - (1 - 2 / 3)) < 0.0000001;          // true
 ```
+
+
+
+### 判断数据类型
+
+#### typeof
+
+可以判断：
+
+* undefined
+* 数值
+* 字符串
+* 布尔值
+* function
+
+不能判断：
+
+* null与object
+* object与array
+
+
+
+#### instanceof
+
+判断对象的具体类型
+
+```js
+obj instanceof Object;
+obj instanceof Array;
+```
+
+
+
+#### ===
+
+可以判断：
+
+* undefined 
+
+* null
+
+
+
+
+
+
+
+
+
+
 
 
 

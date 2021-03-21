@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定style</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1 :style="{color:'red',fontSize:'222px'}">i am h1</h1>
+    <h1 :style="[blue]">i am h1</h1>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            red:{color:'red'},
+            blue:{color:'blue'}
+        },
+        methods: {}
+    })
+</script>
+</body>
+</html>

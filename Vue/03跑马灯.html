@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跑马灯</title>
+</head>
+<body>
+<script src="vue.js"></script>
+<script>
+    /*分析：
+    * 1。绑定事件
+    * 2.函数逻辑：
+    *   把第一个字符截取出来放在最后
+    *   substring
+    * 3。实现自动截取，定时器
+    *
+    *
+    * */
+    window.onload = function () {
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                msg: "欢迎光临重庆交通大学1221寝室 ",
+                index: null //定义定时器接收
+            },
+            methods: {
+                rolling() {
+                    if (this.index != null)return
+                    this.index = setInterval(() => {
+                        //箭头函数，解决this指向问题
+                        let start = this.msg.substring(0, 1);
+                        let end = this.msg.substring(1);
+                        this.msg = end + start;
+                    }, 100)
+                },
+                stop(){
+                    clearInterval(this.index);
+                    this.index = null;
+                },
+                linkClick(){
+                    alert("hello");
+                }
+
+                }
+        })
+    }
+
+</script>
+</body>
+<div id="app">
+    <input type="button" value="滚动" @click="rolling()">
+    <input type="button" value="停止" @click="stop">
+    <h1 v-text="msg"></h1>
+    <a href="http://www.baidu.com" @click.prevent.once="linkClick">有问题,先去百度</a>
+</div>
+</html>
