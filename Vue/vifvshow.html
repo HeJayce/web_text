@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-if和v-show</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="button" @click="toggle" value="control">
+    <h3 v-if="flag">v-if</h3>
+    <h3 v-show="flag">v-show</h3>
+</div>
+<script>
+    const vm = new Vue({
+        el:"#app",
+        data:{
+            flag:true
+        },
+        methods:{
+            toggle(){
+                this.flag = !this.flag;
+            }
+
+        }
+
+    });
+</script>
+
+</body>
+</html>
