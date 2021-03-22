@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="删除和搜索">
-      <change afterPath="$PROJECT_DIR$/Vue/过滤器.html" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="过滤器过滤时间">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vue/car.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/car.html" afterDir="false" />
     </list>
@@ -175,14 +174,7 @@
       <workItem from="1616396086766" duration="5865000" />
       <workItem from="1616403575550" duration="28000" />
       <workItem from="1616403607865" duration="38000" />
-      <workItem from="1616403664877" duration="9066000" />
-    </task>
-    <task id="LOCAL-00028" summary="2.3">
-      <created>1612356966404</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1612356966404</updated>
+      <workItem from="1616403664877" duration="9990000" />
     </task>
     <task id="LOCAL-00029" summary="2.3">
       <created>1612366183535</created>
@@ -520,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616418654192</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="过滤器过滤时间">
+      <created>1616423392263</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1616423392263</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +539,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="2.18" />
     <MESSAGE value="2.24" />
     <MESSAGE value="2.25" />
     <MESSAGE value="2.26" />
@@ -565,7 +563,8 @@
     <MESSAGE value="品牌添加" />
     <MESSAGE value="3.22vue" />
     <MESSAGE value="删除和搜索" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除和搜索" />
+    <MESSAGE value="过滤器过滤时间" />
+    <option name="LAST_COMMIT_MESSAGE" value="过滤器过滤时间" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

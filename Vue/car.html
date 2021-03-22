@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap3.css">
 </head>
 <body>
-
 <div id="app">
-    <p>{{test.getDate()}}</p>
     <div class="panel panel-success">
         <div class="panel-heading">
             <h3 class="panel-title">添加品牌</h3>
@@ -27,8 +25,8 @@
             <input type="button" value="添加" class="btn btn-success" @click="add">
 
             <label>
-            搜索:
-            <input type="text" class="form-control" v-model="keywords">
+                搜索:
+                <input type="text" class="form-control" v-model="keywords">
                 <input type="button" value="搜索" class="btn btn-success">
             </label>
         </div>
@@ -36,48 +34,56 @@
 
     <table class="table table-bordered table-hover table-striped">
         <thead>
-            <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>ctime</th>
-                <th></th>
-            </tr>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>ctime</th>
+            <th></th>
+        </tr>
         </thead>
         <tbody>
-            <tr v-for="item in search(keywords)" :key="item.id">
-                <td>{{item.id}}</td>
-                <td>{{item.name}}</td>
-                <td>{{item.ctime | dateFormat }}</td>
-                <td>
-                    <a href="" @click.prevent="del(item.id)">删除</a>
-                </td>
-            </tr>
+        <tr v-for="item in search(keywords)" :key="item.id">
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.ctime | dateFormat }}</td>
+            <td>
+                <a href="" @click.prevent="del(item.id)">删除</a>
+            </td>
+        </tr>
         </tbody>
     </table>
 </div>
 
 <script>
+    Vue.filter('dateFormat', function (dateStr) {
+        var dt = new Date(dateStr)
+        var y = dt.getFullYear();
+        var m = dt.getMonth() + 1;
+        var d = dt.getDate();
+        return y + '-' + m + '-' + d
+        // return `${y}-${m}-${d}` ;
+    })
     const vm = new Vue({
         el: "#app",
         data: {
-            test:new Date(),
-            id:"",
-            name:"",
-            keywords:"",
-            list:[
-                {id:1 ,name:"BMW",ctime:new Date()},
-                {id:2 ,name:"奥迪" ,ctime:new Date()},
-                {id:3 ,name:"法拉利",ctime:new Date()}
+            test: new Date(),
+            id: "",
+            name: "",
+            keywords: "",
+            list: [
+                {id: 1, name: "BMW", ctime: new Date()},
+                {id: 2, name: "奥迪", ctime: new Date()},
+                {id: 3, name: "法拉利", ctime: new Date()}
             ]
         },
         methods: {
-            add(){
-                var car = {id :this.id , name : this.name,ctime:new Date()};
+            add() {
+                var car = {id: this.id, name: this.name, ctime: new Date()};
                 this.list.push(car);
                 this.id = "";
                 this.name = ""
             },
-            del(id){
+            del(id) {
                 //方法一 ：
                 //使用数组的some方法，如果return true ，就会立即终止这个数组的后续得环
                 // this.list.some((item,i)=>{
@@ -88,14 +94,14 @@
                 // })
 
                 //方法二：使用findIndex查找索引
-                var index = this.list.findIndex(item=>{
-                    if (item.id == id){
+                var index = this.list.findIndex(item => {
+                    if (item.id == id) {
                         return true;
                     }
                 })
-                this.list.splice(index,1)
+                this.list.splice(index, 1)
             },
-            search(keywords){
+            search(keywords) {
                 //方法1
                 // var newlist = [];
                 // this.list.forEach(item=>{
@@ -106,8 +112,8 @@
                 // return newlist;
 
                 //方法2
-                var newlist = this.list.filter(item=>{
-                    if (item,name.includes(keywords)){
+                var newlist = this.list.filter(item => {
+                    if (item, name.includes(keywords)) {
                         return item;
                     }
                 })
@@ -116,14 +122,7 @@
             }
         }
     });
-    Vue.filter('dateFormat' , function (dateStr){
-        var dt = new Date(dateStr)
-        var y = dt.getFullYear();
-        var m = dt.getMonth()+1;
-        var d = dt.getDate();
-        return y+'-'+m+'-'+d
-        // return `${y}-${m}-${d}` ;
-    })
+
 </script>
 
 
