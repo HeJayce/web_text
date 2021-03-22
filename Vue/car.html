@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>品牌列表案例</title>
@@ -9,6 +9,7 @@
 <body>
 
 <div id="app">
+    <p>{{test.getDate()}}</p>
     <div class="panel panel-success">
         <div class="panel-heading">
             <h3 class="panel-title">添加品牌</h3>
@@ -46,11 +47,10 @@
             <tr v-for="item in search(keywords)" :key="item.id">
                 <td>{{item.id}}</td>
                 <td>{{item.name}}</td>
-                <td>{{item.ctime}}</td>
+                <td>{{item.ctime | dateFormat }}</td>
                 <td>
                     <a href="" @click.prevent="del(item.id)">删除</a>
                 </td>
-
             </tr>
         </tbody>
     </table>
@@ -60,6 +60,7 @@
     const vm = new Vue({
         el: "#app",
         data: {
+            test:new Date(),
             id:"",
             name:"",
             keywords:"",
@@ -114,6 +115,14 @@
 
             }
         }
+    });
+    Vue.filter('dateFormat' , function (dateStr){
+        var dt = new Date(dateStr)
+        var y = dt.getFullYear();
+        var m = dt.getMonth()+1;
+        var d = dt.getDate();
+        return y+'-'+m+'-'+d
+        // return `${y}-${m}-${d}` ;
     })
 </script>
 

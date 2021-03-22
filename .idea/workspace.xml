@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="品牌添加">
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="删除和搜索">
+      <change afterPath="$PROJECT_DIR$/Vue/过滤器.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vue/car.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/car.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/JavaScript.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,7 +63,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -175,21 +175,7 @@
       <workItem from="1616396086766" duration="5865000" />
       <workItem from="1616403575550" duration="28000" />
       <workItem from="1616403607865" duration="38000" />
-      <workItem from="1616403664877" duration="4715000" />
-    </task>
-    <task id="LOCAL-00026" summary="2.1">
-      <created>1612189598448</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1612189598448</updated>
-    </task>
-    <task id="LOCAL-00027" summary="2.1">
-      <created>1612192713497</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1612192713497</updated>
+      <workItem from="1616403664877" duration="9066000" />
     </task>
     <task id="LOCAL-00028" summary="2.3">
       <created>1612356966404</created>
@@ -520,7 +506,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616403722626</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="3.22vue">
+      <created>1616418620334</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1616418620334</updated>
+    </task>
+    <task id="LOCAL-00076" summary="删除和搜索">
+      <created>1616418654192</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1616418654192</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +540,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="通过一张大图的定位优化速度" />
     <MESSAGE value="2.18" />
     <MESSAGE value="2.24" />
     <MESSAGE value="2.25" />
@@ -563,9 +562,10 @@
     <MESSAGE value="3.18" />
     <MESSAGE value="定时切换图片未完成" />
     <MESSAGE value="3.21 vue" />
-    <MESSAGE value="3.22vue" />
     <MESSAGE value="品牌添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="品牌添加" />
+    <MESSAGE value="3.22vue" />
+    <MESSAGE value="删除和搜索" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除和搜索" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
