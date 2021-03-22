@@ -540,6 +540,12 @@ arr.forEach(function (value,index,obj){
 })
 ```
 
+##### some
+
+##### filter
+
+##### findIndex
+
 
 
 ##### sort

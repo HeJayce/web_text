@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.21 vue">
-      <change afterPath="$PROJECT_DIR$/Vue/car.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vue/vifvshow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap3.css" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="品牌添加">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/car.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/JavaScript.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,20 +175,7 @@
       <workItem from="1616396086766" duration="5865000" />
       <workItem from="1616403575550" duration="28000" />
       <workItem from="1616403607865" duration="38000" />
-    </task>
-    <task id="LOCAL-00024" summary="1.27">
-      <created>1611844818854</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1611844818854</updated>
-    </task>
-    <task id="LOCAL-00025" summary="1.30">
-      <created>1612013177880</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1612013177880</updated>
+      <workItem from="1616403664877" duration="4715000" />
     </task>
     <task id="LOCAL-00026" summary="2.1">
       <created>1612189598448</created>
@@ -520,7 +506,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616337759090</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="3.22vue">
+      <created>1616403698809</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1616403698810</updated>
+    </task>
+    <task id="LOCAL-00074" summary="品牌添加">
+      <created>1616403722626</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1616403722626</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,8 +540,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="2.10" />
-    <MESSAGE value="tb选择区域bug" />
     <MESSAGE value="通过一张大图的定位优化速度" />
     <MESSAGE value="2.18" />
     <MESSAGE value="2.24" />
@@ -565,7 +563,9 @@
     <MESSAGE value="3.18" />
     <MESSAGE value="定时切换图片未完成" />
     <MESSAGE value="3.21 vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.21 vue" />
+    <MESSAGE value="3.22vue" />
+    <MESSAGE value="品牌添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="品牌添加" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
