@@ -339,7 +339,9 @@ asd
 1. mustache插值
 2. v-bind表达式
 
-**过滤器调用格式**
+### 全局过滤
+
+**过滤器定义格式**
 
 ```js
 Vue.filter('msgFormat',function (msg , arg) {
@@ -358,3 +360,216 @@ Vue.filter('msgFormat',function (msg , arg) {
 ```
 
 调用可以添加多个过滤器
+
+### 私有过滤器
+
+**过滤器定义格式**
+
+在vm中添加属性：
+
+```js
+filters:{  //定于私有过滤器
+   filterName:function (dataStr) {
+                
+     }
+}
+```
+
+#### 调用顺序
+
+就近原则，全局和私有名字可以一样，
+
+就近调用
+
+**字数填补方法：**
+
+`padStart(x,"x")`
+
+1.需要填补至几位
+
+2.填补的字符
+
+
+
+## 键盘操作
+
+@keyup
+
+### 按键修饰符
+
+能操作的按键有：
+
+`.enter`
+
+`.tab`
+
+`.delete`
+
+`.esc`
+
+`.space`
+
+`.up`
+
+`.down`
+
+`.left`
+
+`.right`	
+
+没有上述的按键，则需要使用键盘码
+
+比如：
+
+`.enter` = 13
+
+通过键盘码自定义名称：
+
+2.X 版本：
+
+```js
+Vue.config.keyCodes.f2=113
+```
+
+
+
+## 自定义指令
+
+### 钩子函数
+
+指令函数提供
+
+* `bind`：
+    * 只调用一次
+    * 指令第一次**绑定**到元素时调用。在这里可以进行一次性的初始化设置。
+    * 常用于样式操作
+* `inserted`：
+    * 被绑定元素**插入**DOM时调用
+    *  (仅保证父节点存在，但不一定已被插入文档中)。
+    * 常用于JS行为
+* `update`：
+    * 所在组件的 VNode **更新**时调用，**但是可能发生在其子 VNode 更新之前**。
+    * 指令的值可能发生了改变，也可能没有，可能触发多次
+
+例如：
+
+```js
+inserted: function (el){
+	el.focus()
+}
+```
+
+每个函数中第一个参数永远是el，表示被绑定了指令的元素
+
+el参数是原生的JS对象
+
+第二个参数：`binding`
+
+* 属性
+    * `name`：指令名，不包括 `v-` 前缀。
+    * `value`：指令的绑定值，例如：`v-my-directive="1 + 1"` 中，绑定值为 `2`。
+    * `oldValue`：指令绑定的前一个值，仅在 `update` 和 `componentUpdated` 钩子中可用。无论值是否改变都可用。
+
+### 全局自定义指令
+
+```js
+Vue.directive('focus' ,{
+	inserted: function (el) {
+    el.focus()
+  }
+})
+//等同于，id为搜索框id
+//document.getElementById("search").focus()
+```
+
+参数：
+
+1. 指令名称，定义时不需要加v-前缀，调用时需要加
+2. 一个对象，有指令相关的函数
+
+
+
+### 私有指令
+
+在vm中创建一个私有指令ß
+
+```js
+directives:{
+	'fontweight':{
+			bind:function (el , binding) {
+				el.style.fontWeight = binding.value
+		}
+	}
+}
+```
+
+
+
+## 生命周期
+
+![lifecycle](Vue.assets/lifecycle.png)
+
+（来自：https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA）
+
+生命周期钩子 = 生命周期函数 = 生命周期事件
+
+### new Vue
+
+创建一个vm
+
+```
+var vm = new Vue({})
+```
+
+
+
+### 初始化事件和生命周期
+
+表示刚初始化了一个Vue空实例对象，这个对象只有默认的一些**生命周期函数**和**默认事件**，其他东西都未创建
+
+在1.`beforeCreate`生命周期函数执行时，data 和 methods未初始化
+
+
+
+
+
+2.`created()` 第二个生命周期函数
+
+这时data和methods已经创建完成
+
+
+
+### 编辑模版
+
+![image-20210326195250562](Vue.assets/image-20210326195250562.png)
+
+
+
+把Vue代码中的那些指令进行执行。
+
+最终在内存中生成一个编译好的最终模版字符串
+
+然后。把这个模板字符串渲染为内存中的DOM
+
+此时。只是在内存中渲染好了模版。
+
+并没有把模版挂载到真正的页面中去。
+
+3.`beforeMount()`,页面元素还未被替换
+
+
+
+### 替换页面
+
+
+
+4.`mounted()` 
+
+此时实例以及完全被建好了
+
+就可以看到渲染好的页面了
+
+这个实例会一直在内存中
+
+
+
