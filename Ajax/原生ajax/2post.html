@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #result{
+            height: 200px;
+            width: 200px;
+            border: solid 1px red;
+        }
+    </style>
+</head>
+<body>
+<div id="result"></div>
+<script>
+    const result = document.getElementById("result");
+    result.addEventListener("mouseover", function () {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://127.0.0.1:8000/server");
+        xhr.send();
+        xhr.setRequestHeader()
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4){
+                if (xhr.status >= 200 && xhr.status<=300)
+                {
+                   result.innerHTML = xhr.response;
+                    console.log(xhr.readyState)
+                }
+                else
+                {
+
+                }
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

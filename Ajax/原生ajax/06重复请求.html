@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>取消请求</title>
+</head>
+<body>
+<button>点击发送</button>
+<script>
+    const btns = document.querySelectorAll('button');
+    var x ;
+    btns[0].onclick = ()=>{
+        x = new XMLHttpRequest();
+        x.open('GET','http://127.0.0.1:8000/delay');
+        x.send();
+    }
+</script>
+</body>
+</html>

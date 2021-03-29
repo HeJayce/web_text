@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>error</title>
+    <style>
+        #result{
+            height: 200px;
+            width: 200px;
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+<button>点击发送请求</button>
+<div id="result"></div>
+
+<script>
+    const btn = document.getElementsByTagName("button")[0];
+    const result = document.getElementById("result");
+    btn.onclick = ()=>{
+        const xhr = new XMLHttpRequest();
+        xhr.timeout = 2000;
+        xhr.ontimeout = ()=>{
+            alert("请求超时")
+        }
+        xhr.onerror = ()=>{
+            alert("网络异常")
+        }
+        xhr.open('GET','http://127.0.0.1:8000/delay');
+        xhr.send();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState === 4){
+                //判断响应状态 200 404 403 401 500
+                //2xx 成功
+                if(xhr.status >= 200 && xhr.status <300)
+                {//处理结果
+                    result.innerHTML = xhr.response
+                }
+                else
+                {
+
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

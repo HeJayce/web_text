@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>axios</title>
+    <script crossorigin="anonymous" src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
+</head>
+<body>
+    <button>GET</button>
+    <button>POST</button>
+    <button>AJAX</button>
+
+
+    <script>
+        const btns = document.querySelectorAll('button')
+        axios.defaults.baseURL = 'http://127.0.0.1:8000'
+        btns[0].onclick = function () {
+           axios.get('/axios-server', {
+               //url参数
+               params: {
+                   user:'admin',
+                   password:'admin'
+               },
+               //请求头信息
+               headers: {
+
+               }
+
+           }).then(value => {
+               console.log(value)
+           })
+
+        }
+        btns[1].onclick = function () {
+
+        }
+        btns[2].onclick = function () {
+
+        }
+    </script>
+</body>
+</html>

@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.26" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.27">
+      <change afterPath="$PROJECT_DIR$/Ajax/01xml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/express/useExpress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/原生ajax/05取消请求.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/原生ajax/06重复请求.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/原生ajax/07axios.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/原生ajax/1get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/原生ajax/2post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/原生ajax/3json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/原生ajax/4error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax/原生ajax/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/vfor.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/vfor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/AJAX.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/AJAX.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -69,11 +86,11 @@
       <recent name="$PROJECT_DIR$/html/media/10" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ajax/原生ajax" />
+      <recent name="$PROJECT_DIR$/Ajax" />
       <recent name="$PROJECT_DIR$/Vue" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/html/media" />
-      <recent name="$PROJECT_DIR$/html/media/09" />
-      <recent name="$PROJECT_DIR$/html/fa" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.text.js">
@@ -175,20 +192,10 @@
       <workItem from="1616659930512" duration="2987000" />
       <workItem from="1616742233963" duration="1571000" />
       <workItem from="1616755395734" duration="2151000" />
-    </task>
-    <task id="LOCAL-00032" summary="2.8">
-      <created>1612789536309</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1612789536309</updated>
-    </task>
-    <task id="LOCAL-00033" summary="2.8">
-      <created>1612797128967</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1612797128967</updated>
+      <workItem from="1616811015217" duration="648000" />
+      <workItem from="1454544082486" duration="168000" />
+      <workItem from="1616997818576" duration="888000" />
+      <workItem from="1617001230630" duration="10525000" />
     </task>
     <task id="LOCAL-00034" summary="2.10">
       <created>1612967017567</created>
@@ -519,7 +526,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616765665213</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="3.26">
+      <created>1616811021470</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1616811021471</updated>
+    </task>
+    <task id="LOCAL-00082" summary="3.27">
+      <created>1616811033472</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1616811033472</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +560,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="2.26" />
     <MESSAGE value="2.27" />
     <MESSAGE value="3.3" />
     <MESSAGE value="3.5" />
@@ -564,7 +584,8 @@
     <MESSAGE value="过滤器过滤时间" />
     <MESSAGE value="3.22" />
     <MESSAGE value="3.26" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.26" />
+    <MESSAGE value="3.27" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.27" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

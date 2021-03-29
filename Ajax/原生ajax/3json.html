@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3json</title>
+    <style>
+        #result{
+            height: 200px;
+            width: 200px;
+            border: solid 1px #bfa;
+        }
+    </style>
+</head>
+<body>
+<div id="result"></div>
+<script>
+    window.onkeydown = function () {
+        const result = document.getElementById("result");
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "http://127.0.0.1:8000/json-server");
+        xhr.send();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4){
+                if (xhr.status >= 200 && xhr.status<=300)
+                {
+                    let data = xhr.response;
+                    console.log(data)
+                }
+                else
+                {
+
+                }
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>
