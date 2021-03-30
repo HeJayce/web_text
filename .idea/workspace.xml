@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.30">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,13 +186,7 @@
       <workItem from="1617018646314" duration="41000" />
       <workItem from="1617086788177" duration="13404000" />
       <workItem from="1617115464351" duration="6000" />
-    </task>
-    <task id="LOCAL-00036" summary="2.18">
-      <created>1613641985631</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1613641985631</updated>
+      <workItem from="1617115564803" duration="301000" />
     </task>
     <task id="LOCAL-00037" summary="tb选择区域bug">
       <created>1613642039605</created>
@@ -529,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617115436126</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="3.30">
+      <created>1617115853481</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1617115853481</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
