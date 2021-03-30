@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实践</title>
+</head>
+<body>
+用户名：<input type="text" id="username">
+<p></p>
+<script>
+    const input = document.getElementById('username')
+    const p = document.getElementsByTagName('p')[0]
+    function handle(data) {
+       input.style.border = 'solid 1px #f00';
+        p.innerHTML = data.msg;
+    }
+    //输入框失去聚焦事件
+    input.onblur = function () {
+        //获取输入值
+        let username = this.value;
+        //向服务器端发送请求
+        //1.创建script标签
+        const script = document.createElement('script')
+        //2.设置标签的src属性
+        script.src = 'http://127.0.0.1:8000/check-user';
+        //3.将script插入文档
+        document.body.appendChild(script);
+    }
+
+</script>
+
+</body>
+</html>

@@ -573,3 +573,44 @@ var vm = new Vue({})
 
 
 
+## 发AJAX
+
+利用vue-resource 实现get，post，jsonp 请求
+
+`vue-resource` 是一个外部包
+
+导入：
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.2"></script>
+```
+
+[http参考手册](https://github.com/pagekit/vue-resource/blob/develop/docs/http.md)
+
+### 发起get请求
+
+
+
+语法：
+
+```js
+this.$http.get('/someUrl', [config]).then(successCallback, errorCallback);
+```
+
+失败回调可不传，成功必须传
+
+
+
+### 发起post
+
+语法：
+
+```js
+this.$http.post('/someUrl', [body], [config]).then(successCallback, errorCallback);
+```
+
+
+
+手动发起的post请求，默认没有表单格式，有的服务器处理不了
+
+post方法的第三个参数，{emulateJSON: true}

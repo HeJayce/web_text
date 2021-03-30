@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>同源策略</title>
+</head>
+<body>
+    <h1>i am H1</h1>
+    <button>点击获取用户数据</button>
+    <script>
+        const btn = document.getElementsByTagName("button")[0];
+        btn.onclick = function (){
+            const x = new XMLHttpRequest();
+            x.open('GET' , '/data');
+            x.send();
+            x.onreadystatechange = function () {
+                if (x.readyState === 4){
+                    if (x.status >= 200 && x.status <300){
+                        console.log(x.response)
+
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

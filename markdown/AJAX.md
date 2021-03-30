@@ -320,7 +320,95 @@ xhr.onerror = ()=>{
 
 vue和react推荐的AJAX请求包
 
+### GET
 
+```js
+axios.get('http://127.0.0.1:8000/axios-server , {
+	params: {
+	},
+	headers:{}
+}).then(value => {
+		console.log(value)
+})
+```
+
+### POST
+
+```
+axios.post('http://127.0.0.1:8000/axios-server , {
+	params: {
+	},
+	headers:{},
+	data: {}
+}).then(value => {
+		console.log(value)
+})
+```
+
+### AJAX
+
+```js
+axios({
+  method: 'POST',
+  url: '/axios-server',
+  params: {
+  	vip: 10,
+  	level: 30
+  },
+  	headers: {
+  		a: 100,
+  		b: 200
+  },
+  	data: {
+  		username: 'admin',
+  		password: 'admin'
+  	}
+  }).then(response=>{
+  	console.log(response);
+  })
+```
+
+
+
+## fetch
+
+
+
+
+
+## 跨域
+
+### 同源策略
+
+一种安全策略
+
+协议，域名，端口号必须完全相同
+
+
+
+### 解决跨域
+
+#### JSONP
+
+只支持get请求
+
+不是向服务端要数据，而是要JS代码
+
+动态创建script标签
+
+
+
+
+
+
+
+
+
+#### CORS
+
+官方的跨域解决方案，完全在服务器进行处理
+
+cors是通过设置一个响应头来告诉浏览器，该请求允许跨域
 
 
 
