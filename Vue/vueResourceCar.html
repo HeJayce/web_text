@@ -23,7 +23,7 @@
                 Name:
                 <input type="text" class="form-control">
             </label>
-            <input type="button" value="添加" class="btn btn-success">
+            <input type="button" value="添加" class="btn btn-success" @click="add()">
 
             <label>
                 搜索:
@@ -68,7 +68,14 @@
           this.getAllList();
         },
         methods: {
-            add(){},
+            add(){
+                this.$http.post('http://127.0.0.1:8000/car-list',{name : this.name},{emulateJSON: true})
+                    .then(response=>{
+                        this.getAllList()
+                    })
+
+
+            },
             getAllList(){
                 this.$http.get('http://127.0.0.1:8000/car-list').then(response=>{
                     var result = response.body

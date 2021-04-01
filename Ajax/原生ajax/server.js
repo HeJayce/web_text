@@ -68,7 +68,7 @@ app.all('/car-list',(request,response)=>{
     response.setHeader('Access-Control-Allow-Origin','*')
     //设置响应体
     const data = [
-        {id: 1, name: "BMW", ctime: "Tue Mar 30 2021 22:20:38 GMT+0800 (中国标准时间)"},
+        {id: 1, name: "BMW", ctime: new Date()},
         {id: 2, name: "奥迪", ctime: "Tue Mar 30 2021 22:20:38 GMT+0800 (中国标准时间)"},
         {id: 3, name: "法拉利", ctime: "Tue Mar 30 2021 22:20:38 GMT+0800 (中国标准时间)"},
         {id: 4, name: "奥迪", ctime: "Tue Mar 30 2021 22:20:38 GMT+0800 (中国标准时间)"},

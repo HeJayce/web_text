@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <script src="vue.js"></script>
+    <style>
+        .v-enter,
+        .v-leave-to {
+            opacity: 0;
+            transform: translateX(80px);
+        }
+
+        .v-enter-active,
+        .v-leave-active {
+            transition: all 1s linear;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="button" @click="flag=!flag" value="control">
+    <transition>
+        <h1 v-if="flag">v-if</h1>
+    </transition>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            flag: true
+        },
+        methods: {
+
+        }
+
+    });
+</script>
+
+</body>
+</html></script>

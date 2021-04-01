@@ -614,3 +614,51 @@ this.$http.post('/someUrl', [body], [config]).then(successCallback, errorCallbac
 手动发起的post请求，默认没有表单格式，有的服务器处理不了
 
 post方法的第三个参数，{emulateJSON: true}
+
+
+
+## Vue动画
+
+### 过度动画
+
+![image-20210401140658765](Vue.assets/image-20210401140658765.png)
+
+**方法**：
+
+1. 使用`transition` 把需要控制的元素包裹起来
+
+`transition`是vue官方提供的元素
+
+2. 自定义两组style样式，控制`transition`的元素
+
+    其中style样式里主要包含图中的状态
+
+    ```css
+    /*动画进去之前和离开之后*/
+    .v-enter,
+    .v-leave-to{
+    	opacity: 0;
+    }
+    /*入场动画和离场动画时间段*/
+    .v-enter-active,
+    .v-leave-active{
+    	transition: all 0.4s ease;
+    }
+    ```
+
+    
+
+3. 对于这些在过渡中切换的类名来说，如果你使用一个没有名字的 `<transition>`，则 `v-` 是这些类名的默认前缀。
+
+    如果你使用了 `<transition name="my-transition">`，那么 `v-enter` 会替换为 `my-transition-enter`。
+
+
+
+### 第三方CSS
+
+
+
+
+
+
+
