@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <title>动画</title>
     <script src="vue.js"></script>
-    <style>
-        .v-enter,
-        .v-leave-to {
-            opacity: 0;
-            transform: translateX(80px);
-        }
+    <link rel="stylesheet" href="../html/css/animate.css">
+<!--    <style>-->
+<!--        .v-enter,-->
+<!--        .v-leave-to {-->
+<!--            opacity: 0;-->
+<!--            transform: translateX(80px);-->
+<!--        }-->
 
-        .v-enter-active,
-        .v-leave-active {
-            transition: all 1s linear;
-        }
-    </style>
+<!--        .v-enter-active,-->
+<!--        .v-leave-active {-->
+<!--            transition: all 1s linear;-->
+<!--        }-->
+<!--    </style>-->
 </head>
 <body>
 <div id="app">
     <input type="button" @click="flag=!flag" value="control">
-    <transition>
-        <h1 v-if="flag">v-if</h1>
+    <transition
+            enter-active-class="animate__bounceIn"
+            leave-active-class="animate__bounceOut"
+            :duration="{enter:400,leave:400}">
+        <h1 v-if="flag" class="animate__animated">v-if</h1>
     </transition>
 </div>
 <script>

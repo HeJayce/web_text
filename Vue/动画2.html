@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS钩子函数小球</title>
+    <script src="vue.js"></script>
+    <style>
+        .ball{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="点击" @click="flag = !flag">
+    <transition
+    @before-enter="beforeEnter"
+    @enter="enter"
+    @after-enter="afterEnter">
+        <div class="ball" v-show="flag">
+
+        </div>
+    </transition>
+</div>
+<script>
+    const vm = new Vue({
+        el : "#app",
+        data : {
+            flag:false
+        },
+        methods : {
+            beforeEnter(el){
+                el.style.transform = "translate(5px,5px)"
+            },
+            enter(el,done){
+                el.offsetWidth  //必须要写，强制动画刷新
+                el.style.transform = "translate(400px,400px)"
+                el.style.transition = 'all 1s ease'
+                done()
+
+            },
+            afterEnter(el){
+                this.flag = !this.flag
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

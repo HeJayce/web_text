@@ -656,6 +656,87 @@ post方法的第三个参数，{emulateJSON: true}
 
 ### 第三方CSS
 
+`animate.css`
+
+[官网](https://animate.style/)
+
+使用方法：
+
+```html
+<transition
+	enter-active-class="animate__bounceIn"   
+	leave-active-class="animate__bounceOut"
+	:duration="{enter:400,leave:400}">
+	<h1 v-if="flag" class="animate__animated">v-if</h1>
+</transition>
+```
+
+`enter-active-class`入场动画
+
+`leave-active-class`离场动画
+
+`:duration`可以分别设置动画时间
+
+
+
+### JS钩子函数
+
+```html
+<transition
+  v-on:before-enter="beforeEnter"
+  v-on:enter="enter"
+  v-on:after-enter="afterEnter"
+  v-on:enter-cancelled="enterCancelled"
+
+  v-on:before-leave="beforeLeave"
+  v-on:leave="leave"
+  v-on:after-leave="afterLeave"
+  v-on:leave-cancelled="leaveCancelled">
+</transition>
+```
+
+使用方法：
+
+```vue
+methods : {
+	beforeEnter(el){},
+	enter(el,done){
+    done()
+  },
+	afterEnter(el){}
+}
+```
+
+每个函数身上都有一个el属性，表示要执行动画的那个DOM元素
+
+1. `beforeEnter`表示动画入场之前，此时，动画尚未开始，此函数可设置起始样式
+
+2. `enter` 表示动画开始的样式，可设置完成动画的结束状态
+
+    其中在 `enter` 和 `leave` 中必须使用 `done` 进行**回调**
+
+    这里的done，就是afterEnter这个函数，就是说done是afterenter的引用
+
+    
+
+3. `afterEnter` 动画完成后调用
+
+
+
+### 列表动画
+
+与前面不同的是
+
+如果使用过度元素，是通过v-for渲染出来的，不能使用`transition`来包裹
+
+需要使用`transition-group`
+
+`transition-group`的`tag`和`appear`属性
+
+appear实现页面入场动画
+
+tag属性指定渲染元素，默认为span标签
+
 
 
 

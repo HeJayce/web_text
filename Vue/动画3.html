@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表动画</title>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="../html/css/reset.css">
+    <style>
+        #app {
+            margin-top: 30px;
+        }
+
+        li {
+            line-height: 30px;
+            border: black solid 1px;
+            margin: 10px;
+            width: 250px;
+            padding-left: 30px;
+            font-size: 16px;
+            transition: all 0.2s ease;
+        }
+        .v-enter,
+        .v-leave-active{
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .v-leave-active,
+        .v-enter-active{
+            transition: all 0.2s ease;
+
+        }
+        li:hover{
+            font-size: 18px;
+            transition: all 0.2s ease;
+        }
+        .v-move{
+            transition: all 0.2s ease;
+        }
+        .v-leave-active{
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <lable>
+        ID:
+        <input type="text" v-model="id">
+        Name
+        <input type="text" v-model="name">
+        <input type="button" value="add" @click="add">
+    </lable>
+
+    <ul>
+        <transition-group appear tag="ul">
+        <li v-for="item in list" :key="item.id" @click="del(i)">
+            {{ item.id }} ---- {{ item.name }}
+
+        </li>
+        </transition-group>
+    </ul>
+
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            id: '',
+            name: '',
+            list: [
+                {id: 1, name: 'jayce1'},
+                {id: 2, name: 'jayce2'},
+                {id: 3, name: 'jayce3'},
+                {id: 4, name: 'jayce4'},
+                {id: 5, name: 'jayce5'}
+            ]
+        },
+        methods: {
+            add() {
+                this.list.push({id: this.id, name: this.name})
+            },
+            del(i){
+                this.list.splice(i,1)
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

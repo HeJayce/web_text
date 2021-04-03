@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="3.30">
-      <change afterPath="$PROJECT_DIR$/Vue/动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/markdown/Vue.assets/image-20210401140658765.png" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="4.1">
+      <change afterPath="$PROJECT_DIR$/Vue/动画2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/动画3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax/原生ajax/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax/原生ajax/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/vueResourceCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/vueResourceCar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/动画.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/动画.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markdown/Vue.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/Vue.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +66,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -192,14 +190,9 @@
       <workItem from="1617086788177" duration="13404000" />
       <workItem from="1617115464351" duration="6000" />
       <workItem from="1617115564803" duration="648000" />
-      <workItem from="1617255996785" duration="3871000" />
-    </task>
-    <task id="LOCAL-00038" summary="tb选择区域bug">
-      <created>1613642342464</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1613642342464</updated>
+      <workItem from="1617255996785" duration="3960000" />
+      <workItem from="1617261196462" duration="5020000" />
+      <workItem from="1617267549444" duration="3741000" />
     </task>
     <task id="LOCAL-00039" summary="2.18">
       <created>1613658661739</created>
@@ -537,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617115969656</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="4.1">
+      <created>1617260858810</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1617260858811</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,7 +557,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="3.5" />
     <MESSAGE value="3.6" />
     <MESSAGE value="3.8" />
     <MESSAGE value="数组去重" />
@@ -582,7 +581,8 @@
     <MESSAGE value="3.27" />
     <MESSAGE value="3.29" />
     <MESSAGE value="3.30" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.30" />
+    <MESSAGE value="4.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
