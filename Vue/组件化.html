@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件化</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <my-com1></my-com1>
+    <mycom2></mycom2>
+    <mycom3></mycom3>
+<!--    私有组件无法显示：-->
+    <my-prcom></my-prcom>
+</div>
+<div id="app2">
+    <my-prcom></my-prcom>
+</div>
+<template id="tmp1">
+    <div>
+        <h1>我是tmp1的模版</h1>
+        <h1>i am mycom3</h1>
+    </div>
+</template>
+
+<script>
+    //方法1
+    var com1 = Vue.extend({
+        template: '<h1>i am mycom1</h1>'
+    })
+    Vue.component('myCom1',com1)
+    //方法2
+    Vue.component('mycom2',{
+        template:'<h1>i am mycom2</h1>'
+    })
+    //方法3
+    Vue.component('mycom3',{
+        template: '#tmp1'
+    })
+
+    const vm = new Vue({
+        el : "#app",
+        data : {
+        },
+        methods : {
+        }
+    });
+    const vm2 = new Vue({
+        el : "#app2",
+        components:{
+            myPrcom:{
+                template: '<h1>这是私有的login组件</h1>'
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

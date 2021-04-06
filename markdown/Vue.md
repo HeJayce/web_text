@@ -739,6 +739,113 @@ tag属性指定渲染元素，默认为span标签
 
 
 
+## 组件化和模块化
+
+### 组件化
+
+组件，为了拆分Vue实例代码，能用不同的组件划分不同的功能模块
+
+#### 创建公有组件
+
+1.1 使用Vue.extend来创建全局的Vue组件。
+
+返回一个 模版对象
+
+
+
+```js
+var com1 = Vue.extend({
+	template: '<h3>i am h3</h3>'    
+})
+```
+
+通过template属性，指定了组件要展示的HTML结构
+
+1.2 使用Vue.component('组件的名称'，创建出来的组件模版对象)
+
+注册组件
+
+```js
+Vue.component('mycom1', com1)
+```
+
+1.3 在HTML页面中使用组件
+
+```html
+<my-com1></my-com1>
+```
+
+**注意：注册可以使用驼峰命名法，但在在使用组件时必须使用`-`重新使用。**
+
+
+
+
+
+**2. 简写：**
+
+```
+Vue.component('mycom2', {
+	template: '<h3>i am h3</h3>'    
+})
+
+```
+
+
+
+**注意⚠️：**
+
+模版内容，组件必须包含在唯一的根元素中，可以写在一个div 中，但不能有两个同级的
+
+3. template模版使用id
+
+    在被控制的`#app`元素外面使用template元素，定义HTML模版结构
+
+    ```js
+    Vue.component('mycom3',{
+    	template: '#tmp1'
+    })
+    ```
+
+    ```html
+    <template id="tmp1">
+        <div>
+            <h1>我是tmp1的模版</h1>
+            <h1>i am mycom3</h1>
+        </div>
+    </template>
+    ```
+
+    template组件里放需要的内容
+
+
+
+#### 定义私有组件
+
+使用components定义内部私有组件
+
+```js
+const vm2 = new Vue({
+	el : "#app2",
+	components:{
+		myPrcom:{
+			template: '<h1>这是私有的login组件</h1>'
+		}
+	}
+})
+```
+
+template也可以单独写在外面，使用id作为标记，同上
+
+
+
+
+
+组件化和模块化的区别
+
+组件化：从UI界面角度划分，前端组件化，方便UI组件重用
+
+模块化：从代码逻辑角度划分，方便代码分层开发
+
 
 
 
