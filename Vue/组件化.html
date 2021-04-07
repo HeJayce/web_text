@@ -32,7 +32,12 @@
     Vue.component('myCom1',com1)
     //方法2
     Vue.component('mycom2',{
-        template:'<h1>i am mycom2</h1>'
+        template:'<h1>i am mycom2 {{msg}}</h1>',
+        data: function (){
+            return {
+                msg:'这是组件中data定义的数据'
+            }
+        }
     })
     //方法3
     Vue.component('mycom3',{
