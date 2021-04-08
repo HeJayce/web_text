@@ -723,6 +723,12 @@ methods : {
 
 
 
+Vue把一个完整的动画，使用钩子函数，拆分为了两部分
+
+我们使用`flag` 标识符来，表示动画的切换 
+
+
+
 ### 列表动画
 
 与前面不同的是
@@ -852,6 +858,139 @@ component里直接使用data会报错
 
 ### 组件切换
 
+#### 方法一
+
+使用`v-if`和`v-else`切换组件
+
+在不同的组件使用定义的flag来切换
+
+```html
+<!--flag=true-->
+<a href="" @click.prevent="flag = true">登陆</a>
+ <a href="" @click.prevent="flag = false">注册</a>
+<login v-if="flag"></login>
+<register v-else="flag"></register>
+```
+
+```js
+Vue.component('login',{
+  template: '<h3>登陆</h3>'
+})
+Vue.component('register',{
+  template: '<h3>注册</h3>'
+})
+```
+
+
+
+#### 方法二
+
+使用Vue提供的``component`组件展示对应名称的组件
+
+```html
+<component :is="'组件名'"></component>
+```
+
+需要注意的是：
+
+​	组件名是字符串形式，必须使用引号
+
+​	也可以使用变量：
+
+```html
+<a href=""  @click.prevent="comName='login'">登陆</a>
+<a href=""  @click.prevent="comName='register'">注册</a>
+```
+
+需要定义：
+
+comName : ' '
+
+
+
+#### 组件切换动画
+
+将`component`包含在`transition`里
+
+```html
+<transition mode="out-in">
+	<component :is="comName"></component>
+</transition>
+```
+
+使用`mode="out-in"`将动画设置为前一个淡出后后一个进入
+
+
+
+动画设置：
+
+```css
+.v-enter,
+.v-leave-to{
+	opacity: 0;
+	transform: translateY(50px);
+}
+.v-enter-active,
+.v-leave-active{
+	transition: all 0.5s ease;
+}
+```
+
+
+
+#### 父子组件传值
+
+父组件在引入子组件时，通过属性绑定（v-bind）把数据以数据绑定的形式，传递给子组件
+
+使用方法：
+
+1. 在使用组件的地方设置数据绑定
+
+    ```html
+    <com1 v-bind:parentmsg="msg"></com1>
+    ```
+
+2. 在组件定义时添加绑定
+
+    ```js
+    com1: {
+    	template: '<h1>我是子组件--{{ parentmsg }}</h1>',
+    }
+    ```
+
+3. 在组件定义地方添加`props`数组，定义才能使用
+
+    ```js
+    com1: {
+    	template: '<h1>我是子组件--{{ parentmsg }}</h1>',
+    	props: ['parentmsg']
+    }
+    ```
+
+    所有props中的数据，都是通过父组件传递给子组件的
+
+4. 子组件数据
+
+    ```js
+    data(){
+    	return{
+    		msg: 'child'
+    	}
+    },
+    ```
+
+    子组件数据可读可写
+
+    父组件数据可读
+
+
+
+#### 父组件方法传递
+
+使用v-on
+
+
+
 
 
 
@@ -863,6 +1002,10 @@ component里直接使用data会报错
 组件化：从UI界面角度划分，前端组件化，方便UI组件重用
 
 模块化：从代码逻辑角度划分，方便代码分层开发
+
+
+
+
 
 
 

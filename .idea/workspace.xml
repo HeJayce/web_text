@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="4.6">
-      <change afterPath="$PROJECT_DIR$/Vue/组件谢欢.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/组件父子传值.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/组件化.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/组件化.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/动画.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/动画.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/动画2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/动画2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/组件谢欢.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/组件谢欢.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markdown/Vue.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/Vue.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,6 +199,7 @@
       <workItem from="1617766890270" duration="1932000" />
       <workItem from="1617787630195" duration="920000" />
       <workItem from="1617826816477" duration="23000" />
+      <workItem from="1617885631730" duration="5384000" />
     </task>
     <task id="LOCAL-00041" summary="通过一张大图的定位优化速度">
       <created>1613660199502</created>

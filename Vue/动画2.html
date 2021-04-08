@@ -29,7 +29,7 @@
     const vm = new Vue({
         el : "#app",
         data : {
-            flag:false
+            flag: false
         },
         methods : {
             beforeEnter(el){
@@ -37,13 +37,17 @@
             },
             enter(el,done){
                 el.offsetWidth  //必须要写，强制动画刷新
-                el.style.transform = "translate(400px,400px)"
+                el.style.transform = "translate(150px,450px)"
                 el.style.transition = 'all 1s ease'
                 done()
-
             },
             afterEnter(el){
+                //隐藏
+                //直接跳过后半场动画，让flag标识直接变为false
+                //第二次点击，flag  false  ->  true
                 this.flag = !this.flag
+                //渐变隐藏
+                el.style.opacity = 0;
             }
         }
     })

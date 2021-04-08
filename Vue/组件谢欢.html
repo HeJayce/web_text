@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <title>组件切换</title>
     <script src="vue.js"></script>
+    <style>
+        .v-enter,
+        .v-leave-to{
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        .v-enter-active,
+        .v-leave-active{
+            transition: all 0.5s ease;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <a href="" @click.prevent="flag = true">登陆</a>
-    <a href="" @click.prevent="flag = false">注册</a>
+<!--    <a href="" @click.prevent="flag = true">登陆</a>-->
+<!--    <a href="" @click.prevent="flag = false">注册</a>-->
+<!--    <login v-if="flag"></login>-->
+<!--    <register v-else="flag"></register>-->
 
-    <login v-if="flag"></login>
-    <register v-else="flag"></register>
+    <a href=""  @click.prevent="comName='login'">登陆</a>
+    <a href=""  @click.prevent="comName='register'">注册</a>
+    <transition mode="out-in">
+        <component :is="comName"></component>
+    </transition>
+
 
 </div>
 <script>
@@ -21,10 +38,12 @@
     Vue.component('register',{
         template: '<h3>注册</h3>'
     })
+
     const vm = new Vue({
         el : "#app",
         data : {
-            flag :true
+            flag :true,
+            comName: 'login'
         },
         methods : {
         }

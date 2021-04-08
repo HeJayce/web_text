@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父组件向子组件传值</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <com1 v-bind:parentmsg="msg"></com1>
+</div>
+<script>
+    const vm = new Vue({
+        el : "#app",
+        data : {
+            msg: 'father'
+        },
+        methods : {
+        },
+        components: {
+            com1: {
+                data(){
+                    return{
+                        msg: 'child'
+                    }
+                },
+                template: '<h1>父组件传值--{{ parentmsg }}</h1>',
+                props: ['parentmsg']
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
