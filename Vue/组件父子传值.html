@@ -7,26 +7,48 @@
 </head>
 <body>
 <div id="app">
-    <com1 v-bind:parentmsg="msg"></com1>
+    <com1 :parentmsg="msg"></com1>
+    <com2 @func="show"></com2>
 </div>
+
+<template id="tmp">
+    <div>
+        <h1>这是子组件</h1>
+        <input type="button" value="父组件func方法" @click="myclick">
+    </div>
+</template>
+
 <script>
+    var com2 = {
+        template: '#tmp',
+        methods: {
+            myclick(){
+                this.$emit('func')
+            }
+        }
+    }
+
     const vm = new Vue({
         el : "#app",
         data : {
             msg: 'father'
         },
         methods : {
+            show(){
+                console.log("我是父组件show方法")
+            }
         },
         components: {
             com1: {
                 data(){
                     return{
-                        msg: 'child'
+                        msg: '我是父组件msg值'
                     }
                 },
                 template: '<h1>父组件传值--{{ parentmsg }}</h1>',
                 props: ['parentmsg']
-            }
+            },
+            com2
         }
     })
 </script>

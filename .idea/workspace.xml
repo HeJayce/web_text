@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="4.6">
-      <change afterPath="$PROJECT_DIR$/Vue/组件父子传值.html" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="4.8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/动画.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/动画.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/动画2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/动画2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/组件谢欢.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/组件谢欢.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/Vue.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/Vue.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/组件父子传值.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/组件父子传值.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,14 +195,8 @@
       <workItem from="1617766890270" duration="1932000" />
       <workItem from="1617787630195" duration="920000" />
       <workItem from="1617826816477" duration="23000" />
-      <workItem from="1617885631730" duration="5384000" />
-    </task>
-    <task id="LOCAL-00041" summary="通过一张大图的定位优化速度">
-      <created>1613660199502</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1613660199502</updated>
+      <workItem from="1617885631730" duration="5568000" />
+      <workItem from="1617947519309" duration="744000" />
     </task>
     <task id="LOCAL-00042" summary="2.18">
       <created>1613660265307</created>
@@ -544,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617719833464</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="4.8">
+      <created>1617892693267</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1617892693268</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="数组去重" />
     <MESSAGE value="3.11" />
     <MESSAGE value="3.14" />
     <MESSAGE value="全选1.0" />
@@ -589,7 +585,8 @@
     <MESSAGE value="4.1" />
     <MESSAGE value="4.3" />
     <MESSAGE value="4.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.6" />
+    <MESSAGE value="4.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.8" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
