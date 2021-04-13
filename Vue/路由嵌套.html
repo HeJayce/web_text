@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>路由嵌套</title>
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+    <router-link to="/account">account</router-link>
+    <router-view></router-view>
+
+</div>
+<template id="tmp">
+    <div>
+        <h1>这是account组件</h1>
+        <router-link to="/account/login">login</router-link>
+        <router-link to="/account/register">register</router-link>
+        <router-view></router-view>
+    </div>
+</template>
+<script>
+    var account = {
+        template: '#tmp'
+    }
+    var login = {
+        template: '<h3>登陆组件</h3>'
+    }
+    var register = {
+        template: '<h3>注册组件</h3>'
+    }
+
+    var router = new VueRouter({
+        routes: [
+            {
+                path: '/account', component: account,
+                children: [
+                    {path: 'login', component: login},
+                    {path: 'register', component: register},
+                ]
+            }
+
+        ]
+    })
+
+    const vm = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        router
+
+    })
+</script>
+
+</body>
+</html>

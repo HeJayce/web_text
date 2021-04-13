@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="4.8">
+      <change afterPath="$PROJECT_DIR$/Vue/router.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/vue-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/名称案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/命名视图经典布局.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/监视路由地址改变.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/评论功能.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vue/路由嵌套.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown/Vue.assets/image-20210410162123209.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vue/组件父子传值.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/组件父子传值.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/Vue.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/Vue.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -63,7 +74,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -73,11 +84,11 @@
       <recent name="$PROJECT_DIR$/html/media/10" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Vue" />
       <recent name="$PROJECT_DIR$/html/css" />
       <recent name="$PROJECT_DIR$/markdown/JavaScript.assets" />
       <recent name="$PROJECT_DIR$/Ajax/fetch" />
       <recent name="$PROJECT_DIR$/Ajax/axios" />
-      <recent name="$PROJECT_DIR$/Ajax/原生ajax" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.text.js">
@@ -196,14 +207,10 @@
       <workItem from="1617787630195" duration="920000" />
       <workItem from="1617826816477" duration="23000" />
       <workItem from="1617885631730" duration="5568000" />
-      <workItem from="1617947519309" duration="744000" />
-    </task>
-    <task id="LOCAL-00042" summary="2.18">
-      <created>1613660265307</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1613660265307</updated>
+      <workItem from="1617947519309" duration="12000000" />
+      <workItem from="1617973705754" duration="496000" />
+      <workItem from="1618042375243" duration="7161000" />
+      <workItem from="1618140999623" duration="918000" />
     </task>
     <task id="LOCAL-00043" summary="2.24">
       <created>1614168927981</created>
@@ -541,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617892693268</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="4.9">
+      <created>1617948484283</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1617948484283</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +575,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="3.11" />
     <MESSAGE value="3.14" />
     <MESSAGE value="全选1.0" />
     <MESSAGE value="3.15" />
@@ -586,7 +599,8 @@
     <MESSAGE value="4.3" />
     <MESSAGE value="4.6" />
     <MESSAGE value="4.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.8" />
+    <MESSAGE value="4.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.9" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

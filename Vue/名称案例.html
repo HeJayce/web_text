@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>名称案例</title>
+    <script src="vue.js"></script>
+
+</head>
+<body>
+
+<div id="app">
+    <input type="text" v-model="firstname" @keyup="getFullname">+
+    <input type="text" v-model="lastname" @keyup="getFullname">=
+    <input type="text" v-model="fullname">
+    <hr>
+    <input type="text" v-model="firstname2">+
+    <input type="text" v-model="lastname2">=
+    <input type="text" v-model="fullname2">
+</div>
+
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            firstname: '',
+            lastname: '',
+            fullname: '',
+
+            firstname2: '',
+            lastname2: '',
+            fullname2: ''
+        },
+        methods: {
+            getFullname() {
+                this.fullname = this.firstname + '-' + this.lastname
+            }
+        },
+        watch: {
+            // firstname2:function () {
+            //     this.fullname2 = this.firstname2 + '-' + this.lastname2
+            // },
+            // lastname2:function () {
+            //     this.fullname2 = this.firstname2 + '-' + this.lastname2
+            // }
+            firstname2:function (newVal) {
+                this.fullname2 = newVal + '-' + this.lastname2
+            },
+            lastname2:function (newVal) {
+                this.fullname2 = this.firstname2 + '-' + newVal
+            }
+        }
+
+    })
+</script>
+
+</body>
+</html>

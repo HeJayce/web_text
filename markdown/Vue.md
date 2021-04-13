@@ -987,11 +987,62 @@ comName : ' '
 
 #### 父组件方法传递
 
-使用v-on
+1. 使用`v-on` 将需要传递方法绑定给子组件
+
+```html
+<com2 @func="show"></com2>
+```
+
+`func`是自定的名称
+
+`show` 是父组件的方法
+
+`com2`是自定义组件
+
+2. 在自定义组件中加入需要调用的事件
+
+    ```html
+    <input type="button" value="父组件func方法" @click="myclick">
+    ```
+
+    
+
+3. 在这个事件触发函数中调用父组件方法
+
+```js
+com2 = {
+	template: '#tmp',
+	methods: {
+		myclick(){
+			this.$emit('func')
+		}
+	}
+}
+```
+
+`this.$emit('func')`
+
+`emit`意为调用
 
 
 
+### 评论功能
 
+#### 评论方法逻辑
+
+1.评论数据存放到了`localstorage` 中`localstorage.setItem('emts','')`
+
+2.先组织出一个最新的评论数据对象
+
+3.想办法，把第二步中，得到的评论对象，保存到localstorage 中:
+
+​	3.1 localstorage 只支持存放字符串数据，要先调用`JSON.stringity`
+
+​	3.2在保存最新的评论数据之前，要先从`localstorage` 获取到之前的评论数据( string )，转换为一个数组对象，然后把新的评论，`push `到这个数组
+
+​	3.3 如果评论字符串为空，则返回一个'[]' ，让JSON.parse去转换
+
+​	3.4 最新的评论列表再次调用`JSON.stringity`，转为数组字符串，然后调用`localstorage.setItem('emts','')`
 
 
 
@@ -1005,9 +1056,217 @@ comName : ' '
 
 
 
+## 路由
+
+后端路由：把URL 地址都对应到服务器上对应的资源
+
+前端路由：只在前端页面通过hash（#）来实现页面的切换
+
+### 使用方法
+
+1. 新建一个路由对象
+
+```js
+var routerObj = new VueRouter({
+})
+```
+
+2. 配置路由规则
+```js
+routes: [ //路由匹配规则
+  { path: '/login', component:login },
+  { path: '/', redirect:'/login' }  //实现默认login
+]
+```
+
+每个路由规则都是一个对象，这个规则对象身上，有两个必须的属性：
+1. `path`，表示监听哪个路由链接地址
+2. `component`，表示如果匹配到`path`，则展示`component`属性对应组件
 
 
 
+**注意`component`的属性值，必须是一个组件的模版对象，不能是引用名称**
+
+3. 在vm实例中添加新建的router对象
+
+```js
+const vm = new Vue({
+  el : "#app",
+  router: routerObj
+}
+```
+
+4. 引入标签
+
+```html
+<router-view></router-view>
+```
+
+这是`vue-router`提供的元素，专门用来当作占位符，路由规则匹配到的组件就会展示到`router-view`中
+
+   
+
+**router-link**
+
+router-link会自动渲染一个a标签
+
+```html
+<router-link to="/login">login</router-link>
+```
 
 
+
+### 切换动画
+
+将`router-view`标签放在`transition`标签中
+
+
+
+### 路由传参
+
+使用查询字符串，给路由传递参数，则不需要修改路由规则的path属性
+
+传值：
+
+```html
+<router-link to="/login?id=10">登陆</router-link>
+```
+
+获取数据：
+
+```js
+{{ $route.query }}
+```
+
+
+
+另一种方式：
+
+在定义路由规则时给定一个占位符用来存放参数
+
+```js
+{path: '/login/:id', component: login},
+```
+
+在url上，直接后面接需要传的值即可
+
+```html
+<router-link to="/login/id=10">登陆</router-link>
+```
+
+![image-20210410162123209](Vue.assets/image-20210410162123209.png)
+
+`path`被解析出需要的参数，存放在`params`中
+
+
+
+### 路由嵌套
+
+需要子路由时
+
+将路由规则写入父路由
+
+格式如下：
+
+```js
+{
+	path: '/account', component: account,
+	children: [
+		{path: 'login', component: login},
+		{path: 'register', component: register},
+	]
+}
+```
+
+**注意⚠️：子路由的路径不要写`/`**
+
+`/`代表根路由
+
+
+
+### 命名视图经典布局
+
+在一个页面根据命名实现防止不同的组件
+
+```js
+routes: [
+{
+	path: '/', components: {
+		'default': header,
+		'left': leftBox,
+		'main': mainBox
+		}
+	}
+]
+```
+
+命名名称是字符串
+
+组件使用：
+
+```html
+<router-view></router-view>
+<router-view name="left"></router-view>
+<router-view name="main"></router-view>
+```
+
+
+
+## watch监视
+
+watch属性可以监视data中指定数据的变化，然后触发相应的函数
+
+```
+watch: {
+	msg:function () {}
+}
+```
+
+当数据名称有`-`的时候，必须加上引号：
+
+`'first-name'`
+
+函数可以有两个参数，分别是新值和旧值
+
+
+
+监视路由地址变化：
+
+```js
+'$route.path': function(){}
+```
+
+
+
+## computed
+
+计算属性
+
+本质是一个方法，使用时把名称直接当作属性来使用，并不会把计算属性当作方法去调用
+
+例如计算全名：
+
+```
+computed:{
+	'fullname':function (){
+		return this.firstname + '-' + this.lastname
+	}
+}
+```
+
+
+
+## NRM
+
+提供了npm下载包地址
+
+`nrm ls`查看
+
+
+
+## Webpack
+
+是一个前端项目构建工具
+
+解决各个包的依赖关系
 

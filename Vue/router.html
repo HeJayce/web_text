@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>路由基本使用</title>
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+    <style>
+        .router-link-active {
+            color: red;
+            font-weight: 100;
+        }
+
+        .v-enter,
+        .v-leave-active {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .v-leave-active,
+        .v-enter-active {
+            transition: all 0.2s ease;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--    <a href="#/login">登陆</a>-->
+    <!--    <a href="#/register">注册</a>-->
+    <router-link to="/login?id=1">登陆</router-link>
+    <router-link to="/register/2">注册</router-link>
+    <transition mode="out-in">
+        <router-view></router-view>
+    </transition>
+</div>
+
+
+<script>
+    var login = {
+        template: '<h1>登陆---id={{ $route.query.id }}</h1>',
+        created(){
+            console.log(this.$route.query)
+        }
+    }
+    var register = {
+        template: '<h1>注册</h1>',
+        created(){
+            console.log(this.$route.params)
+        }
+    }
+
+    var routerObj = new VueRouter({
+        routes: [ //路由匹配规则
+            // {path: '/', redirect: '/login'},
+            {path: '/login', component: login},
+            {path: '/register/:id', component: register}
+        ]
+    })
+
+
+    const vm = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        router: routerObj //注册到VM，监听URL变化
+
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>监视路由地址改变</title>
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+    <router-link to="/login">登陆</router-link>
+    <router-link to="/register">注册</router-link>
+    <router-view></router-view>
+</div>
+
+
+<script>
+    var login = {
+        template: '<h1>登陆</h1>',
+    }
+    var register = {
+        template: '<h1>注册</h1>',
+    }
+
+    var router = new VueRouter({
+        routes: [ //路由匹配规则
+            // {path: '/', redirect: '/login'},
+            {path: '/login', component: login},
+            {path: '/register', component: register}
+        ]
+    })
+
+    const vm = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        router,
+        watch: {
+            '$route.path': function (newVal,oldVal) {
+                console.log(newVal + '-' + oldVal)
+                if (newVal === '/login'){
+                    alert('请登陆')
+                }
+                else if (newVal === '/register'){
+                    alert('欢迎注册')
+                }
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
