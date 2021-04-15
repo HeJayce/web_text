@@ -29,10 +29,8 @@
             transition: all 0.2s ease;
 
         }
-        li:hover{
-            font-size: 18px;
-            transition: all 0.2s ease;
-        }
+
+
         .v-move{
             transition: all 0.2s ease;
         }
@@ -54,7 +52,7 @@
 
     <ul>
         <transition-group appear tag="ul">
-        <li v-for="item in list" :key="item.id" @click="del(i)">
+        <li v-for="item in list" :key="item.id" @click="del(item.id-1)">
             {{ item.id }} ---- {{ item.name }}
 
         </li>
