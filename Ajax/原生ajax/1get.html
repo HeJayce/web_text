@@ -19,30 +19,48 @@
     const btn = document.getElementsByTagName("button")[0];
     const result = document.getElementById("result");
     btn.onclick = ()=>{
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET','http://127.0.0.1:8000/server?a=100');
-        xhr.send();
-        xhr.onreadystatechange = function(){
-            if(xhr.readyState === 4){
-                //判断响应状态 200 404 403 401 500
-                //2xx 成功
-                if(xhr.status >= 200 && xhr.status <=300)
-                {//处理结果
-                    // console.log(xhr.status);  //状态码
-                    // console.log(xhr.statusText); //状态字符串
-                    // console.log(xhr.getAllResponseHeaders());//all响应头
-                    // console.log(xhr.response);//all响应头
-                    result.innerHTML = xhr.status+"<br>"+
-                                     xhr.statusText+"<br>"+
-                                     xhr.getAllResponseHeaders()+"<br>"+
-                                     xhr.response;
-                }
-                else
-                {
-
-                }
+        const xhr = new XMLHttpRequest()
+        xhr.open('GET','http://127.0.0.1:8000/server')
+        xhr.send()
+        console.log(xhr.readyState)
+        xhr.onreadystatechange = function (){
+            if (xhr.readyState===4){
+                console.log(xhr.readyState)
             }
         }
+
+
+
+
+
+
+
+
+
+        // const xhr = new XMLHttpRequest();
+        // xhr.open('GET','http://127.0.0.1:8000/server?a=100');
+        // xhr.send();
+        // xhr.onreadystatechange = function(){
+        //     if(xhr.readyState === 4){
+        //         //判断响应状态 200 404 403 401 500
+        //         //2xx 成功
+        //         if(xhr.status >= 200 && xhr.status <=300)
+        //         {//处理结果
+        //             // console.log(xhr.status);  //状态码
+        //             // console.log(xhr.statusText); //状态字符串
+        //             // console.log(xhr.getAllResponseHeaders());//all响应头
+        //             // console.log(xhr.response);//all响应头
+        //             result.innerHTML = xhr.status+"<br>"+
+        //                              xhr.statusText+"<br>"+
+        //                              xhr.getAllResponseHeaders()+"<br>"+
+        //                              xhr.response;
+        //         }
+        //         else
+        //         {
+        //
+        //         }
+        //     }
+        // }
     }
 </script>
 </body>
