@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="4.18">
-      <change afterPath="$PROJECT_DIR$/html/css/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/exercise/垂直居中.html" afterDir="false" />
+    <list default="true" id="7dfe526c-ed5c-45be-a3aa-140c33ac51aa" name="Default Changelist" comment="linux">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax/原生ajax/1get.html" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax/原生ajax/1get.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax/原生ajax/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax/原生ajax/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -220,13 +216,10 @@
       <workItem from="1619583803254" duration="549000" />
       <workItem from="1620553992631" duration="224000" />
       <workItem from="1621690678120" duration="1804000" />
-    </task>
-    <task id="LOCAL-00047" summary="3.3">
-      <created>1614746707873</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1614746707873</updated>
+      <workItem from="1622918282574" duration="1406000" />
+      <workItem from="1622919707232" duration="470000" />
+      <workItem from="1454549750834" duration="58000" />
+      <workItem from="1623507823849" duration="1442000" />
     </task>
     <task id="LOCAL-00048" summary="3.3">
       <created>1614766731339</created>
@@ -564,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618744905136</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="linux">
+      <created>1622918333707</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1622918333707</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="1.0版本，麻烦" />
     <MESSAGE value="2.0版本inner写入" />
     <MESSAGE value="3.16" />
     <MESSAGE value="3.17" />
@@ -609,7 +608,8 @@
     <MESSAGE value="4.13" />
     <MESSAGE value="4.15" />
     <MESSAGE value="4.18" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.18" />
+    <MESSAGE value="linux" />
+    <option name="LAST_COMMIT_MESSAGE" value="linux" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
